@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Channel : MonoBehaviour {
     
-    public TextAsset inkAsset;
+    public TextAsset[] inkAsset;
     public float frequency;    
     public float tickDuration;
 
@@ -18,7 +18,7 @@ public class Channel : MonoBehaviour {
     // Use this for initialization
     void Start () {
         engine = GetComponent<Engine>();
-        story = new Story(inkAsset.text);
+        story = new Story(inkAsset[Localization.LanguageIndex].text);
         endOfPause = Time.time;
         listened = false;
         waiting = true; // to prevent early notifications of readiness
