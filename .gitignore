@@ -19,3 +19,7 @@
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
+
+#Unignore DLLs and executables ignored by gitignore_global.txt (useful for Ink plugin)
+!*.dll
+!*.exe
