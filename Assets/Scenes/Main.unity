@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 235695968}
   - component: {fileID: 235695967}
   m_Layer: 5
-  m_Name: LobBg
+  m_Name: LogBg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1378,7 +1378,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 8400000, guid: 5e29ebdf523e9274880b448841c77f59, type: 2}
+  m_Texture: {fileID: 8400000, guid: 9f667289092bc594abaf92940ddc3a8c, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2010,7 +2010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -0.000036186666}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &947564374
@@ -2203,7 +2203,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7a19804877896364eb737e3d784660d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f29e2e86a81f340419f0443ab290e519, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2618,7 +2618,7 @@ RectTransform:
   m_Father: {fileID: 350524003}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.000000059604645}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -3770,8 +3770,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1193450044}
   m_HandleRect: {fileID: 1193450043}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.99999994
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4061,6 +4061,12 @@ Prefab:
       propertyPath: m_Name
       value: Marker3
       objectReference: {fileID: 0}
+    - target: {fileID: 114980502349234734, guid: d0af913d0a333bf449e8ac9939e609ae,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f6dd7f383c0b294e91bf682c2c7ab5f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0af913d0a333bf449e8ac9939e609ae, type: 2}
   m_IsPrefabAsset: 0
@@ -4432,6 +4438,12 @@ Prefab:
       propertyPath: m_Name
       value: Marker2
       objectReference: {fileID: 0}
+    - target: {fileID: 114980502349234734, guid: d0af913d0a333bf449e8ac9939e609ae,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f6dd7f383c0b294e91bf682c2c7ab5f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0af913d0a333bf449e8ac9939e609ae, type: 2}
   m_IsPrefabAsset: 0
@@ -4546,6 +4558,12 @@ Prefab:
       propertyPath: m_Name
       value: Marker1
       objectReference: {fileID: 0}
+    - target: {fileID: 114980502349234734, guid: d0af913d0a333bf449e8ac9939e609ae,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f6dd7f383c0b294e91bf682c2c7ab5f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0af913d0a333bf449e8ac9939e609ae, type: 2}
   m_IsPrefabAsset: 0
