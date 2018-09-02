@@ -70,7 +70,7 @@ public class Log : MonoBehaviour, ILog
         for(int i = 0; i < options.Length; i++)
         {
             GameObject answerBlock = Instantiate(TextBlockPrefab, _activeScrollViewContent);
-            answerBlock.GetComponentInChildren<Text>().text = string.Format("<i><b>{0}</b></i>", options[i]);
+            answerBlock.GetComponentInChildren<Text>().text = string.Format("<i>{0}</i>", options[i]);
             answerBlock.GetComponent<RectTransform>().sizeDelta += new Vector2(0, CalcBlockHeight(options[i]));
             _activeScrollViewContent.sizeDelta += new Vector2(0, answerBlock.GetComponent<RectTransform>().sizeDelta.y);
             int index = i;

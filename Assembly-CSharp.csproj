@@ -63,9 +63,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Channel.cs" />
     <Compile Include="Assets\Scripts\Dummy\DummyCurtains.cs" />
-    <Compile Include="Assets\Scripts\Dummy\DummyLog.cs" />
-    <Compile Include="Assets\Scripts\Dummy\DummyMap.cs" />
-    <Compile Include="Assets\Scripts\Dummy\DummyRadio.cs" />
     <Compile Include="Assets\Scripts\Engine.cs" />
     <Compile Include="Assets\Scripts\FrequencyButton.cs" />
     <Compile Include="Assets\Scripts\ICurtains.cs" />
