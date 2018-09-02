@@ -10,7 +10,7 @@ public class Engine : MonoBehaviour, IEngine {
     private ILog log;
     private IRadio radio;
     private IMap map;
-    private ICurtains curtains;
+    //private ICurtains curtains;
 
     private Channel[] channels;
     private int? currentChannelIndex;
@@ -18,6 +18,7 @@ public class Engine : MonoBehaviour, IEngine {
 	// Use this for initialization
 	void Start () {
         log = canvas.GetComponentInChildren<ILog>();
+        map = canvas.GetComponentInChildren<IMap>();
         channels = GetComponentsInChildren<Channel>();
         currentChannelIndex = null;
     }
@@ -40,7 +41,7 @@ public class Engine : MonoBehaviour, IEngine {
     }
 
     public bool TuneTo(float frequency, int noise)
-    {        
+    {
         for (int i = 0; i < channels.Length; i++)
         {
             if (channels[i].frequency == frequency)
@@ -54,7 +55,10 @@ public class Engine : MonoBehaviour, IEngine {
                     currentChannelIndex = i;
                     CurrentChannel.Listen();
                 }
+
                 log.NotifyTuned(i, frequency.ToString("N1"), noise);
+                log.SwitchStatus(true);
+                map.UpdateMap(i);
                 return true;
             }
         }
@@ -62,6 +66,7 @@ public class Engine : MonoBehaviour, IEngine {
         {
             CurrentChannel.Unlisten();
         }
+        log.SwitchStatus(false);
         return false;
     }
 

@@ -73,4 +73,9 @@ public class DummyLog : MonoBehaviour, ILog {
     {
         Debug.Log(channel + ": NEW MESSAGE");
     }
+
+    public void SwitchStatus(bool active)
+    {
+        throw new NotImplementedException();
+    }
 }

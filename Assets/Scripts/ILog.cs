@@ -9,4 +9,5 @@ public interface ILog
     void NotifyReady(int channel);
     void Send(int channel, string sentence);
     void Ask(int channel, string[] options);
+    void SwitchStatus(bool active);
 }

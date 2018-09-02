@@ -6,5 +6,6 @@ using UnityEngine;
 
 public interface IMap
 {
+    void UpdateMap(int channel);
     void MoveMarker(int channel, Vector2 position);
 }

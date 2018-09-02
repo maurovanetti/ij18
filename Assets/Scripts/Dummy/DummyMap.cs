@@ -10,6 +10,11 @@ public class DummyMap : MonoBehaviour, IMap {
         Debug.Log(channel + ": MARKER @ " + position);
     }
 
+    public void UpdateMap(int channel)
+    {
+        throw new NotImplementedException();
+    }
+
     // Use this for initialization
     void Start () {
 		
