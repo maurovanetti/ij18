@@ -1,0 +1,184 @@
+=== window ===
+
+= description
+VAR just_checked_corpses = false
+Li stavamo seguendo ma li abbiamo persi di vista.
+*   /Meglio avanzare.
+*   /Rallentate.
+    Mi sembra un consiglio davvero insensato.
+    Piuttosto aiutaci a capire dove siamo.
+- C'è un edificio imponente davanti a noi.
+*   /Ditemi meglio.
+    È un cilindro. Avrà almeno 10 piani.
+    /Ho capito dove siete.
+*   /Credo di sapere dove siete.
+- È aperto. Entriamo.
+-> problem
+
+= problem
+*   /Attenti a[lla porta che si chiude alle vostre spalle!]…
+*   /OK.
+*   /Entrate piano.
+- Cazzo, la porta si è chiusa alle nostre spalle.
+L'ingresso si è bloccato!
+Contiamoci… 
+{soldiers}. Ci siamo tutti.
+/Quel passaggio era usato dai trafficanti di migranti.
+/Era stato messo in sicurezza.
+In effetti in quell'angolo vedo qualcosa che potrebbero essere resti umani.
+Resti umani carbonizzati.
+Procediamo, sarà meglio. # shortbreak
+In una stanza abbiamo trovato un estintore e l'abbiamo preso.
+~ Inventory += extinguisher
+*   /Che ve ne fate?
+    Si vede che non sei pratico di scenari di emergenza.
+    * *     /[Lasciatelo giù, è contaminato.]No, seriamente, lasciatelo giù.
+            /Si facevano… esperimenti pericolosi in questo edificio.
+            /Potrebbe essere contaminato.
+            Contaminato? e con cosa?
+            * * *   /Con… un virus.
+                    Mai sentito di virus che attacchino oggetti metallici.
+                    /E il tetano?
+                    Mi tengo la corda col morbillo, non ci stressare.
+            * * *   /Con… radiazioni.
+                    Abbiamo con noi un contatore Geiger e non c'è nessuna radioattività particolare qui.
+                    Mi tengo l'estintore "radioattiva", non ci stressare.
+            * * *   /Ah, fate come vi pare. La vita è la vostra.
+                    Va bene, va bene. Lo lasciamo giù.
+                    ~ Inventory -= extinguisher
+*   /A-ha.
+- Stiamo controllando le stanze una a una.
+A dopo. # longbreak
+-> end_of_check
+
+= end_of_check
+~ just_checked_corpses = false
+Qui Team Rosso.
++   /Rieccovi.
+    Q<>
+*   /È buio? Riuscite a vedere?
+    Perfettamente, ma q<>
++   /Come procede?
+    Mah. {|Ci siamo rotti le palle.} Q<>
+- ui non c'è nessuno.
+Come usciamo?
++   /[Dalla finestra del settimo piano.] Salite al settimo piano, troverete un’unica finestra.
+    /Uscite da lì.
+    -> solution
++   /Tornate all'ingresso.
+    Va bene. # shortbreak
+    Siamo tornati all'ingresso.
+    Pensa un po': la porta è ancora chiusa.
+    + + /Vedete altro?
+        In un angolo, ci sono i resti umani carbonizzati che ti dicevo.
+        Al centro della stanza, c'è una specie di tombino triangolare.
+        Il tombino è bloccato da una lunga spranga messa di traverso.
+        Ah! Giurerei di averlo visto muoversi.
+        /Muoversi?
+        Sì. Come se tentasse di aprirsi, ma la spranga lo ferma.
+        /C'è altro?
+        Piastrelle rotte, tubi di metallo, detriti… roba così.
+        -> examine_hall
+    + + /Controllate meglio le stanze.
+        Mi sembra inutile ma proviamo. # longbreak
+        -> end_of_check
+
+= examine_hall
+*   /Controlla meglio i resti carbonizzati.
+    Che cosa morbosa.
+    Non saprei che dire, sono dei tizi morti.
+    Sono tutti neri e si sbriciolano.
+    A che cazzo serve guardarli?
+    /OK, OK.
+    Secondo me gli ha sparato quello che sta sotto quel tombino.
+    ~ just_checked_corpses = true
+    -> examine_hall
+*   /Cosa mi dici dei tubi e dei detriti?
+    Ti dico che non c'è un bel niente da dire.
+    Sicuro di conoscere questo luogo?
+    -> examine_hall
++    { not hell_breaks_loose } /Togli la spranga{|, dai}.
+    Perché?
+    + + /Se avete paura lascia stare.
+        {
+            - just_checked_corpses:
+                Abbiamo appena visto quei cazzo di cadaveri!
+                Carbonizzati!
+                Non ho intenzione di farci sparare addosso.
+                -> examine_hall
+            - else:
+                Paura, noi?
+                Non ci conosci.
+                Ragazzi, togliete la spranga.
+                -> hell_breaks_loose
+        } 
+        
+    * * /Forse c'è un passaggio lì sotto.
+        Forse? Non sai di che parli.
+        C'è qualcuno di più competente che può sostituirti?
+        /Finiscila.
+    * * /Sto provandole tutte.
+        Non è professionale.
+    - - La spranga resta dov'è.
+    -> examine_hall
++   /Lasciamo perdere.
+    /Tornate dalla parte opposta, oltre le stanze.
+    Oh diamine.
+    { 
+        - hell_breaks_loose:
+            Dobbiamo portare a spalla la ferita. # longbreak
+        - else:
+            A tra poco. # shortbreak
+    }
+    -> end_of_check
+    
+= hell_breaks_loose
+Non è facile. Ancora un attimo…
+(Rumori metallici.)
+(Rumore di mitragliatore.)
+~ soldiers--
+~ Events += turret
+(Urla.)
+Cazzo cazzo cazzo! # shortbreak
+Porca puttana ma cosa hai fatto?
+C'era una torretta automatica sotto quel "tombino".
+Ho una donna ferita. Non possiamo lasciarla qui!
+La dobbiamo almeno lasciare all'aperto, per il drone di soccorso.
+Perché ci hai fatto togliere la spranga?
+/Scusatemi.
+Scusatemi il cazzo.
+Il "tombino" era la calotta della torretta.
+Come facevi a non saperlo?
+Come diamine si esce da qua?
+-> examine_hall
+        
+
+= solution
+Roger. A dopo. # shortbreak
+Siamo fuori, su una strada molto ripida.
+Il settimo piano dava sulla strada!
+/Sì, la città è in una zona con grandi dislivelli.
+Abbiamo notato.
+Che posto di merda, perfetto per quella feccia.
+/Per chi?
+Musi scuri.
+Clandestini.
+/Mio padre ha passato il confine così.
+Ecco perché hai quell'accento di merda.
+Sono davvero commosso, guarda.
+{
+    -   not hell_breaks_loose: 
+        -> close_communication
+}
+Ora cosa facciamo di questa?
+L'emorragia si è fermata, chiama il drone.
+Non ha neanche una radio.
+*   [(Chiama il drone.)] /Chiamato!
+*   [(Fai finta.)] /Ehm, chiamato!
+- Noi dobbiamo assolutamente proseguire.
+-> close_communication
+
+
+= close_communication
+Passo e chiudo.
+-> DONE

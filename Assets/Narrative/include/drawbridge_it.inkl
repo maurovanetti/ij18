@@ -1,0 +1,93 @@
+=== drawbrige ===
+
+= problem
+VAR checked_terminal = false
+Non possiamo {~procedere|avanzare}.
+Davanti a noi c'è un fossato molto profondo.
+L'edificio fortificato si trova al di là del fossato.
+-> solution
+
+= solution 
+*   /Potete calarvi nel fossato?
+    Lasciami verificare.
+    No, non è possibile.
+    Saranno almeno 20 metri, le pareti sono verticali.
+    E in fondo vedo muoversi qualcosa di meccanico e minaccioso.
+    * * /OK, direi che le condizioni siano subottimali.
+        Decisamente.
+    * * /Temo che sia l'unico modo.
+        /Mandate giù uno con una corda, con qualcosa…
+        Non se ne parla.
+        /Non siete così coraggiosi come dite…
+        Fottiti.
+    - - -> solution
+*   /Cos'altro vedete?
+    Il parapetto del fossato si interrompe per alcuni metri, dove il muro dell'edificio ha una specie di pannello.
+    In quel punto su una colonnina c'è… sembra un monitor.
+    Andiamo a vedere.
+    ~ checked_terminal = true
+    -> solution
+*   { checked_terminal } /Avete controllato il monitor?
+    È un terminale.
+    Chiede un codice per aprire il varco, ma non capisco a quale varco si riferisca.
+    -> code
+*   { code } /Torniamo al terminale.
+    -> insert_code
++   /[Esplorate.]{~Esplorate|Curiosate|Guardatevi un po'|Provate a girargli} attorno.
+    Va bene, ci sentiamo tra un po'.
+    Passo e chiudo.
+    /A tra poco. # shortbreak
+    Non abbiamo trovato nulla{ e l'aggiramento del fossato è impedito da altre transenne elettrificate|}.
+    {F|Ripeto: f}iniremo troppo lontano dall'obiettivo se non troviamo un modo di entrare nell'edificio fortificato.
+    {Abbiamo perso|Ci hai fatto perdere{| altro}} tempo.{|| Ci stiamo innervosendo.}
+    -> solution
+    
+= code
+{Conosci il codice?|E adesso?}
+*   /Non sono sicuro, ma proviamoci.
+    Sono cinque cifre.
+    /Se è lo stesso sistema usato nei bastioni sud, cambia ogni mezz'ora.
+    /Quindi non possiamo provarli tutti e centomila.
+    Per fortuna: non siamo addestrati per essere molto pazienti.
+    -> insert_code
++   { insert_code } /Inseriamo un altro codice.
+    -> insert_code
++   /Lasciamo perdere.
+    -> solution
+ 
+= insert_code
+VAR knows_code = true
+~ temp code1 = "{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}"
+~ temp code2 = "{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}"
+~ temp code3 = "{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}"
+*   {knows_code} /29979
+    -> guessed_code
++   /{ code1 }
+    { code1 == "29979": 
+        Come hai fatto?! Incredibile. -> guessed_code
+    } 
++   /{ code2 }
+    { code2 == "29979": 
+        Come hai fatto?! Incredibile. -> guessed_code
+    } 
++   { not knows_code } /{ code3 }
+    { code3 == "29979": 
+        Come hai fatto?! Incredibile. -> guessed_code
+    } 
+- No, sbagliato.
+-> code
+
+= guessed_code
+Dice che è giusto.
+/Prego.
+Ah!
+Il pannello sta ruotando su un perno…
+È una specie di ponte levatoio.
+-> all_safe
+
+= all_safe
+Così possiamo passare. Procediamo.
+Passo e chiudo.
+/Non è stato necessario provarne centomila.
+
+-> DONE

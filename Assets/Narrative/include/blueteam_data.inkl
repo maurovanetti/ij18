@@ -1,0 +1,3 @@
+VAR soldiers = 5
+LIST Inventory = (nothing), rope
+LIST Events = (none), turret

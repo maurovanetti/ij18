@@ -1,0 +1,125 @@
+=== stack ===
+
+= problem
+VAR nervous = false
+
+Dove si sono cacciati? Stiamo girando a vuoto.
+Mi sembra di essere già passata di qui.
+Questo cos’è? Un cimitero di droni?
+*   /Come è fatto?
+    Ci sono centinaia di droni a terra, a distanze regolari.
+    Ad alcuni mancano delle eliche. Ad altri il motore.
+    /Sì, è quello.
+*   /Abbiamo visto qualcosa del genere con la ricognizione aerea.
+- /La città continua a funzionare da sola.
+/Qui è dove accumula i droni da riparare e riutilizza le parti.
+Non ho visto droni in volo.
+/Li usa di notte o quando individua dei migranti clandestini.
+*   /Vi conviene spostarvi verso sud.
+*   /Seguite la via più diretta, a ovest.
+    Quel che pensavo di fare.
+    A dopo. # shortbreak
+    Qui Squadra Rossa. Abbiamo un problema.
+    C'è una torretta automatica. Ci tiene d'occhio.
+    Ha un mitragliatore. Lo può usare?
+    * * /Lo escludo.
+        /Procedete con cautela.
+        (Spari.)
+        (Voci concitate.)
+        Non sono solita innervosirmi.
+        Tuttavia, la tua indicazione era sbagliata.
+        ~ nervous = true
+        * * *   /Strano! Ero sicuro che non sparasse più.
+                Non abbiamo nessun ferito.
+                Non ha più importanza.
+        * * *   /Perdonatemi, sono stato imprudente.
+                Non ha avuto conseguenze.
+    * * /Certo! State alla larga.
+    - - Allora cosa si fa?
+    Ci toccherà tornare indietro e provare a sud.
+- Ma li abbiamo visti fuggire a ovest.
+/ Andate a sud fino alla torre di acciaio rosso.
+/ Da lì risalite verso ovest.
+Ricevuto. Passo e chiudo. # longbreak
+Accidenti.
+Stiamo risalendo verso ovest, lungo una sopraelevata.
+La strada è bloccata da cataste di oggetti.
+/ Una barricata?
+È impossibile smuoverli, ci vorrebbe troppo tempo e siamo solo in {soldiers}.
+-> solution
+
+= solution
+*   (might_climb) /Potreste scalarli.
+    { Inventory has rope: -> climb_with_rope } 
+    Se avessimo tenuto quei cavi, sì.
+    Ma { might_jump: ribadisco che }ci hai detto di lasciarli giù.
+    /Oh, è vero.
+    Non sono solita innervosirmi.
+    Tuttavia, la tua indicazione era {nervous: ancora una volta} sbagliata.
+    /Mi dispiace, ma potete scalare anche a mani nude.
+    Mi sembra subottimale.
+    -> solution
++   { might_climb } /Io dico di scalare.
+    -> climb_without_rope
+*   (might_jump) /Potreste calarvi giù dal viadotto.
+    { Inventory has rope: -> jump_with_rope }
+    Se avessimo tenuto quei cavi, sì.
+    Ma { might_climb: ribadisco che }ci hai detto di lasciarli giù.
+    /Ehm…
+    Escludiamo l'idea di lanciarci nel vuoto come lemming.
+    /Ha senso.
+    -> solution
+*   /Tornate indietro.
+    Capisco il senso del tuo consiglio, ma no.
+    Non se ne parla, ci metteremmo troppo tempo.
+    Il nostro obiettivo sta avanzando troppo velocemente, è pericoloso tardare.
+    Inoltre non ho visto vie alternative.
+    -> solution
+
+
+= jump_with_rope
+Abbiamo quei cavi di acciaio che abbiamo trovato prima.
+Penso che possiamo calarci giù in sicurezza.
+Mettiamoci all'opera. Passo e chiudo. # longbreak
+OK, siamo tornati al livello del terreno.
+Proseguiamo fiancheggiando la sopraelevata.
+-> DONE
+
+= climb_with_rope
+Abbiamo quei cavi di acciaio che abbiamo trovato prima.
+Penso che possiamo arrampicarci in sicurezza.
+Mettiamoci all'opera. Passo e chiudo. # longbreak
+Abbiamo scavalcato la barricata.
+Proseguiamo lungo la sopraelevata.
+-> DONE
+
+= climb_without_rope
+Non vedo alternative. Proviamoci.
+Spero vada tutto bene. A dopo. # longbreak
+(Lamenti.)
+~ soldiers--
+No, non è andato tutto bene.
+Abbiamo un uomo ferito.
+Niente di grave ma credo si sia rotto una gamba.
+/Dannazione!
+Dobbiamo lasciarlo indietro, è possibile mandare un drone di soccorso?
+*   /Sì.
+*   /No.
+    Ma come no? Mandatelo, per favore.
+    /Farò il possibile.
+- Conoscete la sua posizione, fate in fretta.
+Noi proseguiamo.
+- /OK.
+-> DONE
+
+
+
+    
+
+        
+        
+    
+
+
+
+-> DONE
