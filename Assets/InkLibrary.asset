@@ -14,10 +14,10 @@ MonoBehaviour:
   inkLibrary:
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: d6786b2f94ff7d248b9b23e23da58465, type: 3}
-    jsonAsset: {fileID: 4900000, guid: c0c5ba66fdf572043add3baf5ca80b2e, type: 3}
+    jsonAsset: {fileID: 0}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: c15450d535429e642aa58ac0a8fd6344, type: 3}
-    jsonAsset: {fileID: 4900000, guid: 33b88dad28b3a7c4d8216eae638dbdbf, type: 3}
+    jsonAsset: {fileID: 0}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: fe6d3813ff9ac7d41b6bea89ddfc8379, type: 3}
     jsonAsset: {fileID: 0}
@@ -33,4 +33,24 @@ MonoBehaviour:
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: e338e5e2a9ce6754b825b25fbb1df967, type: 3}
     jsonAsset: {fileID: 0}
-  compilationStack: []
+  compilationStack:
+  - state: 1
+    inkFile:
+      compileAutomatically: 0
+      inkAsset: {fileID: 102900000, guid: c15450d535429e642aa58ac0a8fd6344, type: 3}
+      jsonAsset: {fileID: 0}
+    inkAbsoluteFilePath: C:/Users/Mauro/Codice/ij18-tmp/inkJam 2018/Assets/Narrative/redteam_it.ink
+    jsonAbsoluteFilePath: C:/Users/Mauro/Codice/ij18-tmp/inkJam 2018/Assets/Narrative/redteam_it.json
+    output: []
+    errorOutput: []
+    timeTaken: 0
+  - state: 1
+    inkFile:
+      compileAutomatically: 0
+      inkAsset: {fileID: 102900000, guid: d6786b2f94ff7d248b9b23e23da58465, type: 3}
+      jsonAsset: {fileID: 0}
+    inkAbsoluteFilePath: C:/Users/Mauro/Codice/ij18-tmp/inkJam 2018/Assets/Narrative/blueteam_it.ink
+    jsonAbsoluteFilePath: C:/Users/Mauro/Codice/ij18-tmp/inkJam 2018/Assets/Narrative/blueteam_it.json
+    output: []
+    errorOutput: []
+    timeTaken: 0
