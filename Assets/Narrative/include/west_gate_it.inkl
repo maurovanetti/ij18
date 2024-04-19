@@ -1,0 +1,29 @@
+=== west_gate ===
+~ x = 0.05
+~ y = 0.80
+(Clic.) # sfx click
+Qui Squadra Rossa. Qui Squadra Rossa. {~Qui Squadra Rossa.|}
+{~Riesci a sentirci|Ci ricevi}?
+*   /Sì[.], ma la comunicazione è molto disturbata.
+    Bene.
+*   /No.
+    Hai problemi di ricezione?
+    /Ehm, no. Stavo solo {~scherzando|facendo una battuta}.
+    …
+    Non siamo qui per {~giocare|perdere tempo}.
+- {~Siamo|Ci troviamo|Siamo davanti|Siamo qui} al Cancello Ovest.
+Soldati presenti: {soldiers}.
+*   /Apro il cancello della città abbandonata. # sfx metal
+- Entriamo.
+Potete controllare anche gli altri meccanismi automatici della città?
+/Decisamente no. È questo il problema.
+/La città ormai funziona quasi da sola.
+/È fuori controllo.
+Capisco.
+Dovremo neutralizzare la minaccia senza contare su di voi.
+*   /Faremo del nostro meglio.
+- /Siamo solo i guardiani delle rovine.
+Ancora per poco…
+/Ancora per poco, è vero. La città sarà definitivamente rasa al suolo tra un anno.
+Passo e chiudo. Ci sentiamo dopo.
+-> plot

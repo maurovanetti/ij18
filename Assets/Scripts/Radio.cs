@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,9 +10,10 @@ public class Radio : MonoBehaviour, IRadio
     public int MaxNoiseValue;
     public NoiseControlButton[] NoiseControlButtons;
     public FrequencyButton[] FrequencyButtons;
+    public Animator RadioTick;
 
     [Header("UI")]
-    public Text FrequencyText;
+    public TextMeshProUGUI FrequencyText;
     public Animator NoiseIndicator;
 
     private float _frequency;
@@ -37,7 +39,9 @@ public class Radio : MonoBehaviour, IRadio
     {
         _frequency = FrequencyButtons[0].ActualFrequency + (FrequencyButtons[1].ActualFrequency / 100);
         SetNoiseValue();
-        FrequencyText.text = _frequency.ToString("N2");
+        FrequencyText.text = Localization.FormatDecimalSeparator(_frequency.ToString("N1"));
+        RadioTick.SetFloat("Frequency", FrequencyButtons[0].ActualFrequency);
+
         _engineInterface.TuneTo(_frequency,_noiseValue);
     }
 
@@ -59,5 +63,6 @@ public class Radio : MonoBehaviour, IRadio
         _calculatedNoiseValue = Mathf.Abs(_noiseValue - noiseControlsValue);
 
         NoiseIndicator.SetInteger("Value", _calculatedNoiseValue);
+        _engineInterface.TuneTo(_frequency, _calculatedNoiseValue);
     }
 }

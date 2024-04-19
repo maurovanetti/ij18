@@ -1,0 +1,25 @@
+=== mine_field ===
+~ x = 0.15
+~ y = 1.00
+(Clic.) # sfx click
+Siamo su una strada sterrata tra magazzini vuoti. # kidsmove
+Che posto di merda.
+C'è un cartello arrugginito. Impossibile leggerlo, e non solo perché è buio, qui.
+*   /Attenti, è un[ campo minato!]…
+*   /Non c'è da preoccuparsi.
+    Bene.
+- ~ soldiers--
+(Esplosione.) # sfx boom # intensify
+(Lamenti.)
+Abbiamo perso un uomo.
+Dannazione!
+(Voci.)
+Credo non ci sia niente da fare.
+/Mi dispiace.
+Era un campo minato.
+Non credevo che qui fosse così pericoloso.
+Maledetta automazione.
+/L'intelligenza artificiale l'ha riorganizzata in modi imprevedibili.
+Manderemo un artificiere a prelevare il corpo.
+Ora completiamo la missione. E cerchiamo di prevedere anche l'imprevedibile.
+-> plot

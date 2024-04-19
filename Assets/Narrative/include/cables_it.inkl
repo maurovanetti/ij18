@@ -1,0 +1,19 @@
+=== cables ===
+~ x = 0.95
+~ y = 1.00
+(Clic.) # sfx click
+Un. Intrico. Di. Cavi.
+Un. Intrico. Di. Inutili. Cavi.
+*   /Tagliateli[.] e avanzate.
+- Si può fare. # shortbreak
+Teniamo un po' di cavi, potrebbero servire.
+*   /Non appesantitevi[.], che ve ne fate?
+    /Il percorso non prevede scalate.
+    Roger.
+    Niente cavi, allora.
+*   /Buona idea.
+    /Non si sa mai.
+    Lo so.
+		~ Inventory += rope
+- A dopo, la galleria sta finendo.
+-> plot

@@ -1,31 +1,38 @@
 === stack ===
 
 = problem
+~ x = 0.85
+~ y = 1.00
 VAR nervous = false
-
-Dove si sono cacciati? Stiamo girando a vuoto.
+(Clic.) # sfx click
+Dove si sono cacciati?! Stiamo girando a vuoto.
 Mi sembra di essere già passata di qui.
 Questo cos’è? Un cimitero di droni?
-*   /Come è fatto?
+*   /Com'è fatto?
     Ci sono centinaia di droni a terra, a distanze regolari.
     Ad alcuni mancano delle eliche. Ad altri il motore.
-    /Sì, è quello.
-*   /Abbiamo visto qualcosa del genere con la ricognizione aerea.
+    /Sì, è proprio un cimitero di droni.
+*   /Abbiamo visto qualcosa [del genere…] di simile durante l'ultima ricognizione aerea…
 - /La città continua a funzionare da sola.
-/Qui è dove accumula i droni da riparare e riutilizza le parti.
-Non ho visto droni in volo.
-/Li usa di notte o quando individua dei migranti clandestini.
+/Qui è dove accumula i droni da riparare. Ne riutilizza le parti.
+/Usa i droni di notte o quando individua migranti clandestini.
+Strano: non ne ho ancora visti in volo…
+Restiamo concentrati, però.
 *   /Vi conviene spostarvi verso sud.
 *   /Seguite la via più diretta, a ovest.
     Quel che pensavo di fare.
-    A dopo. # shortbreak
-    Qui Squadra Rossa. Abbiamo un problema.
-    C'è una torretta automatica. Ci tiene d'occhio.
+    A dopo.
+    ~ x = 0.80
+    ~ y = 1.00
+	(Clic.) # sfx click
+    Qui Squadra Blu. Abbiamo un problema.
+    Una torretta automatica ci tiene d'occhio.
     Ha un mitragliatore. Lo può usare?
     * * /Lo escludo.
         /Procedete con cautela.
-        (Spari.)
+        (Spari.) # sfx spari # intensify
         (Voci concitate.)
+        ~ Events += turret
         Non sono solita innervosirmi.
         Tuttavia, la tua indicazione era sbagliata.
         ~ nervous = true
@@ -35,17 +42,20 @@ Non ho visto droni in volo.
         * * *   /Perdonatemi, sono stato imprudente.
                 Non ha avuto conseguenze.
     * * /Certo! State alla larga.
-    - - Allora cosa si fa?
+    - - Allora cosa si fa? # abate
     Ci toccherà tornare indietro e provare a sud.
 - Ma li abbiamo visti fuggire a ovest.
-/ Andate a sud fino alla torre di acciaio rosso.
-/ Da lì risalite verso ovest.
-Ricevuto. Passo e chiudo. # longbreak
-Accidenti.
+/Andate a sud fino alla torre di acciaio rosso.
+/Da lì risalite verso ovest.
+Ricevuto. Passo e chiudo.
+~ x = 0.75
+~ y = 1.00
+(Clic.) # sfx click
+Accidenti. # kidsmove
 Stiamo risalendo verso ovest, lungo una sopraelevata.
 La strada è bloccata da cataste di oggetti.
-/ Una barricata?
-È impossibile smuoverli, ci vorrebbe troppo tempo e siamo solo in {soldiers}.
+/Una barricata?
+Qualcosa del genere… È impossibile smuoverli, ci vorrebbe troppo tempo e siamo solo in {soldiers}.
 -> solution
 
 = solution
@@ -57,7 +67,7 @@ La strada è bloccata da cataste di oggetti.
     Non sono solita innervosirmi.
     Tuttavia, la tua indicazione era {nervous: ancora una volta} sbagliata.
     /Mi dispiace, ma potete scalare anche a mani nude.
-    Mi sembra subottimale.
+    Non mi sembra una grande idea.
     -> solution
 +   { might_climb } /Io dico di scalare.
     -> climb_without_rope
@@ -72,45 +82,46 @@ La strada è bloccata da cataste di oggetti.
 *   /Tornate indietro.
     Capisco il senso del tuo consiglio, ma no.
     Non se ne parla, ci metteremmo troppo tempo.
-    Il nostro obiettivo sta avanzando troppo velocemente, è pericoloso tardare.
+    Il nostro obiettivo sta avanzando troppo velocemente, rallentare è pericoloso.
     Inoltre non ho visto vie alternative.
     -> solution
 
 
 = jump_with_rope
 Abbiamo quei cavi di acciaio che abbiamo trovato prima.
-Penso che possiamo calarci giù in sicurezza.
+Possiamo calarci giù in sicurezza.
 Mettiamoci all'opera. Passo e chiudo. # longbreak
 OK, siamo tornati al livello del terreno.
 Proseguiamo fiancheggiando la sopraelevata.
--> DONE
+-> plot
 
 = climb_with_rope
 Abbiamo quei cavi di acciaio che abbiamo trovato prima.
-Penso che possiamo arrampicarci in sicurezza.
-Mettiamoci all'opera. Passo e chiudo. # longbreak
+Possiamo arrampicarci in sicurezza.
+Mettiamoci all'opera. Passo e chiudo. # shortbreak
 Abbiamo scavalcato la barricata.
 Proseguiamo lungo la sopraelevata.
--> DONE
+-> plot
 
 = climb_without_rope
 Non vedo alternative. Proviamoci.
-Spero vada tutto bene. A dopo. # longbreak
-(Lamenti.)
+Spero vada tutto bene. A dopo. # shortbreak
+(Lamenti.) # intensify
 ~ soldiers--
+~ Events += fall
 No, non è andato tutto bene.
 Abbiamo un uomo ferito.
-Niente di grave ma credo si sia rotto una gamba.
+Niente di grave, ma credo si sia rotto una gamba.
 /Dannazione!
 Dobbiamo lasciarlo indietro, è possibile mandare un drone di soccorso?
 *   /Sì.
 *   /No.
-    Ma come no? Mandatelo, per favore.
+    Ma come no?! Mandatelo. Per favore.
     /Farò il possibile.
 - Conoscete la sua posizione, fate in fretta.
-Noi proseguiamo.
+Noi proseguiamo, in {soldiers}.
 - /OK.
--> DONE
+-> plot
 
 
 

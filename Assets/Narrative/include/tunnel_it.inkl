@@ -1,0 +1,30 @@
+=== tunnel ===
+~ x = 0.55
+~ y = 0.60
+(Clic.) # sfx click
+Maledetti topi di fogna! Scappano di nuovo! # kidsmove
+Dentro a quei tubi non li inseguo e non lascerò che la mia squadra ci rimanga intrappolata!
+Siamo ancora in {soldiers} e voglio che arriviamo tutti alla fine della missione.
+*   /Seguite il viottolo[.] subito accanto.
+*   /Manda un soldato in avanscoperta[.] nel tunnel.
+    {
+        - Events has turret:
+            Non mi fido.
+            L'ultima volta che l'ho fatto, una torretta automatica ci ha sparato addosso.
+            /Come vuoi, allora devi seguire il sentiero a destra.
+        - else:
+            Uhm.
+            (Voci.)
+            Ho mandato un soldato. Aspettiamo. # longbreak
+            Senti, non è tornato!
+            Non ho idea di cosa sia successo, ma mi sembra pericoloso mandarne un altro a controllare.
+            /Vedrai che torna…
+            Non abbiamo tempo. Lascio un razzo di segnalazione qui, così vediamo se e quando torna.
+            ~ soldiers--
+            /Allora meglio che voi {soldiers} proseguiate sul sentiero.
+    }
+- Non c'è nessun sentiero!
+*   /Subito accanto[.], guarda meglio.
+- Trovato.
+
+-> plot

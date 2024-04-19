@@ -1,0 +1,15 @@
+=== lemons ===
+~ x = 0.65
+~ y = 1.00
+(Clic.) # sfx click
+Siamo davanti a una casa che sembra intatta. # abate
+*   /La villa dei limoni…
+- Sei nostalgico, ora? Li abbiamo visti infilarsi lì dentro.
+/La villa sembra intatta, ma è solo un guscio vuoto.
+/Di sicuro non sono rimasti lì. # kidsmove
+Ci piove dentro?
+*   /Come[…] in certe fantasie.
+- Finite le poesie?
+/Prendete il viale verso nord.
+
+-> plot

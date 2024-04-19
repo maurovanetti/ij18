@@ -33,6 +33,21 @@ public class Localization : MonoBehaviour
         }
     }
 
+    public static string FormatDecimalSeparator(string unformatted)
+    {
+        switch (language)
+        {
+            case Language.Italian:
+                return unformatted.Replace(".", ",");
+
+            default:
+            case Language.English:
+                return unformatted.Replace(",", ".");
+
+        }
+
+    }
+
     public void SetLanguage(string languageCode)
     {
         switch (languageCode)

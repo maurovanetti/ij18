@@ -1,3 +1,13 @@
+VAR inter__knows_code = false
+VAR inter__red_in_factory = false
+VAR inter__red_in_fridge = false
+VAR inter__blue_in_factory = false
+VAR inter__blue_in_fridge = false
+VAR inter__conveyor_belt = false
+VAR inter__fridge_locked = false
+
 VAR soldiers = 5
-LIST Inventory = (nothing), extinguisher
-LIST Events = (none), turret
+VAR x = -1
+VAR y = -1
+LIST Inventory = (nothing), sphere
+LIST Events = (none), turret, contamination

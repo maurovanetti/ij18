@@ -1,0 +1,258 @@
+=== robots ===
+
+= problem
+~ x = 0.65
+~ y = 0.80
+(Clic.) # sfx click
+Alt!
+Muro a… direi 100 metri. Con il nostro sistema di illuminazione non è facile essere precisi.
+Procediamo lentamente.
+Uhm.
+Ma… che muro è?
+/Non ho abbastanza informazioni per rispondere.
+/Vedo la vostra posizione, ma quella zona era densamente costruita.
+*   /Potrebbe essere qualsiasi cosa.
+*   /Preparatevi al peggio.
+*   /Sento morte nell'aria.
+    Ehi…!
+- Non mi fido ad avvicinarmi.
+Manda strani bagliori.
+/Sono luci intermittenti?
+Sì, ma non sono quelle delle stazioni di ricarica.
+/Temo che non abbiate altra scelta che avvicinarvi.
+Preferisco osservare da qui. Un minuto. # shortbreak
+Spostiamoci a destra, vediamo di trovare un modo di aggirarlo.
+*   /Non c'è modo di aggirarlo.
+    Come lo sai?
+    /Ho capito che muro è, credo.
+*   /Ma non è che il muro…
+- Si muove! Sono dei robot! #sfx metal
+Ma cosa vi siete inventati?!
+/Come immaginavo! È la zona di controllo sanitario.
+I robot sono a forma di parallelepipedo.
+Sono come scatole di metallo decisamente alte.
+A cosa servivano?
+/A dividere lo spazio secondo le necessità e i tipi di malattie.
+/Spostandosi formano stanze di quarantena e corridoi.
+/Ogni robot ha in memoria i dati di migliaia di soggetti.
+OK, ma ora qui non ci sono infetti.
+Siamo sanissimi, noi!
+/Devono essere saltati i collegamenti.
+/Da qui non posso spegnerli del tutto.
+E quindi? Dobbiamo subire il controllo anche noi e poi ci lasceranno passare?
+*   /No[.], sareste inseriti in enormi scatole trasparenti ed eliminati.
+*   /Non credo.
+- Trova una soluzione.
+/Da qui posso solo farli stare fermi in una posizione oppure lasciare che si muovano secondo i loro algoritmi.
+Lo dici ora?! Sbrigati.
+/Uff, quanta inutile agitazione.
+*   /Allora li fermo.
+    Ora che ci penso, però…
+    Ma anche se li fermi come attraversiamo la zona?
+    /Appunto.
+*   /Anche se li fermo[…], come attraversate la zona?
+- Vedo una specie di corridoio tra i robot.
+Proviamo a entrare.
+ -> labyrinth_entrance
+ 
+ = labyrinth_entrance
+LIST DescribedRooms = (ventrance), vhall, vcross, varch, vserpentine
+LIST VisitedRooms = (entrance), hall, cross, arch, serpentine
+VAR currentRoom = entrance
+/Spengo i robot mentre camminate lungo il corridoio. #sfx silence
+Grazie. Però il corridoio finisce quasi subito.
+È impressionante, le pareti dei robot sono liscissime.
+Ora siamo in una specie di stanza stretta e l'unica via d'uscita è il corridoio da dove veniamo.
+/Provo a riaccenderli per cambiare configurazione.
+/Non spaventatevi, ma state attenti a non farvi schiacciare.
+Siamo pronti.
+*   /(Cambia configurazione del labirinto.)
+    (Rumori metallici.) # sfx metal
+    (Silenzio.) # sfx silence
+- Tutto a posto. Si è aperto un passaggio.
+Avanziamo.
+-> labyrinth_room
+
+= labyrinth_progress
+/Per uscire, dovete attraversare quattro stanze diverse.
+Dicci tu cosa fare. Questa l'abbiamo già vista?
++   /Mai vista prima. Avanzate.
+    /* { VisitedRooms has currentRoom: -> labyrinth_restart } */
+    ~ VisitedRooms += currentRoom
+    OK.		
+    { VisitedRooms has (hall, cross, arch, serpentine): -> labyrinth_exit }
+    -> labyrinth_door
++   /(Cambia configurazione del labirinto.)
+    /{~State|Tutti} fermi{\ finché i muri non finiscono di spostarsi|}.
+    (Rumori metallici.) # sfx metal
+    (Silenzio.) # sfx silence
+    {~Direi che hanno finito|Finito|Hanno finito|Pronti}.
+    -> labyrinth_room
+
+= labyrinth_door
+Oltrepassiamo la porta. Si chiude {~alle nostre spalle|dietro di noi}. # sfx clang
+{~C'è un|Lungo} corridoio.
+{~ -> reach_hall | -> reach_cross | -> reach_arch | -> reach_serpentine | -> reach_dead_end }
+
+= labyrinth_room
+{~ -> describe_hall | -> describe_cross | -> describe_arch | -> describe_serpentine | -> describe_dead_end }
+
+= reach_dead_end
+Vicolo cieco!
+-> describe_dead_end
+
+= describe_dead_end
+{Questa stanza non ha|Di nuovo la stanza senza} uscite.
++   /Non ho molte alternative[.], posso solo provare a cambiare la configurazione del labirinto.
+    /{~State|Tutti} fermi.
+    (Rumori metallici.) # sfx metal
+    (Silenzio.) # sfx silence
+    Adesso va meglio. <>
+    -> labyrinth_room
+
+= reach_hall
+Il corridoio ci {~porta|conduce} in una {~grande stanza|stanza molto grande}.
+-> describe_hall
+
+= describe_hall
+~ currentRoom = hall
+Apparecchiature mediche. Tanto spazio.
+Vedo {~|un cubicolo per i prelievi di sangue e |una specie di colonna centrale e |uno scanner per difetti anatomici e |un'apparecchiatura a muro per il test del DNA e }una sola via d'uscita.
+~ DescribedRooms += vhall
+-> labyrinth_progress
+
+= reach_cross
+Molto lungo.
+-> describe_cross
+
+= describe_cross
+~ currentRoom = cross
+Siamo in una {stanza|di quelle stanze} a croce.
+{
+    - DescribedRooms has vcross:
+        {~Mi sembra che ci siamo già passati.|Ci stiamo perdendo?}
+    - else:
+        Lungo le pareti ci sono monitor con diagrammi e scanner biometrici.
+        Inquietante.
+}
+Se non vogliamo tornare indietro, possiamo solo prendere il braccio {~nord|sud|ovest|est}.
+Gli altri sono vicoli ciechi.
+~ DescribedRooms += vcross
+-> labyrinth_progress
+
+= reach_arch
+{
+    - DescribedRooms has varch:
+        Il corridoio si è allargato.
+    - else:
+        Il corridoio si allarga.
+}
+-> describe_arch
+
+= describe_arch
+~ currentRoom = arch
+{
+    - DescribedRooms has varch:
+        Un robot si è messo di traverso in alto, formando un arco.
+    - else:
+        Un robot si è alzato sopra altri due e ha lasciato un'apertura bassa.
+        Sembra un arco.
+}
+~ DescribedRooms += varch
+-> labyrinth_progress
+
+=reach_serpentine
+{
+    - DescribedRooms has vserpentine:
+        Curve, bivi, curve.
+    - else:  
+        Il corridoio fa delle curve.
+				Molte curve.
+				E queste biforcazioni…
+				Ah no, sono vicoli ciechi.
+}
+-> describe_serpentine
+
+= describe_serpentine
+~ currentRoom = serpentine
+{
+    - DescribedRooms has vserpentine:
+        Di nuovo il "test del QI"{.|!|…}
+        {/La seconda volta è più facile.|}
+        {/Ce la potrebbe fare anche tuo padre.|}
+    - else:        
+        C'è solo una strada che avanza.
+        /Probabilmente è il test del QI.
+        Test del QI ai migranti?
+        Mi sembra superfluo.
+        /Perché?
+        Vengono da zone di cui è noto il difetto intellettivo.
+        /Non credo.
+        Lo abbiamo studiato nell'addestramento.
+        /Mio padre era un migrante.
+        Non ne andrei fiera.
+        { Events has fall: Del resto tu sei il genio che ci ha detto di non prendere i cavi.}
+        { Events has turret: Sei anche quello che ci ha fatto sparare addosso dalla torretta automatica.}
+        /…
+        Siamo a uno slargo con una sola via d'uscita.
+        Che si fa?
+}
+~ DescribedRooms += vserpentine
+-> labyrinth_progress
+
+
+= labyrinth_restart
+Evviva, un'uscita!
+Ah no, aspetta.
+Siamo usciti, ma siamo ancora al punto da cui siamo entrati.
+/Scusate. Riproviamoci.
+(Rumori metallici.) # sfx metal
+(Silenzio.) # sfx silence
+Rientriamo.
+~ VisitedRooms = (entrance)
+-> labyrinth_room
+
+= labyrinth_exit
+Sembra proprio che ci siamo, finalmente!
+Il corridoio ha delle svolte a 90°.
+Aspetta. Adesso continua sempre dritto.
+Sembra non finire mai.
+~ x = 0.65
+~ y = 0.77
+Però si sta stringendo: sai mica cosa significa?
+*   /Non temete.
+    Qua ci sta a malapena una persona.
+    Non far muovere i robot, eh!
+*   /Si allargherà[…], ma solo quanto basta per il passaggio di una persona.
+    Non far muovere i robot, eh!
+    Non finisce mai!
+- Ma quanto è lungo?!
+*   /Eh, già. Continuate.
+    Ah, intravedo l'uscita.
+    Siamo fuori.
+    Facciamo una breve pausa, i ragazzi sono stanchi. # shortbreak
+    Va bene, è ora di <>
+*   /(Cambia configurazione del labirinto.)
+    (Rumore metallico.) # sfx metal # intensify
+    Aiuto!
+    (Urla strazianti.)
+    No!!
+    (Rumore di ossa.)
+    ~ soldiers--
+    Ehi! Ma che cazzo succede?
+    /Cosa capita?
+    I muri si sono spostati.
+    /Non ne so niente.
+    (Ansimare.)
+    Abbiamo corso velocissimo, siamo fuori.
+    Credo che manchi uno di noi.
+    (Voci concitate.)
+    È così.
+    Non sono solita cedere alla paura.
+    Ma uno di noi è stato stritolato nel labirinto!
+    /Condoglianze… Non so cosa sia successo.
+    Parlo con la truppa. Sono scossi.
+    A dopo. # longbreak
+    Ci siamo ripresi. Non possiamo far altro che <>
+- procedere con la missione. # abate
+-> plot

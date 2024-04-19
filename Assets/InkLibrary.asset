@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -14,43 +15,119 @@ MonoBehaviour:
   inkLibrary:
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: d6786b2f94ff7d248b9b23e23da58465, type: 3}
-    jsonAsset: {fileID: 0}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: c0c5ba66fdf572043add3baf5ca80b2e, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: e7273acb9249dd544ac472d8905eefab, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 70d0de9fd92c34c4b8f9f172a7683b69, type: 3}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: c15450d535429e642aa58ac0a8fd6344, type: 3}
-    jsonAsset: {fileID: 0}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 33b88dad28b3a7c4d8216eae638dbdbf, type: 3}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 100b9dcdac75f7145a858f968b32840e, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 39d8259daf236be42b839ac06239bc18, type: 3}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: fe6d3813ff9ac7d41b6bea89ddfc8379, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: ccff263bc8976de43803b654b86a91e4, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 0943f9d232e84ac4cb8e340ae039d9ca, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 75bc5798ecac337438ea10f5a5d0804f, type: 3}
+    jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 0}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: 232b46fa5615a2b4b9fe89a944dbd3f2, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 74b226a06b84cb44a84fd6cbac51729b, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 5a11e35181e8d484d872bd969afdad38, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 151c28c20625da14db774fb121149322, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 778f58da3845fa943aa761a59c037a49, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 0ad822bdf2d61f8488150610b4f603b5, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 62f40bc943a2bed41a093c8a4ac4013b, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 4d98d01432fc6cd4684ea03bd43aa3b8, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 12fe086798e6b6f4c857579781ea94be, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: e3fb654f8d4b99b42a4e585e5e4a92da, type: 3}
+    jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 0}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: ae7a1558fee9da047b91643c9e24c328, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 34ac7be88bc02844c82976c0d241eff5, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: ca6b68f800becde44932e6847f58bb03, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 200aa3bd09a0d2e48adfbca4bb5a33d7, type: 3}
+    jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 0}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: ec8cb209b2e033248ac2d8e18c5026f3, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 95e49dc0c2a280f4e8336b6560da292a, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 740fccdb9d080ee40821f5554f80be4d, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 3098c5d9e16096549af69b872ffb3c92, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 0}
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 833641d4f1511254491831233aec0a9d, type: 3}
+    jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 0}
   - compileAutomatically: 0
     inkAsset: {fileID: 102900000, guid: e338e5e2a9ce6754b825b25fbb1df967, type: 3}
+    jsonAssetPath: {fileID: 0}
     jsonAsset: {fileID: 0}
-  compilationStack:
-  - state: 1
-    inkFile:
-      compileAutomatically: 0
-      inkAsset: {fileID: 102900000, guid: c15450d535429e642aa58ac0a8fd6344, type: 3}
-      jsonAsset: {fileID: 0}
-    inkAbsoluteFilePath: C:/Users/Mauro/Codice/ij18-tmp/inkJam 2018/Assets/Narrative/redteam_it.ink
-    jsonAbsoluteFilePath: C:/Users/Mauro/Codice/ij18-tmp/inkJam 2018/Assets/Narrative/redteam_it.json
-    output: []
-    errorOutput: []
-    timeTaken: 0
-  - state: 1
-    inkFile:
-      compileAutomatically: 0
-      inkAsset: {fileID: 102900000, guid: d6786b2f94ff7d248b9b23e23da58465, type: 3}
-      jsonAsset: {fileID: 0}
-    inkAbsoluteFilePath: C:/Users/Mauro/Codice/ij18-tmp/inkJam 2018/Assets/Narrative/blueteam_it.ink
-    jsonAbsoluteFilePath: C:/Users/Mauro/Codice/ij18-tmp/inkJam 2018/Assets/Narrative/blueteam_it.json
-    output: []
-    errorOutput: []
-    timeTaken: 0
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 460ee776139e48344ac797f722576165, type: 3}
+    jsonAssetPath: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 9230bcf4e34d10342862e5521937b97e, type: 3}
+  pendingCompilationStack: []
+  compilationStack: []

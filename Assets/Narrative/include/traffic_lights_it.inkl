@@ -1,0 +1,14 @@
+=== traffic_lights ===
+~ x = 0.55
+~ y = 0.20
+(Clic.) # sfx click
+Aspetta, aspetta… Come si chiamavano questi cosi? # kidsmove # abate
+/Cosa?
+Questi cosi con le tre luci per dare indicazioni al traffico… dai!
+*   /Semafori.
+*   /Urologi.
+- Quelli.
+/Ce ne sono almeno cinque. È l'unica strada che li ha.
+/Proseguite.
+
+-> plot

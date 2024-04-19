@@ -1,0 +1,112 @@
+=== electrified_fence ===
+
+= problem
+~ x = 0.65
+~ y = 0.00
+VAR power = true
+VAR try_again = ""
+(Clic.) # sfx click
+OK, una strada direi che va verso la fabbrica.
+Fammi segnare da qualche parte che però questo nostro sistema di illuminazione va migliorato…
+/Sì, dovete prendere quella strada, per quel che immagino. # kidsmove
+Eh, ma c'è un problema.
+Tutto questo lato è recintato.
+/Be', state avanzando armati in una città automatizzata abbandonata, per compiere una missione critica.
+/Penso che possiate permettervi di tagliare un recinto.
+La recinzione metallica è troppo spessa.
+A intervalli regolari sulla recinzione c'è un cartello.
+/Che dice?
+«Non oltrepassare. Identificarsi su FM 102.5».
+/Dubito che quel canale sia ancora attivo.
+Dovremo scavalcarla, ma è molto alta.
+*   /Buon motivo per iniziare subito.
+    Non vorrei però che fosse elettrificata.
+    * * /Giusto, controlla.
+    * * /Ma no, figurati…
+    - - …
+    { 
+        - inter__electrification:
+            (Rumore di scossa elettrica.) # sfx electricshock
+            Diamine, sì!
+            -> wait_for_safety
+        - else:
+            Avevi ragione. Tutto sicuro.
+            -> trespass
+    }
+*   /State attenti che non sia elettrificata.
+    Provo a verificare.
+    Ha dei cavi che la elettrificano, ma per ora sembrano spenti.
+    Nel dubbio, li taglio. Aspetta. # shortbreak
+    ~ power = false
+    Fatto. Addio elettricità.
+- -> trespass
+
+= wait_for_safety
+{&Come|Cosa} facciamo?
+/{Aspetta, provo a contattare la fabbrica|{&|Hm. }Riprovo} su FM 102.5.
+~ try_again = "{~tenta|prova|proviamoci} {~di nuovo|adesso|ora|ancora}"
++   /OK, {try_again}.
+    {  
+        - inter__electrification:
+            (Rumore di scossa elettrica.) # sfx electricshock
+            Come prima.
+            -> wait_for_safety
+        - else:
+            OK, ora è a posto. Incrocio le dita.
+            -> trespass
+    }
+        
+
+= trespass
+- Scavalchiamo! Inizio io…
+Bene, sono passata incolume. 
+Direi che sia sicuro far passare anche gli altri, giusto?
+*   /Giusto, falli passare.
+- Avanti!
+{power && inter__electrification: -> burn}
+{
+    - soldiers == 2:
+        Ora passa il soldato che è con me.
+        Non lasciarmi da sola…
+    - soldiers > 2:
+        Ora passano gli altri {soldiers - 1}.
+}
+(Sospiro.)
+A posto, siamo dall'altra parte.
+Ci sentiamo quando arriviamo alla fabbrica.
+-> plot
+
+= burn
+(Rumore di cortocircuito.) # sfx shortcircuit # intensify
+(Urla strazianti.)
+(Rantolo.)
+Merda.
+{
+    - soldiers == 2:
+        ~ soldiers = 1
+        L'unico soldato che era con me… l'abbiamo persa.
+        Sono rimasta da sola.
+        Direi che non c'è niente da fare: è carbonizzata.
+    - soldiers == 3:
+        ~ soldiers = 1
+        Ne abbiamo persi due, e sono rimasta solo io.
+        Uno è solo ferito, ma l'altra…
+        Completo la missione e torno.
+        (Voci.)
+        Non ti agitare. Arriverà un drone di soccorso.
+        /Roger.
+        I rischi del mestiere.
+    - soldiers > 3:
+        ~ soldiers -= 2
+        Ne abbiamo persi due. Uno è solo ferito, ma l'altra…
+        Cerchiamo di salvare almeno lei.
+        (Voci.)
+        Non ti agitare. Arriverà un drone.
+        /Roger.
+        Siamo rimasti in {soldiers}.
+        Completiamo la missione e torniamo.
+}
+- /Sono mortificato!
+Sembrava una sedia elettrica.
+Non sono solita commuovermi. Proseguiamo. # abate
+-> DONE

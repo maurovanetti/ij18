@@ -1,0 +1,207 @@
+=== factory_east ===
+~ x = 0.55
+~ y = 0.00
+(Clic.) # sfx click
+Siamo arrivati alla fabbrica degli approvvigionamenti alimentari.
+Fabbrica inutile, direi.
+/Infatti, ma la città automatizzata non l'ha capito.
+/Gli obiettivi si trovano lì.
+Missione quasi compiuta.
+*   /Non credi alla fortuna.
+*   /Probabilmente, sì.
+- Manca poco.
+~ inter__blue_in_factory = true
+Ecco una porta d'ingresso.
+*   /Entra.
+{
+    - soldiers > 2:
+        Faccio entrare da qui gli altri. Io provo a prenderli dall'altra porta.
+    - soldiers == 2:
+        Aspetta.
+        Faccio entrare da qui l'altro soldato. Io provo a prenderli dall'altra porta.
+    - else:
+        Sono rimasta sola, ma dovrei bastare.
+}
+- Non vorrei che fuggissero dagli altri ingressi.
+*   /Saggia.
+{ soldiers > 1: -> get_them }
+-> infiltrate
+
+
+= infiltrate
+/Sei sola, bisogna usare l'astuzia.
+Lo faccio sempre.
+Sono entrata.
+{
+    - inter__conveyor_belt:
+        (Rumore di macchinari.) # sfx productionline
+        Catena di montaggio ancora in funzione.
+        Il baccano è insopportabile.
+    - else:
+        Catena di montaggio. Spenta.
+}
+- Ho capito dove si trovano: nel magazzino.
+*   /Fa' irruzione nel magazzino.
+    -> get_them
+*   /Cos'altro vedi?
+    C'è una porta, il cartello dice che è il locale frigorifero.
+    * * /Lì c'è un passaggio[.] da cui puoi prenderli di sorpresa.
+        -> fridge
+    * * /Meglio irrompere direttamente[.] nel magazzino.
+        Concordo.
+        -> get_them
+= get_them
+La minaccia è lì dentro.
+Li ho visti da una finestra.
+Si stanno nutrendo di conserve di frutta.
+Ce n'è una quantità enorme.
+/Per forza, non ci sono più abitanti umani.
+Ci siamo quasi.
+{
+    - inter__red_in_factory && not inter__red_in_fridge && not freeze_both:
+        Chi va là? # veryshortbreak
+        (Voce.)
+        Ah! Mi sono riunita con la Squadra Rossa!
+        Facciamo irruzione assieme.
+    - else:
+        Pronti all'irruzione…
+}
+*   /Roger. # intensify
+- \(Cigolio di porta aperta lentamente.) # sfx squeak
+Mani in alto!
+(Voci.)
+(Sparo.) # sfx bang
+(Silenzio.) # sfx silence
+Faccia al muro!
+*   /Cosa è successo?
+- Meno uno. Ho liquidato uno degli obiettivi.
+Il deceduto, maschio, è di razza straniera, età apparente anni 18.
+Gli altri prigionieri sono un maschio e due femmine, razza straniera.
+Età apparente 14 anni, 18 anni, 24 anni.
+*   /14 anni?
+*   /14 anni!
+*   /14 anni?!
+- Sì. Procediamo all'esecuzione.
+/Cosa?!
+(Sparo.) # sfx bang
+(Sparo.) # sfx bang
+(Sparo.) # sfx bang
+*   /…
+- Registra: giustiziate 4 unità migranti illegali a norma della Legge sulla Sicurezza dello Stato n° 103/2079. # abate
+Missione riuscita.
+Perdite Squadra Blu: {5 - soldiers}.
+Perdite nemiche: 4.
+*   [R I G I O C A] GAME OVER # restart
+-> END
+
+= fridge
+{
+    - inter__fridge_locked && inter__red_in_fridge:
+        La porta del locale frigorifero è bloccata.
+        C'è qualcuno qui dentro.
+        Quello… è il comandante della Squadra Rossa!
+        /Ecco perché non comunicava più!
+        Non è una situazione ottimale.
+        A questo punto posso solo far irruzione nel magazzino.
+        +   /Aspetta…
+            Non c'è tempo. Penseremo dopo a lui.
+            -> get_them
+        +   /Ma no!
+            Sì invece. A lui penseremo dopo.
+            -> get_them
+    - inter__fridge_locked && not inter__red_in_fridge:
+        {L|Come ti ho già detto, l}a porta del locale frigorifero è bloccata.
+        A questo punto posso solo far irruzione nel magazzino.
+        +   /Aspetta… Prova ora.
+            -> fridge
+        +   /OK!
+            -> get_them
+    - else:
+        La porta è aperta.
+        ~ inter__blue_in_fridge = true
+}
+Odore di carne putrescente.
+*   /I robot non mangiano.
+-> rendez_vous
+
+= rendez_vous
+{
+    - inter__fridge_locked:
+        La temperatura sta scendendo velocemente!
+        +   /Uahahaha!
+            Perché ridi?
+            -> freeze_one
+        +   /Ops!
+            -> freeze_one
+    - inter__blue_in_fridge:
+        Chi va là?
+        (Voce.)
+        Ah! Mi sono riunita con la Squadra Rossa!
+        Sono stupita che siate qui anche voi.
+        (Voce.)
+        +   /Oh, che coincidenza!
+            -> both_in_fridge
+        +   /Dite le vostre preghiere!
+            Cosa??
+            -> both_in_fridge
+    - else:
+        -> wait_in_fridge
+}
+
+= wait_in_fridge
+Non capisco cosa devo fare.
+Non vedo nessun passaggio verso il magazzino.
+{C'è un'altra porta per uscire dal lato opposto, ma non credo mi serva|Stiamo perdendo tempo}.
++   /Aspetta.
+    -> rendez_vous
++   /Torna indietro e irrompi[.] nel magazzino.
+    Non dovremmo perdere tempo in questo modo.
+    Sono tornata indietro e ora vado verso la porta che conduce al magazzino.
+    -> get_them
+
+= freeze_one
+(Rantolo.) # intensify
+(Silenzio.)
+/Direi che la Squadra Blu ha finito di perseguitare migranti. # abate
+/Questo è per te, papà. # reddeath
+-> END
+
+= both_in_fridge
+{ inter__fridge_locked: -> freeze_both }
+{&Cosa significa {&|tutto} questo?|Eh?|Che cosa stai dicendo?}
++   /Ora te lo mostro.
+    -> both_in_fridge
++   /Non avete senso dell'umorismo, eh.
+    Sono senza parole.
+    Andiamo assieme al magazzino.
+    -> get_them
+
+= freeze_both
+(Urla.) # intensify
+(Rumore di pugni sulle porte.) # sfx bam
+(Rantoli.)
+/Ciao ciao, Squadra Rossa. # reddeath
+(Silenzio.) # sfx silence
+/Ciao ciao, Squadra Blu. # bluedeath
+/Direi che la vostra missione sia fallita. # abate
+/Questo è per te, papà.
+(Altoparlante: «ATTENZIONE ATTENZIONE.») # victory
+VAR escape_meters = 3000
+
+-> victory
+
+= victory
+~ escape_meters -= 250
+(«MIGRANTI ILLEGALI IN FUGA DAL LATO NORD NORD OVEST».)
+(«SEI STATO RICONOSCIUTO: XERO PAONONGA, ANNI 18. FERMATI!»)
+(«SEI STATA RICONOSCIUTA: KALIFA OKEKE DIYA, ANNI 18. FERMATI!»)
+(«SEI STATA RICONOSCIUTA: RACHIDA NANSUBUGA, ANNI 24. FERMATI!»)
+(«SEI STATO RICONOSCIUTO: KANTIGI OKEKE DIYA, ANNI 14. FERMATI!»)
+(«I FUGGITIVI SI TROVANO A METRI {escape_meters} DAL CONFINE.») # shortbreak
+{ escape_meters < 0:
+    («I FUGGITIVI HANNO VARCATO IL CONFINE.»)
+    -> END
+}
+-> victory
+
+

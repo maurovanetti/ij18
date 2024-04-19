@@ -24,3 +24,6 @@ sysinfo.txt
 !*.dll
 !*.exe
 obj/
+
+# Visual Studio cache directory
+.vs/

@@ -1,0 +1,19 @@
+=== terminal ===
+~ x = 0.55
+~ y = 0.40
+(Clic.) # sfx click
+Questo "castello" è pieno di computer.
+*   /Sono accesi?
+    Uno sì, sembrava violato.
+*   /Non toccateli!
+    Troppo tardi. Ce n'era uno acceso e l'abbiamo analizzato.
+- C'era una linea di comando aperta.
+/Devono essere stati i trafficanti di migranti.
+Senza di loro la feccia non entrerebbe.
+/Cercate un codice di accesso, può servirci.
+Indovina un po': lo abbiamo già fatto.
+29979.
+~ inter__knows_code = true
+/Ottimo. Ora attraversate il castello e uscite.
+
+-> plot

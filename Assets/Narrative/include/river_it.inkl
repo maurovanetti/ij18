@@ -1,0 +1,48 @@
+=== river ===
+~ x = 0.35
+~ y = 0.80
+(Clic.) # sfx click
+(Scroscio d'acqua.) # sfx water start
+Ci mancava… cos'è, un fiume? Loro nuotano facilmente, figuriamoci. # kidsmove
+/Voi no?
+Con questa attrezzatura?
+-> wade
+
+= wade
+*   /Ma sì! Guadate il fiume.
+    Non ci pensiamo proprio.
+    -> wade
++   /Sull'argine ci sono barche che potete usare.
+- Resistono?
+/Resistono.
+/E poi, posso regolare la chiusa.
+Bene. Riduci il flusso: è troppo forte adesso. 
+*   [(Riduci il flusso.)]/Ecco fatto.
+    (Finisce lo scroscio.) # sfx water stop
+- Siamo saliti sulla barca: attraversiamo, allora. # intensify
+*   /Buona traversata.
+    (Rumori di movimento d'acqua.) # sfx splash
+    Siamo arrivati dall'altra parte.
+*   [(Aumenta il flusso.)]/Buona traversata.
+    (Scroscio d'acqua.) # sfx water start
+    Oh no! Un'onda di piena.
+    Ferma il flusso! Ferma il fottuto flusso!
+    /Ci sto provando!
+    (Finisce lo scroscio.) # sfx water stop
+    (Rumori di movimento d'acqua.) # sfx splash
+    Tieni duro! Tieni duro!
+    /Dici a me?
+    No!
+    Stiamo perdendo un uomo.
+    Sta annegando.
+    (Voci.)
+    OK, l'abbiamo salvato.
+    Ma è messo malissimo.
+    Proviamo a salvarlo. Passo. # shortbreak
+    Sembra che ce l'abbia fatta. Non è annegato. # abate
+    Ma non può proseguire, lo lasciamo qui con una coperta termica e una luce di segnalazione.
+    * * [(Chiama il drone.)] /Ho chiamato il drone di soccorso.
+    * * [(Fai finta.)] /O-K. Ho chiamato il drone di soccorso.
+    - - Bene.
+- Noi {soldiers} proseguiamo. # sfx water stop # abate
+-> plot

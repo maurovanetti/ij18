@@ -1,0 +1,9 @@
+=== lost ===
+~ x = 0.25
+~ y = 0.20
+(Clic.) # sfx click
+/Ma quanto ci mettete? Dovreste essere già arrivati all'edificio seguente.
+/Mi sa che siete fuori direzione.
+Fuori direzione sei tu: stiamo puntando a ovest!
+/Appunto: dovete andare a nord.
+-> plot

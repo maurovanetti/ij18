@@ -1,0 +1,22 @@
+=== east_gate ===
+~ x = 0.95
+~ y = 0.80
+(Clic.) # sfx click
+Qui Squadra Blu. Qui Squadra Blu. {~Qui Squadra Blu.|}
+{~Riesci a sentirci|Ci ricevi}?
+*   /Sì[.], anche se non chiaramente.
+    Normale.
+*   /No.
+    Bene, neanch'io.
+- {~Siamo|Ci troviamo|Siamo davanti} al Cancello Est.
+Soldati presenti: {soldiers}.
+Conosciamo la situazione.
+Per favore: apri il cancello della città abbandonata, se puoi.
+*   /Posso[.], e procedo. # sfx metal
+- Confermi che la minaccia proviene da sud?
+*   /Confermo.
+- Ci inoltriamo nel territorio ostile.
+/Usate la galleria alla vostra sinistra.
+/Farete prima.
+Vista. A dopo.
+-> plot

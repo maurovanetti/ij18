@@ -7,6 +7,7 @@ public class NoiseControlButton : RadioButton
     public int[] Values;
     public int InitialValue;
     public int ActualValue { get; set; }
+    public AudioClip ButtonSound;
 
     private Animator _animator;
 
@@ -48,6 +49,8 @@ public class NoiseControlButton : RadioButton
         ActualValue = ActualValue == Values[0] ? ActualValue = Values[1] : Values[0];
         if (_animator)
             _animator.SetInteger("Value", ActualValue);
+        SoundManager.Instance.PlaySingleSound(ButtonSound);
+
         Radio.ApplyNoiseControl();
     }
 
@@ -66,6 +69,8 @@ public class NoiseControlButton : RadioButton
 
         if (_animator)
             _animator.SetInteger("Value", ActualValue);
+        SoundManager.Instance.PlaySingleSound(ButtonSound);
+
         Radio.ApplyNoiseControl();
     }
 }
