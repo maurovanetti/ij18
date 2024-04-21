@@ -1,0 +1,2438 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.4f1 (35713cd46cd7) revision 3502396'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'it' Physical Memory: 16071 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/vanet/Codice/abc/ij18
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+58766
+Successfully changed project path to: C:/Users/vanet/Codice/abc/ij18
+C:/Users/vanet/Codice/abc/ij18
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [14972] Host "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 1158365240 [EditorId] 1158365240 [Version] 1048832 [Id] WindowsEditor(7,MAURO-FISSO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [14972] Host "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 1158365240 [EditorId] 1158365240 [Version] 1048832 [Id] WindowsEditor(7,MAURO-FISSO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 12.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.4f1 (35713cd46cd7)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/vanet/Codice/abc/ij18/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8024 MB
+    Driver:   31.0.15.5161
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004769 seconds.
+- Loaded All Assemblies, in  0.297 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.213 seconds
+Domain Reload Profiling: 510ms
+	BeginReloadAssembly (84ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (126ms)
+		LoadAssemblies (82ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (122ms)
+			TypeCache.Refresh (121ms)
+				TypeCache.ScanAssembly (111ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (214ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (168ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (115ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.560 seconds
+Refreshing native plugins compatible for Editor in 5.42 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/blueteam_data.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/east_gate_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/cables_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/stack_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/lemons_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/robots_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/tunnel_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/bridge_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/terminal_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/traffic_lights_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/electrified_fence_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/factory_east_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/redteam_data.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/west_gate_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/mine_field_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/window_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/downhill_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/river_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/lunch_time_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/drawbridge_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/lost_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/fire_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/self_confidence_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/factory_west_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Refresh completed but there are assets queued up for importing. Check for code that modifies assets which gets called after OnPostProcessAllAssets. Additional details in Log file
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Ink.UnityIntegration.InkLibrary:Save () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:130)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:99)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs line 130]
+
+Assets queued for import after Refresh completed:
+	Assets/InkLibrary.asset
+Asset Pipeline Refresh (id=c6ca01960c6c9b34abc193f9eaddf89d): Total: 0.000 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Assertion failed on expression: 'm_Ptr'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Ink.UnityIntegration.InkLibrary:Save () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:130)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:99)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs line 130]
+
+Ink Library was rebuilt.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:101)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs Line: 101)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.631 seconds
+Domain Reload Profiling: 1189ms
+	BeginReloadAssembly (90ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (407ms)
+		LoadAssemblies (223ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (221ms)
+			TypeCache.Refresh (199ms)
+				TypeCache.ScanAssembly (189ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (631ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (515ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (349ms)
+			ProcessInitializeOnLoadMethodAttributes (110ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 7.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4546 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 123 unused Assets / (375.1 KB). Loaded Objects now: 4958.
+Memory consumption went from 192.1 MB to 191.7 MB.
+Total: 13.241700 ms (FindLiveObjects: 0.205100 ms CreateObjectMapping: 0.122000 ms MarkObjects: 12.617000 ms  DeleteObjects: 0.296500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 507166.651023 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(5e96a1765d7c8434183faa3671b5b96d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(5e96a1765d7c8434183faa3671b5b96d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1714ed46ca5095bcd63c9c6062ce325') in 0.004723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2 unused Assets / (290.7 KB). Loaded Objects now: 4959.
+Memory consumption went from 95.9 MB to 95.6 MB.
+Total: 5.271400 ms (FindLiveObjects: 0.186700 ms CreateObjectMapping: 0.103000 ms MarkObjects: 4.934900 ms  DeleteObjects: 0.045200 ms)
+
+Prepare: number of updated asset objects reloaded= 6
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.468 seconds
+Refreshing native plugins compatible for Editor in 4.78 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.790 seconds
+Domain Reload Profiling: 1256ms
+	BeginReloadAssembly (105ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (309ms)
+		LoadAssemblies (180ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (168ms)
+			TypeCache.Refresh (162ms)
+				TypeCache.ScanAssembly (153ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (790ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (427ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (270ms)
+			ProcessInitializeOnLoadMethodAttributes (101ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 5.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4355 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (332.6 KB). Loaded Objects now: 4967.
+Memory consumption went from 164.7 MB to 164.4 MB.
+Total: 5.054000 ms (FindLiveObjects: 0.197800 ms CreateObjectMapping: 0.122600 ms MarkObjects: 4.637600 ms  DeleteObjects: 0.094000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 182.529907 seconds.
+  path: Assets/InkSettings.asset
+  artifactKey: Guid(f2e4a1f1b4bfef640aa1793afe7abaf2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/InkSettings.asset using Guid(f2e4a1f1b4bfef640aa1793afe7abaf2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '38806d1fc65f7eb9dd609ab161ab1244') in 0.142374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scripts/RadioButton.cs
+  artifactKey: Guid(1c9e60979fd24e241be9475b83de86e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/RadioButton.cs using Guid(1c9e60979fd24e241be9475b83de86e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ffd30c562fa930a5bb559821ad2bf343') in 0.018958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Animations/RadioControls/FrequencyTick103.anim
+  artifactKey: Guid(f2cbaa36d1b296b4a95d598357803bae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/FrequencyTick103.anim using Guid(f2cbaa36d1b296b4a95d598357803bae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1d8ab77406376bb2c5f826240bcf4483') in 0.023490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Narrative/redteam_it.ink
+  artifactKey: Guid(c15450d535429e642aa58ac0a8fd6344) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/redteam_it.ink using Guid(c15450d535429e642aa58ac0a8fd6344) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e318fbc291d01a55fe79e643a2b71b1c') in 0.009935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/supportMonitor4.png
+  artifactKey: Guid(d9ec453dbd474f24082a175437364ad9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/supportMonitor4.png using Guid(d9ec453dbd474f24082a175437364ad9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7f04dc874de0a23c3367a58cbc740aa2') in 0.038291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Animations/RadioControls/Button_Variant.overrideController
+  artifactKey: Guid(51ee0cbc349b0cd4385d1eee2ab054cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/Button_Variant.overrideController using Guid(51ee0cbc349b0cd4385d1eee2ab054cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3285d4e51e976295ff82b554c491bdcb') in 0.012283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Animations/RadioControls/FrequencyTick102.anim
+  artifactKey: Guid(bb4980c8ebbd6d4458939ab070f7e66c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/FrequencyTick102.anim using Guid(bb4980c8ebbd6d4458939ab070f7e66c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3de52c45a5dbb24cfd7b1416e9a51297') in 0.018712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(76051890c32ba3546bcd3e44f748f158) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/Main.unity using Guid(76051890c32ba3546bcd3e44f748f158) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b2c18d64289a0df0a4fb87cd61f7ab73') in 0.009857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Scripts/Map.cs
+  artifactKey: Guid(5f1c8632755b2cc4ca39d162751b67a3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/Map.cs using Guid(5f1c8632755b2cc4ca39d162751b67a3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ad6a987080d68d94aeb0f98205dffd91') in 0.009508 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Animations/NoiseIndicator/Noise4.anim
+  artifactKey: Guid(b8520f6a492214b48a00f985e86e6482) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/NoiseIndicator/Noise4.anim using Guid(b8520f6a492214b48a00f985e86e6482) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa970fe2c57d44ca9b5c57c2a4a81235') in 0.010582 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Animations/RadioControls/FrequencyTick100.anim
+  artifactKey: Guid(0b209b3d034055248891d0cb8cfa5766) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/FrequencyTick100.anim using Guid(0b209b3d034055248891d0cb8cfa5766) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7596028b94517a3961b4f77171c3dac0') in 0.010360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Scripts/SimpleCurtains.cs
+  artifactKey: Guid(a3a6d75c784d4a44a83816d265b082b7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/SimpleCurtains.cs using Guid(a3a6d75c784d4a44a83816d265b082b7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cc1948c3028a1d0231f66576ff14cba6') in 0.010488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Animations/Marker/ActiveMarker.anim
+  artifactKey: Guid(5fd103ea03d88da4da092ba83c8f0019) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/Marker/ActiveMarker.anim using Guid(5fd103ea03d88da4da092ba83c8f0019) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9120ba25d4fb78c7b99963fb61e590bf') in 0.013147 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Animations/NoiseIndicator/Noise9.anim
+  artifactKey: Guid(803a393c7a5f1e14da2766f46d85c75e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/NoiseIndicator/Noise9.anim using Guid(803a393c7a5f1e14da2766f46d85c75e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cb04ee5f00ec17312a73e9bbfd7d0684') in 0.010944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Fonts/OxygenMono-Regular.otf
+  artifactKey: Guid(0837a8a0c58aa724d8669feb9b340b11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Fonts/OxygenMono-Regular.otf using Guid(0837a8a0c58aa724d8669feb9b340b11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '036d1bc7707b826a551e00a453f74016') in 0.025386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sounds/BUTTON_Spring_Press_mono.wav
+  artifactKey: Guid(a722f12f56d35f849a658500f205c19b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sounds/BUTTON_Spring_Press_mono.wav using Guid(a722f12f56d35f849a658500f205c19b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1b8b9241a0b2d50d080ff7fe703bb35e') in 0.031779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(241e0daf19ae40e45b921b5692836e41) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/Game.unity using Guid(241e0daf19ae40e45b921b5692836e41) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8bd3195c4145ccf9b67bc4c8ec0542dd') in 0.011170 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Animations/RadioControls/FrequencyTick104.anim
+  artifactKey: Guid(e7239c278262c2a4f8870e685b6762ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/FrequencyTick104.anim using Guid(e7239c278262c2a4f8870e685b6762ff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd984ebbcc4621162af88c1763596df8a') in 0.019386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Narrative/blueteam_it.ink
+  artifactKey: Guid(d6786b2f94ff7d248b9b23e23da58465) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/blueteam_it.ink using Guid(d6786b2f94ff7d248b9b23e23da58465) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '97265d54ea933c02a7e4bf89cb74f122') in 0.009598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Narrative/include/stack_it.inkl
+  artifactKey: Guid(ec8cb209b2e033248ac2d8e18c5026f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/stack_it.inkl using Guid(ec8cb209b2e033248ac2d8e18c5026f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6262cdd5350c404a7c7eae7efa433070') in 0.020572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Narrative/include/lunch_time_it.inkl
+  artifactKey: Guid(12fe086798e6b6f4c857579781ea94be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/lunch_time_it.inkl using Guid(12fe086798e6b6f4c857579781ea94be) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '302e40688af5bb1b2853ad4f9d516a0a') in 0.012615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Animations/RadioControls/FrequencyTick109.anim
+  artifactKey: Guid(7dd9dc04f8926e7428f040b16dbb51ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/FrequencyTick109.anim using Guid(7dd9dc04f8926e7428f040b16dbb51ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0961faf3aba829e4d972d13a829e2ddb') in 0.011694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Animations/RadioControls/Lever3.anim
+  artifactKey: Guid(0ab96a202b1e6a144b250cdfc9b1a5f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/Lever3.anim using Guid(0ab96a202b1e6a144b250cdfc9b1a5f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '81e0d61076bc3b414bf07661fbadf4b1') in 0.013099 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Narrative/include/drawbridge_it.inkl
+  artifactKey: Guid(232b46fa5615a2b4b9fe89a944dbd3f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/drawbridge_it.inkl using Guid(232b46fa5615a2b4b9fe89a944dbd3f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b8735b709e8d70ef4fc2f1543863a53b') in 0.008951 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Narrative/include/traffic_lights_it.inkl
+  artifactKey: Guid(740fccdb9d080ee40821f5554f80be4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/traffic_lights_it.inkl using Guid(740fccdb9d080ee40821f5554f80be4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8cf7deb4e04cf02ff4bd6db45fa72eb2') in 0.009292 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Narrative/include/self_confidence_it.inkl
+  artifactKey: Guid(200aa3bd09a0d2e48adfbca4bb5a33d7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/self_confidence_it.inkl using Guid(200aa3bd09a0d2e48adfbca4bb5a33d7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0e9d9bb086cf5c77129612b4daf593ae') in 0.010749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Animations/Background_Track/Tense.anim
+  artifactKey: Guid(bbd6b9df398db0b458e8fc63c2d43b1a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/Background_Track/Tense.anim using Guid(bbd6b9df398db0b458e8fc63c2d43b1a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7e79a995ddaeeb6b861173645a1cb65f') in 0.010559 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Animations/AnswerBoard/Default.anim
+  artifactKey: Guid(a8b334bfb84642b4cb5fa204464de92d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/AnswerBoard/Default.anim using Guid(a8b334bfb84642b4cb5fa204464de92d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ae520fa22a0ea3de9d795ccb9cc3a21c') in 0.011631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Animations/RadioControls/ButtonOff.anim
+  artifactKey: Guid(43655abc7b8fb8c428e8492b625a4031) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/ButtonOff.anim using Guid(43655abc7b8fb8c428e8492b625a4031) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f3dfa4f80382994dec014f4751f62219') in 0.012197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Narrative/include/factory_west_it.inkl
+  artifactKey: Guid(151c28c20625da14db774fb121149322) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/factory_west_it.inkl using Guid(151c28c20625da14db774fb121149322) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5eaae4f5a869e04a0ea62dc2d0bf4ed8') in 0.008621 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sounds/BUTTON_Very_Bright_Click_mono.wav
+  artifactKey: Guid(8572b398012b3994990feb264dd22b5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sounds/BUTTON_Very_Bright_Click_mono.wav using Guid(8572b398012b3994990feb264dd22b5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '768052724a67ca5bef64507a58d3697d') in 0.031741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Narrative/include/robots_it.inkl
+  artifactKey: Guid(ca6b68f800becde44932e6847f58bb03) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/robots_it.inkl using Guid(ca6b68f800becde44932e6847f58bb03) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '048cbabb798f56bb852847a772a16ab9') in 0.008894 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Mixer.mixer
+  artifactKey: Guid(6b53328e7374c74408d9e858dfbe1d80) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Mixer.mixer using Guid(6b53328e7374c74408d9e858dfbe1d80) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '509105b21d8bd226ee4826423e5d3452') in 0.013323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/Marker.prefab
+  artifactKey: Guid(d0af913d0a333bf449e8ac9939e609ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/Marker.prefab using Guid(d0af913d0a333bf449e8ac9939e609ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '92aa4287abe26da2d501e62bb4ac6962') in 0.029980 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Narrative/factory_it.json
+  artifactKey: Guid(9230bcf4e34d10342862e5521937b97e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/factory_it.json using Guid(9230bcf4e34d10342862e5521937b97e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'afbac608dc670337c12b5b5ca4f55878') in 0.010520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scripts/IMap.cs
+  artifactKey: Guid(e534afcadc3c57b428d7b4ffb68d42bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/IMap.cs using Guid(e534afcadc3c57b428d7b4ffb68d42bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9d8a348223fdb2bf8f289742879ab589') in 0.010742 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Animations/RadioControls/FrequencyTick106.anim
+  artifactKey: Guid(a5c7fa118f9d37748a5f1c156169bfd9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/FrequencyTick106.anim using Guid(a5c7fa118f9d37748a5f1c156169bfd9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b918d2af0da230383259c7ebf08a0bd4') in 0.012000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Narrative/include/river_it.inkl
+  artifactKey: Guid(34ac7be88bc02844c82976c0d241eff5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/river_it.inkl using Guid(34ac7be88bc02844c82976c0d241eff5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '451adda18ba017ede1ae60fb1ac22f64') in 0.009166 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Scripts/ILog.cs
+  artifactKey: Guid(2780c8c85a7dc8c4dafc039ace0dda10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/ILog.cs using Guid(2780c8c85a7dc8c4dafc039ace0dda10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9fc15640a0a691f6b5afea1992bc2014') in 0.009568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Animations/NoiseIndicator/Noise2.anim
+  artifactKey: Guid(3030d3f16a17c0443891f7b1889b3dd9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/NoiseIndicator/Noise2.anim using Guid(3030d3f16a17c0443891f7b1889b3dd9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0d68ed9bd20d39a8dec380343b9c3814') in 0.013301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Animations/RadioControls/FrequencyTick110.anim
+  artifactKey: Guid(c3492aee0d0113145ad1afeb8c3851e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/FrequencyTick110.anim using Guid(c3492aee0d0113145ad1afeb8c3851e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '934fb2ebea2bd6f44b44035c8932d94d') in 0.010106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Narrative/include/terminal_it.inkl
+  artifactKey: Guid(95e49dc0c2a280f4e8336b6560da292a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/terminal_it.inkl using Guid(95e49dc0c2a280f4e8336b6560da292a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0ce01c5a298e050883a396d28ebb45f1') in 0.008421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Animations/RadioControls/Lever2.anim
+  artifactKey: Guid(9973f31903eb60f4ea0cf17145e5bf75) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/Lever2.anim using Guid(9973f31903eb60f4ea0cf17145e5bf75) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4a8507bac8116cb33015a7ad74b1b6f5') in 0.009525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Narrative/include/fire_it.inkl
+  artifactKey: Guid(0ad822bdf2d61f8488150610b4f603b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/fire_it.inkl using Guid(0ad822bdf2d61f8488150610b4f603b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9c1e181758e75dfe5713076cc213bdc3') in 0.008027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Animations/RadioControls/Lever1.anim
+  artifactKey: Guid(49c70d0e7814a754a9d19fb00670859e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/Lever1.anim using Guid(49c70d0e7814a754a9d19fb00670859e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'def3735fa69a57141d3309a1e9c8f612') in 0.009761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Fonts/VT323.asset
+  artifactKey: Guid(5622256c6990c2a4ea413b371a55889c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Fonts/VT323.asset using Guid(5622256c6990c2a4ea413b371a55889c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f381e22eed9bed12b8142227f0957b55') in 0.011766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Machinery/LogFrameNew.png
+  artifactKey: Guid(77636ef9bab992a44ba828b9b33c82b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Machinery/LogFrameNew.png using Guid(77636ef9bab992a44ba828b9b33c82b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '30d03f697fb0cae31ecf530eaa45d1d4') in 0.017038 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Old/Channel1Led.png
+  artifactKey: Guid(854fd3283328d10488ceb2b228d17697) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/Channel1Led.png using Guid(854fd3283328d10488ceb2b228d17697) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dd0fdf2cca5ddb53eb6bd1989439b64c') in 0.025682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001025 seconds.
+  path: Assets/Sprites/Machinery/Icon_SquadraRossa_On.png
+  artifactKey: Guid(08a91e6da8e6e9b4a968efc54e88cbdd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Machinery/Icon_SquadraRossa_On.png using Guid(08a91e6da8e6e9b4a968efc54e88cbdd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '05e2a811537791146c38a5d69e73bdf7') in 0.019587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Old/ButtonOff.png
+  artifactKey: Guid(2d757cfc6b72fee488c2686193f4cc5f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/ButtonOff.png using Guid(2d757cfc6b72fee488c2686193f4cc5f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '014d4cfab0068eb6dcc70b11f20034cd') in 0.017280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Machinery/Icon_SquadraRossa_Off.png
+  artifactKey: Guid(4151da93fc119184ab06a1253122f940) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Machinery/Icon_SquadraRossa_Off.png using Guid(4151da93fc119184ab06a1253122f940) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e8dfd22996ecff94227af10f08070e44') in 0.022305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Old/ChannelLed2Off.png
+  artifactKey: Guid(4ea62965ff848724ca712f226ca8b58e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/ChannelLed2Off.png using Guid(4ea62965ff848724ca712f226ca8b58e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '98ce071f3b4e8ec8b5e24d0972f74f9c') in 0.020010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/Machinery/ledOff.png
+  artifactKey: Guid(e837b81ef6adb0a4fb3c7936a12b7312) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Machinery/ledOff.png using Guid(e837b81ef6adb0a4fb3c7936a12b7312) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '303dcb38e752ce0fb5401ce91cc6e6e7') in 0.018041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Sprites/Machinery/Knob.png
+  artifactKey: Guid(60d5814312716dd49b4a98e492c3f1a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Machinery/Knob.png using Guid(60d5814312716dd49b4a98e492c3f1a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fbada86d4ad457724269702cde82a697') in 0.018667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Machinery/RadioScreen.png
+  artifactKey: Guid(4449533554cf2cb4c9d6136346b127f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Machinery/RadioScreen.png using Guid(4449533554cf2cb4c9d6136346b127f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1eee0629aeb11a6a69c37ef8de3f9973') in 0.025483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Old/ChannelLed2On.png
+  artifactKey: Guid(69091fae71a06b44f85622f49a51cd15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/ChannelLed2On.png using Guid(69091fae71a06b44f85622f49a51cd15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c501070b10aeac6bd8f411ecc699e445') in 0.022498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Machinery/Icon_Fabbrica_On.png
+  artifactKey: Guid(8bbf7d9b992e7394aa7c82960f994e94) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Machinery/Icon_Fabbrica_On.png using Guid(8bbf7d9b992e7394aa7c82960f994e94) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '569ca620d20c5bcc155ea1b6248db11e') in 0.021377 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Plugins/Ink/Readme.md
+  artifactKey: Guid(85254203c0564478cab552275fc29e5f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Readme.md using Guid(85254203c0564478cab552275fc29e5f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '84af0d032b471e3fa197195017576cd8') in 0.011310 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Old/AnswerFrame.png
+  artifactKey: Guid(25f2b2ffbff3910439bfe58efbfe44b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/AnswerFrame.png using Guid(25f2b2ffbff3910439bfe58efbfe44b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '98992a3070d367fbddc635c146688608') in 0.024720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Old/AnswerBoard.png
+  artifactKey: Guid(451b48822eb6eec42a5f29df2f0770da) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/AnswerBoard.png using Guid(451b48822eb6eec42a5f29df2f0770da) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1c983a93b4f0e95ac0ee7d2e1507fe19') in 0.017807 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Machinery/NoiseAdjuster2.png
+  artifactKey: Guid(3daff69632013304182cb765537bf08e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Machinery/NoiseAdjuster2.png using Guid(3daff69632013304182cb765537bf08e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd8a889c85ba57d1437f9feb3f9185f04') in 0.020159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Machinery/FrequencyController.png
+  artifactKey: Guid(eeff3bba50d32e948a2ed2cfc0b32a17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Machinery/FrequencyController.png using Guid(eeff3bba50d32e948a2ed2cfc0b32a17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '21825ac4b1eb40e9a3ff16f62b6931df') in 0.017830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/Sprites/Old/AnswerFrameOnOver.png
+  artifactKey: Guid(ee3aa4edc4859584487c38278b848106) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/AnswerFrameOnOver.png using Guid(ee3aa4edc4859584487c38278b848106) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8af65d830c6c7d88f99a119efb010cb7') in 0.027068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Old/ButtonOn.png
+  artifactKey: Guid(cbfac19508773f04693a3b190c50704e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/ButtonOn.png using Guid(cbfac19508773f04693a3b190c50704e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '766dd17eb97a261677bc5cd3d6e000b3') in 0.017728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Scripts/FrequencyButton.cs
+  artifactKey: Guid(4ceb300001e1c264fa4907d486e575ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/FrequencyButton.cs using Guid(4ceb300001e1c264fa4907d486e575ae) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b44a2b441fb58a09fe056269a62ba2b2') in 0.010421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Animations/NoiseIndicator/NoiseIndicator.controller
+  artifactKey: Guid(e439b2728183ce44ba4bbe1fa1a59c5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/NoiseIndicator/NoiseIndicator.controller using Guid(e439b2728183ce44ba4bbe1fa1a59c5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bce3c9dbba4dfc087c3e3f3ce95fe4ea') in 0.019316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 52
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Props/cavo2.png
+  artifactKey: Guid(0c2353e3689c5a445a9df37df34e84a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/cavo2.png using Guid(0c2353e3689c5a445a9df37df34e84a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '314e5f65ecf7a3dc6857e1dfe88b1477') in 0.042729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Props/Coffe.png
+  artifactKey: Guid(4a521b39f0a073743bf91cbb5b848b69) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/Coffe.png using Guid(4a521b39f0a073743bf91cbb5b848b69) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c095a0879a67172777350ba08d341346') in 0.025245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Props/cavo7.png
+  artifactKey: Guid(bde65ee564591044e813ec663adb3c68) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/cavo7.png using Guid(bde65ee564591044e813ec663adb3c68) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '89d1f89defe772d77efd99e66caee486') in 0.017302 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Old/ChannelLed3On.png
+  artifactKey: Guid(0c0f8ede249b7c1468a25c0ab8bbedba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/ChannelLed3On.png using Guid(0c0f8ede249b7c1468a25c0ab8bbedba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6c9dab33a23204ec51dfc3e97ac65da4') in 0.016414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Props/Chiavi.png
+  artifactKey: Guid(dfffefae96b252d45b2d3fed897e5f95) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/Chiavi.png using Guid(dfffefae96b252d45b2d3fed897e5f95) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1e3d2e3d531198ebe5e77693bb9df7c4') in 0.017492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Props/Bottle.png
+  artifactKey: Guid(6fcf07e8ba31dec438045e4303085a50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/Bottle.png using Guid(6fcf07e8ba31dec438045e4303085a50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '899d8df0ba5406e81ac25377b10ebc3f') in 0.031758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Old/RadioKnobSx.png
+  artifactKey: Guid(96e1369dff7690841aa6c06067301bc8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/RadioKnobSx.png using Guid(96e1369dff7690841aa6c06067301bc8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1932c4cf7085e7b47b8e28311167cf4a') in 0.032636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Props/cavo6.png
+  artifactKey: Guid(6d0e3d9729efe79458520c554ac30239) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/cavo6.png using Guid(6d0e3d9729efe79458520c554ac30239) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '212c1a5f8db365c84922a1730d5a4fea') in 0.062225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Props/Appendino.png
+  artifactKey: Guid(7626e8fd3635558449b1e77d5ae95b04) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/Appendino.png using Guid(7626e8fd3635558449b1e77d5ae95b04) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '089d419f6adcf04a5cef25d29a7f17e6') in 0.032272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Sprites/Props/cavo5.png
+  artifactKey: Guid(f6293aecc72992942b26216823be33c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/cavo5.png using Guid(f6293aecc72992942b26216823be33c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6c656cdff01c9be5cd3be01452ac8cb2') in 0.042563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Old/CorniceLog.psd
+  artifactKey: Guid(bb3ae38f72eaf354a8d07a9457a83c8a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/CorniceLog.psd using Guid(bb3ae38f72eaf354a8d07a9457a83c8a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '430833336ca561149852544212e8f222') in 0.065969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/Old/Mappa.png
+  artifactKey: Guid(a37400a6db4322442bda57de3ccdea88) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/Mappa.png using Guid(a37400a6db4322442bda57de3ccdea88) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8c8c6d297c6f067c76369979a609c8e7') in 0.043216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Sprites/Props/spina.png
+  artifactKey: Guid(dfb057d3f4985264791b95086869180e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/spina.png using Guid(dfb057d3f4985264791b95086869180e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1c3bcf3ac3847a29604b93dfc7b2f32e') in 0.036501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Sprites/Props/Poster3.png
+  artifactKey: Guid(25227fb3043c61d4781f6abc0f639f7f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/Poster3.png using Guid(25227fb3043c61d4781f6abc0f639f7f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa4e1228cbe41156329e435c2adb7295') in 0.042723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+  artifactKey: Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt using Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '15547e835cfbabcb66ba5b851c5eef62') in 0.018421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+  artifactKey: Guid(6e59c59b81ab47f9b6ec5781fa725d2c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt using Guid(6e59c59b81ab47f9b6ec5781fa725d2c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c494f328f6ebba1d12bb3e527a7dcd59') in 0.019407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.json
+  artifactKey: Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.json using Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1922a017a2991c98dea3fa5d50190cf4') in 0.017067 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '49b3275b0c74446cb8b9887ff0d0c3df') in 0.058217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Sprites/Props/orologio.png
+  artifactKey: Guid(6f8991f2bdb8afd4db2642c088091f31) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/orologio.png using Guid(6f8991f2bdb8afd4db2642c088091f31) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fc2427630787f4ac9f93a3ae89dd0cb5') in 0.037441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/Props/Poster.png
+  artifactKey: Guid(0d7465286b5083a4ca4cd1d75634a37f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/Poster.png using Guid(0d7465286b5083a4ca4cd1d75634a37f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '189118d8befcf618296d6f1798e5ac85') in 0.066757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf
+  artifactKey: Guid(1b8d251f9af63b746bf2f7ffe00ebb9b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf using Guid(1b8d251f9af63b746bf2f7ffe00ebb9b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd64f24aef3ca2e38b89b60d4e60790ba') in 0.017066 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+  artifactKey: Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt using Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7a8a022e36a7201ba08a21e909890daa') in 0.015696 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Animations/New/NoiseIndicator/NewNoise0.anim
+  artifactKey: Guid(16eb40a15ce76fc47997c56d623aee69) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/NoiseIndicator/NewNoise0.anim using Guid(16eb40a15ce76fc47997c56d623aee69) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2c55ef9b7b07e9b4b41511d68b4376af') in 0.019419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Animations/New/NoiseIndicator/NewNoise1.anim
+  artifactKey: Guid(1280a579f9540e344be8cc247b19d67a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/NoiseIndicator/NewNoise1.anim using Guid(1280a579f9540e344be8cc247b19d67a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8d051d61f28e10e601a579fd3d8d673f') in 0.024102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Animations/New/NoiseIndicator/NewNoise6.anim
+  artifactKey: Guid(14851ef325f48a840aa58ce539fd8652) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/NoiseIndicator/NewNoise6.anim using Guid(14851ef325f48a840aa58ce539fd8652) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5f37820fc5beeb84918665d7a1a4f9ed') in 0.017142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Animations/New/RadioControls/NewFrequencyTick100.anim
+  artifactKey: Guid(e3082f6de71d2f34382c911d6b610e85) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/RadioControls/NewFrequencyTick100.anim using Guid(e3082f6de71d2f34382c911d6b610e85) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '95c8f3ec625eae49ab36dfc2a9e4ba0f') in 0.016064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Animations/New/RadioControls/NewButtonOnVariant.anim
+  artifactKey: Guid(9e5f98955f063d9409ad305cee00ade7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/RadioControls/NewButtonOnVariant.anim using Guid(9e5f98955f063d9409ad305cee00ade7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fe45a903c1cbed35545271cc347c5daf') in 0.013272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Animations/New/NoiseIndicator/NewNoise4.anim
+  artifactKey: Guid(1315a859c6637834182f27c56f3b7434) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/NoiseIndicator/NewNoise4.anim using Guid(1315a859c6637834182f27c56f3b7434) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '22a3d30d28295aff8ca89324f7fa7dfa') in 0.014772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Props/usb.png
+  artifactKey: Guid(757d134d0c54af14bafa6a0acf2fdc7c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/usb.png using Guid(757d134d0c54af14bafa6a0acf2fdc7c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e139c0475c824549ff0e87fe8c69bc74') in 0.025384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TextMesh Pro/Resources/TMP Settings.asset
+  artifactKey: Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/TMP Settings.asset using Guid(3f5b5dff67a942289a9defa416b206f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ba05a8bcab3e15c6bbcd7ed1ee8c91c1') in 0.083128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Animations/New/RadioControls/NewButton_Variant.overrideController
+  artifactKey: Guid(6921fa33204d7de488420baf86f494c2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/RadioControls/NewButton_Variant.overrideController using Guid(6921fa33204d7de488420baf86f494c2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1924a741de114aa9303f1a749da7dcc2') in 0.014501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Animations/New/NoiseIndicator/NewNoise7.anim
+  artifactKey: Guid(5a349da947bfaf9488130dab0a1b7973) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/NoiseIndicator/NewNoise7.anim using Guid(5a349da947bfaf9488130dab0a1b7973) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '16905aa72e0a6ac6d00dbde0828379e1') in 0.023368 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Old/ChannelLed4On.png
+  artifactKey: Guid(11d7021ef8fb927469a0245c01324fbd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/ChannelLed4On.png using Guid(11d7021ef8fb927469a0245c01324fbd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5335fdcdecf443b8f603099488af5819') in 0.028054 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Props/cavo4.png
+  artifactKey: Guid(3c825baf27147a94287e89d4dd208bbf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/cavo4.png using Guid(3c825baf27147a94287e89d4dd208bbf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ba079ec89d1eaeaefb5d40ccf0f83d4e') in 0.024887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Animations/New/NoiseIndicator/NewNoise8.anim
+  artifactKey: Guid(443a004a323619740aeeee9d345fbfc2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/NoiseIndicator/NewNoise8.anim using Guid(443a004a323619740aeeee9d345fbfc2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e368586d928ba3ca6aaf732dc160d728') in 0.011676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/CallStack.cs
+  artifactKey: Guid(152213b0affe5410c9b7ef8eac085a64) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/CallStack.cs using Guid(152213b0affe5410c9b7ef8eac085a64) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '837cf5c5ecad91adb8a0323aa7efb5f6') in 0.013949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Animations/New/RadioControls/NewFrequencyTick101.anim
+  artifactKey: Guid(97483f6fb84a2d14895a6ddeb9587b09) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/RadioControls/NewFrequencyTick101.anim using Guid(97483f6fb84a2d14895a6ddeb9587b09) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '402775fe19a141a9ae643cf2ed4b96c8') in 0.014556 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Animations/New/RadioControls/NewLeverDefaut.anim
+  artifactKey: Guid(360c7e61ca624f64bbd44214ef13b52d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/RadioControls/NewLeverDefaut.anim using Guid(360c7e61ca624f64bbd44214ef13b52d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '30cfba3202870699d0184f2cf2fe7b52') in 0.018213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Animations/New/RadioControls/NewFrequencyTick105.anim
+  artifactKey: Guid(c034773b9a619534b8a8130f8d839b66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/RadioControls/NewFrequencyTick105.anim using Guid(c034773b9a619534b8a8130f8d839b66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7ec1f2075078721f947f9aa1791dd3c9') in 0.011795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Animations/New/RadioControls/NewFrequencyTick110.anim
+  artifactKey: Guid(90cd7584a994d0e4c825cee147e70f8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/RadioControls/NewFrequencyTick110.anim using Guid(90cd7584a994d0e4c825cee147e70f8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1e5597c79b4f0d8eba3fdf60d9e8a308') in 0.012353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Plugins/Ink/Inklecate/inklecate_win.exe
+  artifactKey: Guid(fe57173b56f7c4aa588b0425b097c3d7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Inklecate/inklecate_win.exe using Guid(fe57173b56f7c4aa588b0425b097c3d7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4423587ee4d5ba66a06d75a9db158536') in 0.011919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Animations/New/RadioControls/NewSlider1.anim
+  artifactKey: Guid(bb1007d0f8b5d654fa5a4c9d72b64f65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/RadioControls/NewSlider1.anim using Guid(bb1007d0f8b5d654fa5a4c9d72b64f65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5b583d1cb020b9e951f2c5bfc87ddb83') in 0.025808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Plugins/Ink/Inklecate/ink_compiler.dll
+  artifactKey: Guid(d2e241d32e6fc425fa06fa41e3c643f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Inklecate/ink_compiler.dll using Guid(d2e241d32e6fc425fa06fa41e3c643f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f0b85782cdec8ed5eda71288cb139e65') in 0.015092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Plugins/Ink/Extras/Sublime3Syntax.zip
+  artifactKey: Guid(db1b6d593e1a4418489b76bb1e8b5ddd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Extras/Sublime3Syntax.zip using Guid(db1b6d593e1a4418489b76bb1e8b5ddd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd788be9649e6582fcd995cf817f6ec50') in 0.013416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Animations/New/RadioControls/NewFrequencyTick108.anim
+  artifactKey: Guid(832b2f812f24bf24787456ccf4f71bb3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/RadioControls/NewFrequencyTick108.anim using Guid(832b2f812f24bf24787456ccf4f71bb3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '01e7cbd4757389d4ddae5c6e0385df4d') in 0.014032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Animations/New/RadioControls/NewSliderDefault.anim
+  artifactKey: Guid(85d9a7087e962a642a1737cbc3b50bc8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/RadioControls/NewSliderDefault.anim using Guid(85d9a7087e962a642a1737cbc3b50bc8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0a80a0a0a0daf83c40ab96605de81fa0') in 0.012882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Old/MuoseOnHover.png
+  artifactKey: Guid(8e2d9886b6db7c2419a8a6b11543d8ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/MuoseOnHover.png using Guid(8e2d9886b6db7c2419a8a6b11543d8ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '31006b4828261326cc40d078c712090b') in 0.020694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/Choice.cs
+  artifactKey: Guid(8db545ff917fa46d7aa5f472a9fdbad8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/Choice.cs using Guid(8db545ff917fa46d7aa5f472a9fdbad8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9a13efeeca4c58e64e9a417f4db4a50d') in 0.012664 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Sprites/Old/Marker.png
+  artifactKey: Guid(13ff17913a26a324e838113c36edfb19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/Marker.png using Guid(13ff17913a26a324e838113c36edfb19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3d99cdb193903cf9544aab3f74bb781e') in 0.033065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Animations/NoiseIndicator/Noise5.anim
+  artifactKey: Guid(244136c159340fe40960f02691f68d11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/NoiseIndicator/Noise5.anim using Guid(244136c159340fe40960f02691f68d11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0ca5f610dd54d201a2baa027b389e474') in 0.018056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Scripts/Channel.cs
+  artifactKey: Guid(4b744f17866e04c418ec7d6f2b8350f8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/Channel.cs using Guid(4b744f17866e04c418ec7d6f2b8350f8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e4a85f425685f15bf0b9abccdc956ebe') in 0.013527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Prefabs/AnswerBlock.prefab
+  artifactKey: Guid(36fe0a1e5fbe8a243acd80bd9380c082) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/AnswerBlock.prefab using Guid(36fe0a1e5fbe8a243acd80bd9380c082) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'baa6ce6c765cab93b96b22e498bc18d7') in 0.061418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Fonts/VT323-REGULAR.TTF
+  artifactKey: Guid(5024deb90b09cc749a37db2cafb3931d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Fonts/VT323-REGULAR.TTF using Guid(5024deb90b09cc749a37db2cafb3931d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b079fe1e0239a127c922092d652a1aa6') in 0.023805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Plugins/Ink/Resources/InkDefaultTemplate.txt
+  artifactKey: Guid(0487be7f554cd45a6916f94d2b6baf50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Resources/InkDefaultTemplate.txt using Guid(0487be7f554cd45a6916f94d2b6baf50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f7749794d6de9ead6bdb0c638367fa2f') in 0.013516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/ControlCommand.cs
+  artifactKey: Guid(41100189b7af04624a6c92ee13e18232) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/ControlCommand.cs using Guid(41100189b7af04624a6c92ee13e18232) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1bbd765144cd2555e13df065e66d885d') in 0.011544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/Value.cs
+  artifactKey: Guid(57357686b389f45c9ad0659798094c5d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/Value.cs using Guid(57357686b389f45c9ad0659798094c5d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9c7c74ce87280486b2228401526b17cb') in 0.017539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/DebugMetadata.cs
+  artifactKey: Guid(c1ae8e933de9541df9d12af663906aaf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/DebugMetadata.cs using Guid(c1ae8e933de9541df9d12af663906aaf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1427de1c810c2e181d7279f02feac149') in 0.010426 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/INamedContent.cs
+  artifactKey: Guid(db1f7c668efd4422d8437ac965745242) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/INamedContent.cs using Guid(db1f7c668efd4422d8437ac965745242) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dd163a802e5575907ae03a28f4af9a47') in 0.010785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/Object.cs
+  artifactKey: Guid(20b56f60ae0f44147bccbae6ef3d0054) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/Object.cs using Guid(20b56f60ae0f44147bccbae6ef3d0054) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ae791f3f0e2b5950fc470002ae4b8069') in 0.013284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/VariableAssignment.cs
+  artifactKey: Guid(fb2c978a16e604e18b1c0ca3ea64db84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/VariableAssignment.cs using Guid(fb2c978a16e604e18b1c0ca3ea64db84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b83164a3ac7bb3699f0320efcf56e0cd') in 0.012100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/Tag.cs
+  artifactKey: Guid(b8a631dc795b748dfbe8f53304cd9675) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/Tag.cs using Guid(b8a631dc795b748dfbe8f53304cd9675) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '571462f1e6ef64ca48af718ad1ec14d7') in 0.011847 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Plugins/Ink/Resources/InkCompileManualIcon.psd
+  artifactKey: Guid(1e91fdbfb2b154a18b675257bc4d43d9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Resources/InkCompileManualIcon.psd using Guid(1e91fdbfb2b154a18b675257bc4d43d9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6b0172b9194564474871c22fc6a4255b') in 0.042252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/SimpleJson.cs
+  artifactKey: Guid(5f2b378ccb9e148929c90bae41bb2c9d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/SimpleJson.cs using Guid(5f2b378ccb9e148929c90bae41bb2c9d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '896a9d234411ad443030911915e65ba8') in 0.014764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/StoryException.cs
+  artifactKey: Guid(83b6443aded8c49e1960594d5f64e114) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/StoryException.cs using Guid(83b6443aded8c49e1960594d5f64e114) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a6117b15a4f5fc47be4ed23a36d0fffd') in 0.011402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Plugins/Ink/Resources/InkFileIcon-Large.psd
+  artifactKey: Guid(957c8ea47888d42349ae208cffe69c4b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Resources/InkFileIcon-Large.psd using Guid(957c8ea47888d42349ae208cffe69c4b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '737ea7d5289a87294a0507e8c4d47130') in 0.022882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/ListDefinition.cs
+  artifactKey: Guid(efacbd9aad3e9480d9c82bbd58922944) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/ListDefinition.cs using Guid(efacbd9aad3e9480d9c82bbd58922944) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c9e9cd20c7c2f1aca16534ed48965dc8') in 0.016090 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/Profiler.cs
+  artifactKey: Guid(8323a1136a1484abebab14150a06453a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/Profiler.cs using Guid(8323a1136a1484abebab14150a06453a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '13c38c06dcdaf4f90476edf6e36fac52') in 0.009837 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/StringJoinExtension.cs
+  artifactKey: Guid(4c907c30d0b7c4e5aa2dfe477bba8a89) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/StringJoinExtension.cs using Guid(4c907c30d0b7c4e5aa2dfe477bba8a89) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '18259bb6c173ba4757bbf1da48a44f5e') in 0.016827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/PushPop.cs
+  artifactKey: Guid(b6f42c73ddbc24b8fadf5f6c84287fc0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/PushPop.cs using Guid(b6f42c73ddbc24b8fadf5f6c84287fc0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9cb281d622d11d4f6261a11d77ae3b67') in 0.011375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/Glue.cs
+  artifactKey: Guid(60dc9de8c1e834c6eade8d924a7afe45) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/Glue.cs using Guid(60dc9de8c1e834c6eade8d924a7afe45) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4c5b31c6df3dc052ed0084dced62985a') in 0.012819 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/Void.cs
+  artifactKey: Guid(28e3cd581fd59451fb8dacea1b19f477) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/Void.cs using Guid(28e3cd581fd59451fb8dacea1b19f477) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4cca44e177591743ed46b83caa8781ce') in 0.013919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Plugins/Ink/InkRuntime/Ink-Runtime.asmdef
+  artifactKey: Guid(58bed0e7c5306824586d7eda03609289) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/InkRuntime/Ink-Runtime.asmdef using Guid(58bed0e7c5306824586d7eda03609289) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8366a27dbf9fa3c0bda10081157426ad') in 0.015430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Plugins/Ink/Resources/InkChildIcon.psd
+  artifactKey: Guid(53256257fd17e4dfda5f08016551019e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Resources/InkChildIcon.psd using Guid(53256257fd17e4dfda5f08016551019e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '70208f1beb9343d52dad2f0bfc182f72') in 0.027373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7aa880a50a4a3e0c954031d9e61b9b1f') in 0.038252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs
+  artifactKey: Guid(55271c8b592344dadb06d13898333e06) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs using Guid(55271c8b592344dadb06d13898333e06) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ffe8d076047c4c89fb03cd40388fd715') in 0.013157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Plugins/Ink/Editor/Ink Library/InkFile.cs
+  artifactKey: Guid(b497ccd4b61cb4fee8b8f0ce86302e83) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Editor/Ink Library/InkFile.cs using Guid(b497ccd4b61cb4fee8b8f0ce86302e83) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8e38b4432483d5d9028378fde2e0fe03') in 0.012007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc
+  artifactKey: Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc using Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e76a18b7c47670be06cd40d0eb656055') in 0.011148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Plugins/Ink/Editor/Ink Library/InkLibraryEditor.cs
+  artifactKey: Guid(da7a0f8590db84a63b1bc2f26b706ed1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Editor/Ink Library/InkLibraryEditor.cs using Guid(da7a0f8590db84a63b1bc2f26b706ed1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '05bcc51697f24a5fbb35dc89eba5c5c6') in 0.015060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Plugins/Ink/Resources/InkUnknownFileIcon.psd
+  artifactKey: Guid(b26518ba7d72a4fd3bc42599f621c839) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Resources/InkUnknownFileIcon.psd using Guid(b26518ba7d72a4fd3bc42599f621c839) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e407725a4541fb123905275aaa344c92') in 0.027854 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Plugins/Ink/Editor/Compiler/Auto Compiler/InkPostProcessor.cs
+  artifactKey: Guid(45a9c84618e20498993d11d2bb89946e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Editor/Compiler/Auto Compiler/InkPostProcessor.cs using Guid(45a9c84618e20498993d11d2bb89946e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4c20b0c03ca2c54c394d9a40405b032c') in 0.010635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader
+  artifactKey: Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader using Guid(48bb5f55d8670e349b6e614913f9d910) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dc23233abd2442decad0bf1574e8d38a') in 0.017851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs
+  artifactKey: Guid(db8895787ed204ab68ec3b62a233cc18) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs using Guid(db8895787ed204ab68ec3b62a233cc18) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eae9fd6962ca0fd5580ab3469cfc2130') in 0.014601 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Plugins/Ink/Editor/Ink Library/InkLibraryRebuilder.cs
+  artifactKey: Guid(fd2dd11a4fef14a67b9deca11c98281f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Editor/Ink Library/InkLibraryRebuilder.cs using Guid(fd2dd11a4fef14a67b9deca11c98281f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '33dbd97471fbc12bb28e427c3d030edd') in 0.017624 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader
+  artifactKey: Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader using Guid(bc1ede39bf3643ee8e493720e4259791) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd92037afa1519f8d6b248ed192bd631b') in 0.020309 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc
+  artifactKey: Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc using Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f5f70282954cb2c421f90b2224f3d900') in 0.011482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Plugins/Ink/Resources/InkWarningIcon.psd
+  artifactKey: Guid(efc1324f6160840a9a4c26231cc2d304) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Resources/InkWarningIcon.psd using Guid(efc1324f6160840a9a4c26231cc2d304) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '952af2db69b16c0dd0c6f3a2d97355a6') in 0.031920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader
+  artifactKey: Guid(dd89cf5b9246416f84610a006f916af7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader using Guid(dd89cf5b9246416f84610a006f916af7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a94e3c408ff3382746eb183ead37e513') in 0.050897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Plugins/Ink/Editor/Ink Inspector/Ink Inspector/DefaultAssetInspector.cs
+  artifactKey: Guid(7fa6f007190b6408c8aebb32050a3bbe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Editor/Ink Inspector/Ink Inspector/DefaultAssetInspector.cs using Guid(7fa6f007190b6408c8aebb32050a3bbe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6793356ec9513dc3cbdf96a44d259020') in 0.019908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8f92079e2eec4e727e2e6c43b3007ddb') in 0.021905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '84dff571bb570bfc1d2d64316c8d85e1') in 0.117408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Plugins/Ink/Editor/Player Window/InkPlayerWindow.cs
+  artifactKey: Guid(bf969d7f2c98e470c9797844e20b20ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Plugins/Ink/Editor/Player Window/InkPlayerWindow.cs using Guid(bf969d7f2c98e470c9797844e20b20ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f22c53b7b34243cd2eaecac68f0f5317') in 0.025683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Animations/New/NoiseIndicator/NewNoiseIndicator.controller
+  artifactKey: Guid(911607f003a53ce45a72eba69981806c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/New/NoiseIndicator/NewNoiseIndicator.controller using Guid(911607f003a53ce45a72eba69981806c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '86768857b1db1989421a4de9ab2b4465') in 0.034119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Animations/NoiseIndicator/Noise0.anim
+  artifactKey: Guid(4ea18c82f7e5d674697f36046323d5f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/NoiseIndicator/Noise0.anim using Guid(4ea18c82f7e5d674697f36046323d5f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '211e954de19cc7f85c66275b4ea677cf') in 0.027231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Narrative/blueteam_it.json
+  artifactKey: Guid(c0c5ba66fdf572043add3baf5ca80b2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/blueteam_it.json using Guid(c0c5ba66fdf572043add3baf5ca80b2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c7a215d1c4108a87778cf31e6eb0c5b6') in 0.021258 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Narrative/redteam_it.json
+  artifactKey: Guid(33b88dad28b3a7c4d8216eae638dbdbf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/redteam_it.json using Guid(33b88dad28b3a7c4d8216eae638dbdbf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd8ea238ada2d54c3ba9b0265cafd6493') in 0.015735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Animations/RadioControls/FrequencyTick101.anim
+  artifactKey: Guid(efdda80afa2d6494e8785a2306f73d92) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/RadioControls/FrequencyTick101.anim using Guid(efdda80afa2d6494e8785a2306f73d92) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f51953d8765706647a7897b8921ce696') in 0.025364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Narrative/include/east_gate_it.inkl
+  artifactKey: Guid(74b226a06b84cb44a84fd6cbac51729b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/east_gate_it.inkl using Guid(74b226a06b84cb44a84fd6cbac51729b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cad629fe81b34e72940a95e428abeb6c') in 0.018510 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Narrative/include/mine_field_it.inkl
+  artifactKey: Guid(e3fb654f8d4b99b42a4e585e5e4a92da) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/include/mine_field_it.inkl using Guid(e3fb654f8d4b99b42a4e585e5e4a92da) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa1db2e1e8b2147212d4f2332e406d85') in 0.013480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Materials/2DLit.mat
+  artifactKey: Guid(36ef8bc319a795542b2b4accca43c2ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/2DLit.mat using Guid(36ef8bc319a795542b2b4accca43c2ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '51e0242f1c6cbd604a01cfb96ba11e4b') in 0.017749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Narrative/factory_it.ink
+  artifactKey: Guid(460ee776139e48344ac797f722576165) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Narrative/factory_it.ink using Guid(460ee776139e48344ac797f722576165) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b874dfff979260aab91432f29349a30a') in 0.010615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Scripts/IEngine.cs
+  artifactKey: Guid(8e1e923e5c22b924c8d81f1e22585a62) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/IEngine.cs using Guid(8e1e923e5c22b924c8d81f1e22585a62) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c90536dc5b8ab690f1bfe40b3cc01ab2') in 0.014086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Sounds/BUTTON_Click_Wrench_01_stereo.wav
+  artifactKey: Guid(900cb80afb529744e8efadfb6ac44a19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sounds/BUTTON_Click_Wrench_01_stereo.wav using Guid(900cb80afb529744e8efadfb6ac44a19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9dacbdafcf92d9d7ec2027fe7c532d88') in 0.063223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Old/RadioSxSignal.png
+  artifactKey: Guid(63270a893b53bac4f808c1f47f104796) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/RadioSxSignal.png using Guid(63270a893b53bac4f808c1f47f104796) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '947a3930ac597932166ecf6b9d0a8a9c') in 0.024855 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Machinery/NoiseAdjuster1_indicator.png
+  artifactKey: Guid(f2a1e46529dbaba4388d2b21c5590c3f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Machinery/NoiseAdjuster1_indicator.png using Guid(f2a1e46529dbaba4388d2b21c5590c3f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6e2cc58a8bd5fdc3cef0cb7a8de477ee') in 0.027589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scripts/Dummy/DummyCurtains.cs
+  artifactKey: Guid(4ee1608a492f0764fad3f274a01219ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/Dummy/DummyCurtains.cs using Guid(4ee1608a492f0764fad3f274a01219ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dcb53da9118cc8f33fa6cf0c56776233') in 0.013367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Scripts/Dummy/DummyLog.cs
+  artifactKey: Guid(9d3c691d05092e44f8dd918dfe498f72) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/Dummy/DummyLog.cs using Guid(9d3c691d05092e44f8dd918dfe498f72) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '969adae90cd58a0b2ae9040d21336ec5') in 0.011888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Old/ConnectionOkLed.png
+  artifactKey: Guid(6fa5b6d1cecb3b847af41970918b8c4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Old/ConnectionOkLed.png using Guid(6fa5b6d1cecb3b847af41970918b8c4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c46f9643c0340e671dae556b38451cc2') in 0.053195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Sprites/Props/jack1.png
+  artifactKey: Guid(b716d90c7bb1d4e4eaac774fdb3d2172) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Props/jack1.png using Guid(b716d90c7bb1d4e4eaac774fdb3d2172) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6736fbda2056116a7db0444b92972c4b') in 0.029097 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Machinery/NoiseAdjusterButtonOff.png
+  artifactKey: Guid(5b40587e2bc025a48bef69ff24c6d575) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sprites/Machinery/NoiseAdjusterButtonOff.png using Guid(5b40587e2bc025a48bef69ff24c6d575) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8d5555072815fc912cf03fbe4dba1722') in 0.023428 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sounds/Bg_Over_Tense.mp3
+  artifactKey: Guid(d10fcccb46818744381be42bd25f7764) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Sounds/Bg_Over_Tense.mp3 using Guid(d10fcccb46818744381be42bd25f7764) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '858310068d0d56acc79840344a403fbb') in 0.094541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 211.224455 seconds.
+  path: Assets/Sprites/Machinery/ConnectionKoLight.png
+  artifactKey: Guid(b976ec0a58f429e4bbc9c15d1b4124cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Machinery/ConnectionKoLight.png using Guid(b976ec0a58f429e4bbc9c15d1b4124cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9956cb5a003cfa2dcab3b2ed1e913026') in 0.001694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 17.678659 seconds.
+  path: Assets/Sprites/Machinery/Icon_SquadraBlu_On.png
+  artifactKey: Guid(027c3415efe672940be3a1b303b6b8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Machinery/Icon_SquadraBlu_On.png using Guid(027c3415efe672940be3a1b303b6b8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ec7b7ba3f61fe05f3392f584af63c82') in 0.001061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.095389 seconds.
+  path: Assets/Sprites/Machinery/Icon_squadraBlu_Off.png
+  artifactKey: Guid(144fea7af3a7034459b39f3c2133a743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Machinery/Icon_squadraBlu_Off.png using Guid(144fea7af3a7034459b39f3c2133a743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2337ccf45862f46d16f440902d130846') in 0.001132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.785442 seconds.
+  path: Assets/Sprites/Machinery/Icon_SquadraRossa_On.png
+  artifactKey: Guid(08a91e6da8e6e9b4a968efc54e88cbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Machinery/Icon_SquadraRossa_On.png using Guid(08a91e6da8e6e9b4a968efc54e88cbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202ed69f8a00c32b63ce6e9a40baf9a1') in 0.010164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 8.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2 unused Assets / (290.7 KB). Loaded Objects now: 4968.
+Memory consumption went from 98.6 MB to 98.4 MB.
+Total: 9.082100 ms (FindLiveObjects: 0.262100 ms CreateObjectMapping: 0.124200 ms MarkObjects: 8.630000 ms  DeleteObjects: 0.064400 ms)
+
+Prepare: number of updated asset objects reloaded= 1
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 19.575983 seconds.
+  path: Assets/TextMesh Pro/Textures/WhiteNoise.renderTexture
+  artifactKey: Guid(9f667289092bc594abaf92940ddc3a8c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Textures/WhiteNoise.renderTexture using Guid(9f667289092bc594abaf92940ddc3a8c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '61d22561e02562acd72267def5f2aa89') in 0.021810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.458 seconds
+Refreshing native plugins compatible for Editor in 5.14 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.806 seconds
+Domain Reload Profiling: 1263ms
+	BeginReloadAssembly (110ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (298ms)
+		LoadAssemblies (183ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (154ms)
+			TypeCache.Refresh (149ms)
+				TypeCache.ScanAssembly (140ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (807ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (443ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (274ms)
+			ProcessInitializeOnLoadMethodAttributes (107ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 8.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4355 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (332.7 KB). Loaded Objects now: 4972.
+Memory consumption went from 165.4 MB to 165.1 MB.
+Total: 8.841000 ms (FindLiveObjects: 0.290800 ms CreateObjectMapping: 0.251100 ms MarkObjects: 8.126200 ms  DeleteObjects: 0.171100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.457 seconds
+Refreshing native plugins compatible for Editor in 4.56 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.720 seconds
+Domain Reload Profiling: 1175ms
+	BeginReloadAssembly (104ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (298ms)
+		LoadAssemblies (175ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (164ms)
+			TypeCache.Refresh (159ms)
+				TypeCache.ScanAssembly (150ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (721ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (428ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (45ms)
+			ProcessInitializeOnLoadAttributes (264ms)
+			ProcessInitializeOnLoadMethodAttributes (108ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 23.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4355 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (332.7 KB). Loaded Objects now: 4976.
+Memory consumption went from 165.4 MB to 165.1 MB.
+Total: 28.830000 ms (FindLiveObjects: 0.690000 ms CreateObjectMapping: 0.653700 ms MarkObjects: 27.323000 ms  DeleteObjects: 0.160700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
