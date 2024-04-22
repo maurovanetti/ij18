@@ -715,6 +715,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 5bdecfbd7cca9d247a373cf98615cf9d, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: metal
@@ -724,6 +728,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 6b467e6ce078261449c60a18b33c0464, type: 3}
     Volume: 1
     Mode: 1
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: siles
@@ -731,6 +739,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 09f00bffe62c3d94a8eca1e19d184f18, type: 3}
     Volume: 0.5
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: spari
@@ -738,6 +750,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 77d2a75374b89b549b07eb7bdc1dbeb8, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 1
+    NumberOfPlay: 2
+    MinInterval: 0.8
+    MaxInterval: 0.8
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: thump
@@ -745,6 +761,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4e8cb01cd4be5d84fab9479f0e4484eb, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: electricshock
@@ -752,6 +772,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4ac952704f7e1474fa37ee47a6b87412, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: shortcircuit
@@ -759,6 +783,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 71fe3e37258f3764e8bb3c50ba8a1097, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: productionline
@@ -766,6 +794,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 4862a61e2de3f2748be14b56c6f77f18, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: squeak
@@ -773,6 +805,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: dbf97cba820656944968f6b725ebdec8, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: bang
@@ -781,6 +817,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 57561403b27f4294dbe75fa63b09e84c, type: 3}
     Volume: 1
     Mode: 1
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: bam
@@ -788,8 +828,12 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 8b37826e14264844fb69cf4ec6f0f026, type: 3}
     - {fileID: 8300000, guid: 00495d6359e5f9445a17beaa559baf86, type: 3}
     - {fileID: 8300000, guid: 18cb93856e1f90c419e76c71f01b6b2b, type: 3}
-    Volume: 1
+    Volume: 0.8
     Mode: 1
+    PlayMoreThanOnce: 1
+    NumberOfPlay: 5
+    MinInterval: 0.3
+    MaxInterval: 0.7
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: fire
@@ -797,6 +841,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 87236eaa9a892774584c03e55e8a0d6f, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: boom
@@ -804,20 +852,32 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 2ecf4a6dcf4544941b8c7cee3a5d135f, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: water start
     Clips:
     - {fileID: 8300000, guid: 4e7562dec0aaf9742bd017c7320e5a2b, type: 3}
-    Volume: 1
+    Volume: 0.25
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: water stop
     Clips:
     - {fileID: 8300000, guid: 4e7562dec0aaf9742bd017c7320e5a2b, type: 3}
-    Volume: 1
+    Volume: 0.25
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: splash
@@ -825,6 +885,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: b84a91251e18a454fbb4ad94de7b3d45, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: clang
@@ -832,6 +896,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: d63f22a9768bd2742866c2585fb37a05, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 0
+    NumberOfPlay: 0
+    MinInterval: 0
+    MaxInterval: 0
   - SelectedForDebug: 0
     Source: {fileID: 957391743}
     Key: gunfire
@@ -839,6 +907,11 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 732c1e3632ba42b47a9e13abd937ca44, type: 3}
     Volume: 1
     Mode: 0
+    PlayMoreThanOnce: 1
+    NumberOfPlay: 2
+    MinInterval: 0.71
+    MaxInterval: 0.71
+  PlayDebugSelectedSound: 0
 --- !u!95 &116917112
 Animator:
   serializedVersion: 5
@@ -2442,8 +2515,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: -0.0014500618, y: 0.0027000904, z: 0}
-    m_Extent: {x: 3.98505, y: 3.9863, z: 0}
+    m_Center: {x: 0.0042999983, y: -0.0010499954, z: 0}
+    m_Extent: {x: 3.9792, y: 3.98605, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8174,8 +8247,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: -0.00075006485, y: -0.003950119, z: 0}
-    m_Extent: {x: 4.15335, y: 4.15595, z: 0}
+    m_Center: {x: 0.006900072, y: 0.00055003166, z: 0}
+    m_Extent: {x: 4.1504, y: 4.1510496, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9115,8 +9188,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 0.13335001, y: 0.18885005, z: 0}
-    m_Extent: {x: 3.23415, y: 3.79885, z: 0}
+    m_Center: {x: 0.12870002, y: 0.19330001, z: 0}
+    m_Extent: {x: 3.2349, y: 3.8023, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10668,8 +10741,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: -6.68715, y: -3.1669, z: 0}
-    m_Extent: {x: 11.00455, y: 8.6328, z: 0}
+    m_Center: {x: -6.6893497, y: -3.1598, z: 0}
+    m_Extent: {x: 11.006149, y: 8.6248, z: 0}
   m_PointLightInnerAngle: 31
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 2.8
@@ -11859,8 +11932,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: -0.034500003, y: 0.0135499835, z: 0}
-    m_Extent: {x: 1.7733, y: 1.29005, z: 0}
+    m_Center: {x: -0.031749964, y: 0.018599987, z: 0}
+    m_Extent: {x: 1.77705, y: 1.2908, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -14590,8 +14663,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: -0.0011999607, y: 0.001650095, z: 0}
-    m_Extent: {x: 2.5643, y: 2.56655, z: 0}
+    m_Center: {x: 0.0011999607, y: 0.0069499016, z: 0}
+    m_Extent: {x: 2.5672, y: 2.56075, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

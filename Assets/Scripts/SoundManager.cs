@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 
@@ -16,7 +17,9 @@ public class SoundManager : MonoBehaviour
 
     [Header("Ink SFX")]
     public SoundFx[] SoundFxs;
-
+#if UNITY_EDITOR
+    public bool PlayDebugSelectedSound;
+#endif
     private static SoundManager _soundManager;
     private const string _paramName = "Tense";
 
@@ -27,6 +30,25 @@ public class SoundManager : MonoBehaviour
         else
             _soundManager = this;
     }
+
+#if UNITY_EDITOR
+
+    private void Update()
+    {
+        if (PlayDebugSelectedSound)
+        {
+            PlayDebugSelectedSound = false;
+
+            SoundFx sfx = SoundFxs.FirstOrDefault(sfx => sfx.SelectedForDebug);
+
+            if (!sfx.PlayMoreThanOnce)
+                sfx.Play();
+            else
+                StartCoroutine(PlaySfxRepeating(sfx));
+        }
+    }
+
+#endif
 
     public void Intensify()
     {
@@ -48,7 +70,21 @@ public class SoundManager : MonoBehaviour
         SoundFx sfx = SoundFxs.SingleOrDefault(sfx => sfx.Key.Equals(sfxKey));
 
         if (sfx != null)
+        {
+            if (!sfx.PlayMoreThanOnce)
+                sfx.Play();
+            else
+                StartCoroutine(PlaySfxRepeating(sfx));
+        }
+    }
+
+    private IEnumerator PlaySfxRepeating(SoundFx sfx)
+    {
+        for(int i = 0; i < sfx.NumberOfPlay; i++)
+        {
             sfx.Play();
+            yield return new WaitForSeconds(UnityEngine.Random.Range(sfx.MinInterval, sfx.MaxInterval));
+        }
     }
 }
 
@@ -71,19 +107,23 @@ public class SoundFx
     public AudioSource Source;
     public string Key;
     public AudioClip[] Clips;
-    [Range(0,1)]
+    [Range(0, 1)]
     public float Volume;
     public SoundFxPlayMode Mode;
+    public bool PlayMoreThanOnce;
+    public int NumberOfPlay;
+    public float MinInterval;
+    public float MaxInterval;
 
     public void Play()
     {
-        if(Mode == SoundFxPlayMode.OneShot)
+        if (Mode == SoundFxPlayMode.OneShot)
         {
             Source.volume = Volume;
             Source.PlayOneShot(Clips[0]);
         }
 
-        if(Mode == SoundFxPlayMode.Random)
+        if (Mode == SoundFxPlayMode.Random)
         {
             Source.volume = Volume;
             Source.PlayOneShot(Clips[UnityEngine.Random.Range(0, Clips.Length)]);
