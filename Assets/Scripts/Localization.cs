@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class Localization : MonoBehaviour
 {
-    public string sceneName;
+    //public string sceneName;
 
     public enum Language
     {
@@ -62,7 +57,7 @@ public class Localization : MonoBehaviour
                 break;
 
         }
-        SceneManager.LoadScene(sceneName);
+        //SceneManager.LoadScene(sceneName);
     }
 
     public void Awake()
