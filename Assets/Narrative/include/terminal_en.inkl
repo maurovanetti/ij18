@@ -1,0 +1,19 @@
+=== terminal ===
+~ x = 0.55
+~ y = 0.40
+(Click.) # sfx click
+This "castles" is stuffed with computers.
+*   /Are they on?
+    One is, it looked hacked.
+*   /Don't touch them!
+    Too late. One was switched on and we analysed it.
+- There was a command line hanging.
+/Must be the migrant smugglers.
+Without them, the scum wouldn't get in.
+/Look for an access code, we might need it.
+Guess what: we found it already.
+29979.
+~ inter__knows_code = true
+/Excellent. Now walk across the castle and get out.
+
+-> plot
