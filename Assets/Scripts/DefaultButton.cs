@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class DefaultButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
+    public bool PreventOnPointerEvents;
     public Color Grey;
     public Color White;
 
@@ -24,15 +25,24 @@ public class DefaultButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Background.color = White;
-        Border.color = Grey;
-        Text.color = Grey;
+        if (PreventOnPointerEvents)
+            return;
+
+        UpdateGraphics(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Background.color = Grey;
-        Border.color = White;
-        Text.color = White;
+        if (PreventOnPointerEvents)
+            return;
+
+        UpdateGraphics(false);
+    }
+
+    public void UpdateGraphics(bool onPointerEnter)
+    {
+        Background.color = onPointerEnter? White : Grey;
+        Border.color = onPointerEnter ? Grey : White;
+        Text.color = onPointerEnter ? Grey : White;
     }
 }

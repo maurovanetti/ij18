@@ -3,13 +3,14 @@
 public class Localization : MonoBehaviour
 {
     //public string sceneName;
+    public string DefaultLanguage = "it";
 
     public enum Language
     {
         English,
         Italian
     }
-    private static Language language;
+    public static Language language;
 
     public static int LanguageIndex
     {
@@ -63,5 +64,6 @@ public class Localization : MonoBehaviour
     public void Awake()
     {
         DontDestroyOnLoad(this);
+        SetLanguage(DefaultLanguage);
     }
 }
