@@ -1,0 +1,1182 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.4f1 (35713cd46cd7) revision 3502396'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'it' Physical Memory: 32682 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/_UnityProjects/ij18
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50812
+Successfully changed project path to: D:/_UnityProjects/ij18
+D:/_UnityProjects/ij18
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [13176] Host "[IP] 192.168.0.35 [Port] 0 [Flags] 2 [Guid] 252458965 [EditorId] 252458965 [Version] 1048832 [Id] WindowsEditor(7,DEV4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [13176] Host "[IP] 192.168.0.35 [Port] 0 [Flags] 2 [Guid] 252458965 [EditorId] 252458965 [Version] 1048832 [Id] WindowsEditor(7,DEV4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 767.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.4f1 (35713cd46cd7)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/_UnityProjects/ij18/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12129 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56668
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.012866 seconds.
+- Loaded All Assemblies, in  0.362 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.250 seconds
+Domain Reload Profiling: 609ms
+	BeginReloadAssembly (115ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (113ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (134ms)
+				TypeCache.ScanAssembly (120ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (250ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (201ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (112ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.107 seconds
+Refreshing native plugins compatible for Editor in 7.97 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/blueteam_data.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/east_gate_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/cables_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/stack_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/lemons_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/robots_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/tunnel_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/bridge_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/terminal_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/traffic_lights_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/electrified_fence_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/blueteam_it.ink expected child Ink file at Assets/Narrative/include/factory_east_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/redteam_data.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/west_gate_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/mine_field_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/window_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/downhill_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/river_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/lunch_time_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/drawbridge_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/lost_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/fire_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/self_confidence_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Assets/Narrative/redteam_it.ink expected child Ink file at Assets/Narrative/include/factory_west_it.inkl but file was not found.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+Ink.UnityIntegration.InkMetaFile:FindIncludedFiles () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs:214)
+Ink.UnityIntegration.InkMetaLibrary:RebuildInkFileConnections () (at Assets/Plugins/Ink/Editor/Ink Library/InkMetaLibrary.cs:124)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:96)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkMetaFile.cs Line: 214)
+
+Refresh completed but there are assets queued up for importing. Check for code that modifies assets which gets called after OnPostProcessAllAssets. Additional details in Log file
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Ink.UnityIntegration.InkLibrary:Save () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:130)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:99)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs line 130]
+
+Assets queued for import after Refresh completed:
+	Assets/InkLibrary.asset
+Asset Pipeline Refresh (id=47f1d13e13b0c154da625ce51f5bc690): Total: 0.000 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Assertion failed on expression: 'm_Ptr'
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+Ink.UnityIntegration.InkLibrary:Save () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:130)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:99)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs line 130]
+
+Ink Library was rebuilt.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Ink.UnityIntegration.InkLibrary:Rebuild () (at Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs:101)
+Ink.UnityIntegration.InkEditorUtils:OnOpenUnityEditor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:58)
+Ink.UnityIntegration.InkEditorUtils:.cctor () (at Assets/Plugins/Ink/Editor/Tools/InkEditorUtils.cs:46)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Ink/Editor/Ink Library/InkLibrary.cs Line: 101)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.167 seconds
+Domain Reload Profiling: 2271ms
+	BeginReloadAssembly (192ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (92ms)
+	LoadAllAssembliesAndSetupDomain (771ms)
+		LoadAssemblies (554ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (327ms)
+			TypeCache.Refresh (293ms)
+				TypeCache.ScanAssembly (270ms)
+			ScanForSourceGeneratedMonoScriptInfo (26ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1168ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (994ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (721ms)
+			ProcessInitializeOnLoadMethodAttributes (180ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 7.03 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4552 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 123 unused Assets / (375.5 KB). Loaded Objects now: 4968.
+Memory consumption went from 193.6 MB to 193.2 MB.
+Total: 7.396200 ms (FindLiveObjects: 0.470100 ms CreateObjectMapping: 0.448700 ms MarkObjects: 6.171300 ms  DeleteObjects: 0.305100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 2 unused Assets / (290.8 KB). Loaded Objects now: 4968.
+Memory consumption went from 97.5 MB to 97.2 MB.
+Total: 8.119300 ms (FindLiveObjects: 0.667100 ms CreateObjectMapping: 0.484400 ms MarkObjects: 6.823200 ms  DeleteObjects: 0.143000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3940.569117 seconds.
+  path: Assets/Scenes/AppStart.unity
+  artifactKey: Guid(c6331437df4697f44bdc0f3ad9529111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AppStart.unity using Guid(c6331437df4697f44bdc0f3ad9529111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e166d443fe7dcd8dc2f4a50f60cbfc4') in 0.008028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 811.571396 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(241e0daf19ae40e45b921b5692836e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(241e0daf19ae40e45b921b5692836e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87fbff3b00621f8de3cca2a1bd2bb188') in 0.000642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.840 seconds
+Refreshing native plugins compatible for Editor in 6.92 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 70.142 seconds
+Domain Reload Profiling: 70979ms
+	BeginReloadAssembly (187ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (576ms)
+		LoadAssemblies (404ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (270ms)
+			TypeCache.Refresh (258ms)
+				TypeCache.ScanAssembly (239ms)
+			ScanForSourceGeneratedMonoScriptInfo (5ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (70142ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (562ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (337ms)
+			ProcessInitializeOnLoadMethodAttributes (140ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 7.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (332.6 KB). Loaded Objects now: 4972.
+Memory consumption went from 164.9 MB to 164.6 MB.
+Total: 6.444100 ms (FindLiveObjects: 0.424400 ms CreateObjectMapping: 0.281700 ms MarkObjects: 5.552100 ms  DeleteObjects: 0.184800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.692 seconds
+Refreshing native plugins compatible for Editor in 6.09 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.004 seconds
+Domain Reload Profiling: 1694ms
+	BeginReloadAssembly (176ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (440ms)
+		LoadAssemblies (287ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (246ms)
+			TypeCache.Refresh (235ms)
+				TypeCache.ScanAssembly (218ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1005ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (549ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (331ms)
+			ProcessInitializeOnLoadMethodAttributes (138ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 8.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4357 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (332.7 KB). Loaded Objects now: 4976.
+Memory consumption went from 164.9 MB to 164.6 MB.
+Total: 8.595000 ms (FindLiveObjects: 0.758500 ms CreateObjectMapping: 0.561300 ms MarkObjects: 6.965900 ms  DeleteObjects: 0.307000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 214.662601 seconds.
+  path: Assets/Scripts/Channel.cs
+  artifactKey: Guid(4b744f17866e04c418ec7d6f2b8350f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Channel.cs using Guid(4b744f17866e04c418ec7d6f2b8350f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db8d84d447e48292548209a286bebd6') in 0.012263 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.212508 seconds.
+  path: Assets/Scripts/GameOverHandler.cs
+  artifactKey: Guid(f8b3f7c08f0af5e4394db1e81df474a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameOverHandler.cs using Guid(f8b3f7c08f0af5e4394db1e81df474a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdc3094aaf086ab8ca7cd299fb0a0bca') in 0.002676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.724 seconds
+Refreshing native plugins compatible for Editor in 6.43 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.107 seconds
+Domain Reload Profiling: 1827ms
+	BeginReloadAssembly (173ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (472ms)
+		LoadAssemblies (306ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (254ms)
+			TypeCache.Refresh (243ms)
+				TypeCache.ScanAssembly (226ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1107ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (611ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (69ms)
+			ProcessInitializeOnLoadAttributes (377ms)
+			ProcessInitializeOnLoadMethodAttributes (143ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 8.14 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4358 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (332.7 KB). Loaded Objects now: 4981.
+Memory consumption went from 164.9 MB to 164.6 MB.
+Total: 9.415400 ms (FindLiveObjects: 0.631600 ms CreateObjectMapping: 0.764800 ms MarkObjects: 7.761200 ms  DeleteObjects: 0.256000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 9.402171 seconds.
+  path: Assets/Scripts/GameOverHandler.cs
+  artifactKey: Guid(f8b3f7c08f0af5e4394db1e81df474a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameOverHandler.cs using Guid(f8b3f7c08f0af5e4394db1e81df474a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6239e9d72de5cba9eb14177ca55fe0ca') in 0.006626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 285.630919 seconds.
+  path: Assets/Animations/EndGameScreen/EndGame.controller
+  artifactKey: Guid(abdc55520f3f10f4083fa20d83bae82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/EndGameScreen/EndGame.controller using Guid(abdc55520f3f10f4083fa20d83bae82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c00644bb9c4bb0ea43dd5efa73cac5b') in 0.002749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.783925 seconds.
+  path: Assets/Animations/EndGameScreen/EndGame_Default.anim
+  artifactKey: Guid(9bd7e62d41419fa45a6d804deb0be5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/EndGameScreen/EndGame_Default.anim using Guid(9bd7e62d41419fa45a6d804deb0be5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040de90752c792f9d584edfdcef6f3ba') in 0.001143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 14.340825 seconds.
+  path: Assets/Animations/EndGameScreen/EndGame_Show.anim
+  artifactKey: Guid(b694adca4f2f8a847a08c9af928cef98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/EndGameScreen/EndGame_Show.anim using Guid(b694adca4f2f8a847a08c9af928cef98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9096b4d97387b41b5fda0ff37e9c62ea') in 0.000984 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 15.377927 seconds.
+  path: Assets/Animations/EndGameScreen/EndGame_Visible.anim
+  artifactKey: Guid(3cb71b94402343045be4ba109a029642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/EndGameScreen/EndGame_Visible.anim using Guid(3cb71b94402343045be4ba109a029642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d3817f58af67dbcc610105429f87ea4') in 0.001088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.991 seconds
+Refreshing native plugins compatible for Editor in 6.47 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.132 seconds
+Domain Reload Profiling: 2120ms
+	BeginReloadAssembly (214ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (66ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (646ms)
+		LoadAssemblies (452ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (315ms)
+			TypeCache.Refresh (304ms)
+				TypeCache.ScanAssembly (286ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1133ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (546ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (328ms)
+			ProcessInitializeOnLoadMethodAttributes (137ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 7.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4358 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (332.8 KB). Loaded Objects now: 4986.
+Memory consumption went from 164.9 MB to 164.6 MB.
+Total: 7.828600 ms (FindLiveObjects: 0.506100 ms CreateObjectMapping: 0.410300 ms MarkObjects: 6.671900 ms  DeleteObjects: 0.238300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.718 seconds
+Refreshing native plugins compatible for Editor in 6.82 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.021 seconds
+Domain Reload Profiling: 1737ms
+	BeginReloadAssembly (179ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (466ms)
+		LoadAssemblies (314ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (247ms)
+			TypeCache.Refresh (235ms)
+				TypeCache.ScanAssembly (218ms)
+			ScanForSourceGeneratedMonoScriptInfo (5ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1021ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (546ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (329ms)
+			ProcessInitializeOnLoadMethodAttributes (137ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 7.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4358 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (332.8 KB). Loaded Objects now: 4990.
+Memory consumption went from 164.9 MB to 164.6 MB.
+Total: 9.086300 ms (FindLiveObjects: 0.608800 ms CreateObjectMapping: 0.533200 ms MarkObjects: 7.741000 ms  DeleteObjects: 0.202100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.725 seconds
+Refreshing native plugins compatible for Editor in 6.36 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.114 seconds
+Domain Reload Profiling: 1836ms
+	BeginReloadAssembly (173ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (475ms)
+		LoadAssemblies (314ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (251ms)
+			TypeCache.Refresh (238ms)
+				TypeCache.ScanAssembly (222ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1115ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (623ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (373ms)
+			ProcessInitializeOnLoadMethodAttributes (167ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 6.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4358 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (332.7 KB). Loaded Objects now: 4994.
+Memory consumption went from 164.9 MB to 164.6 MB.
+Total: 8.087200 ms (FindLiveObjects: 0.546300 ms CreateObjectMapping: 0.482900 ms MarkObjects: 6.843300 ms  DeleteObjects: 0.213600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.715 seconds
+Refreshing native plugins compatible for Editor in 6.84 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.128 seconds
+Domain Reload Profiling: 1841ms
+	BeginReloadAssembly (179ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (459ms)
+		LoadAssemblies (297ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (248ms)
+			TypeCache.Refresh (237ms)
+				TypeCache.ScanAssembly (220ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1128ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (647ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (387ms)
+			ProcessInitializeOnLoadMethodAttributes (160ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 7.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4358 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (332.7 KB). Loaded Objects now: 4998.
+Memory consumption went from 164.9 MB to 164.6 MB.
+Total: 10.455300 ms (FindLiveObjects: 0.582500 ms CreateObjectMapping: 0.633800 ms MarkObjects: 8.886900 ms  DeleteObjects: 0.350600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 812.093330 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(241e0daf19ae40e45b921b5692836e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(241e0daf19ae40e45b921b5692836e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b793e3fd641efd07560a535f981e94b5') in 0.001702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.717 seconds
+Refreshing native plugins compatible for Editor in 7.16 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.185 seconds
+Domain Reload Profiling: 1899ms
+	BeginReloadAssembly (178ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (462ms)
+		LoadAssemblies (308ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (245ms)
+			TypeCache.Refresh (237ms)
+				TypeCache.ScanAssembly (220ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1186ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (698ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (425ms)
+			ProcessInitializeOnLoadMethodAttributes (177ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 10.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4358 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (332.7 KB). Loaded Objects now: 5002.
+Memory consumption went from 164.9 MB to 164.6 MB.
+Total: 11.810500 ms (FindLiveObjects: 0.925000 ms CreateObjectMapping: 1.199700 ms MarkObjects: 9.426100 ms  DeleteObjects: 0.258600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
