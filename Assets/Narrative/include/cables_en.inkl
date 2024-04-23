@@ -1,0 +1,19 @@
+=== cables ===
+~ x = 0.95
+~ y = 1.00
+(Clic.) # sfx click
+A. Tangle. Of. Cables.
+A. Tangle. Of. Useless. Cables.
+*   /Sever them[.] and advance.
+- Can be done. # shortbreak
+We're keeping a few cables, they might turn useful.
+*   /Don't weigh yourself down[.], what for?
+    /No climbing expected along the path.
+    Roger.
+    Then, no cables.
+*   /Good idea.
+    /You never know.
+    I know.
+		~ Inventory += rope
+- Call you later, the gallery is ending.
+-> plot
