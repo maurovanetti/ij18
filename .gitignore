@@ -27,3 +27,4 @@ obj/
 
 # Visual Studio cache directory
 .vs/
+*.log
