@@ -16,6 +16,7 @@ public class Channel : MonoBehaviour {
     public const string Reboot = "restart";
     public const string Intensify = "intensify";
     public const string Abate = "abate";
+    public const string Sfx = "sfx";
 
     public const string InterChannelVariablePrefix = "inter__";
 
@@ -140,6 +141,10 @@ public class Channel : MonoBehaviour {
                     foreach (string tag in story.currentTags)
                     {
                         Debug.Log("TAG found: " + tag);
+
+                        if (tag.Contains(Sfx))
+                            ProcessSfxTag(tag);
+                            
                     }
                     if (story.currentTags.Contains(CanRestart))
                     {
@@ -218,5 +223,14 @@ public class Channel : MonoBehaviour {
     public void Answer(int optionNumber)
     {        
         story.ChooseChoiceIndex(optionNumber);                
+    }
+
+    private void ProcessSfxTag(string tag)
+    {
+        //the sound to play is identified by a string space separated from the sfx tag
+        //the sfxKey can contain spaces
+        string sfxKey = tag.Substring(tag.IndexOf(" ") + 1);
+        Debug.Log($"Sfx id is {sfxKey}");
+        SoundManager.Instance.PlaySfx(sfxKey);
     }
 }

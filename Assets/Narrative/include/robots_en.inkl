@@ -1,0 +1,258 @@
+=== robots ===
+
+= problem
+~ x = 0.65
+~ y = 0.80
+(Click.) # sfx click
+Stop!
+Wall at… say 100 metres. With our lighting system you cannot be too precise.
+We proceed slowly.
+Huh.
+What… kind of wall is this?
+/I have not enough information to answer.
+/I see your position, but that area used to be densely developed.
+*   /It could be anything.
+*   /Prepare for the worst.
+*   /I sense death in the air.
+    Hey…!
+- I don't feel confident enough to approach.
+It casts strange glows.
+/The flashes are intermittent, aren't they?
+Yeah, but not the recharge station kind.
+/I'm afraid you have no choice but approaching.
+I prefer to monitor from here. One minute. # shortbreak
+Let's move to the right, we have to look for a way to circumvent it.
+*   /No way to bypass it.
+    How do you know?
+    /I realised which wall it is, I think.
+*   /Does the wall, by any chance…
+- It moves! It's robots! #sfx metal
+What have you people come up with?!
+/As I thought! It's the health check zone.
+The robots are box-shaped.
+They're like metallic parallelepipeda, definitely very tall metal boxes.
+What was their purpose?
+/Diving space as needed, according to the different types of diseases.
+/Shifting and moving, they form quarantine rooms and alleys.
+/Every robot keeps the records for thousands of subjects.
+OK, but no one is infected now.
+We are perfectly healthy!
+/The connections must be broken.
+/I cannot shut them down completely, from here.
+So what? We have to undergo the check and then they will let us pass, won't they?
+*   /No[.], you would be placed in huge transparent crates and eliminated.
+*   /I don't think so.
+- Find a solution.
+/From here, I can only freeze them in a position or let them move according to their algorithms.
+You only say that now?! Hurry up.
+/Pff, so much unnecessary commotion.
+*   /So, I'll freeze them.
+    Come to think of it, though...
+    Even if you stop them, how do we cross the zone?
+    /Indeed.
+*   /Even if I stop them […], how would you cross the zone?
+- I can see a sort of corridor in between the robots.
+Let's try and enter.
+ -> labyrinth_entrance
+ 
+ = labyrinth_entrance
+LIST DescribedRooms = (ventrance), vhall, vcross, varch, vserpentine
+LIST VisitedRooms = (entrance), hall, cross, arch, serpentine
+VAR currentRoom = entrance
+/I'll switch off the robots while you walk along the corridor. #sfx silence
+Thank you. But the corridor ends almost immediately.
+It's impressive, the robots' sides are extremely smooth.
+We are in a kind of narrow room now, and the only way out is the corridor we are coming from.
+/I'll try to switch them on again, to change their arrangement.
+/Don't freak out, but be careful not to get crushed.
+We are ready.
+*   /(Rearranges the labyrinth.)
+    (Metallic sounds.) # sfx metal
+    (Silence.) # sfx silence
+- Everything's alright. A passageway opened.
+We go on.
+-> labyrinth_room
+
+= labyrinth_progress
+/In order to get out, you need to cross four different rooms.
+You tell us what to do. Did we see this one already?
++   /Never seen before. Walk on.
+    /* { VisitedRooms has currentRoom: -> labyrinth_restart } */
+    ~ VisitedRooms += currentRoom
+    OK.		
+    { VisitedRooms has (hall, cross, arch, serpentine): -> labyrinth_exit }
+    -> labyrinth_door
++   /(Rearranges the labyrinth.)
+    /{~Nobody moves|Everybody stop}{\ while the walls shift|}.
+    (Metallic sounds.) # sfx metal
+    (Silence.) # sfx silence
+    {~I think that they're OK now|Done|They have finished|Ready}.
+    -> labyrinth_room
+
+= labyrinth_door
+We {~pass|walk through} the door. It closes behind us. # sfx clang
+{~There's a|Long} {~corridor|hallway}.
+{~ -> reach_hall | -> reach_cross | -> reach_arch | -> reach_serpentine | -> reach_dead_end }
+
+= labyrinth_room
+{~ -> describe_hall | -> describe_cross | -> describe_arch | -> describe_serpentine | -> describe_dead_end }
+
+= reach_dead_end
+Dead end!
+-> describe_dead_end
+
+= describe_dead_end
+{This room has no|Again the room without} exit.
++   /I don't have many alternatives[.], I can only try to modify the maze arrangement.
+    /{~Everybody|Everyone} stand back.
+    (Metallic sounds.) # sfx metal
+    (Silence.) # sfx silence
+    It's better now. <>
+    -> labyrinth_room
+
+= reach_hall
+The corridor {~takes|leads} us to a {~large hall|very large hall}.
+-> describe_hall
+
+= describe_hall
+~ currentRoom = hall
+Medical equipment. Lots of empty space.
+I can see {~|a cubicle for blood sampling and |a sort of central pillar and |a scanner for anatomic defects and |a wall-mounted fixture for DNA testing and }one exit.
+~ DescribedRooms += vhall
+-> labyrinth_progress
+
+= reach_cross
+Very long.
+-> describe_cross
+
+= describe_cross
+~ currentRoom = cross
+We are in {a cross-shaped room|one of those cross-shaped rooms}.
+{
+    - DescribedRooms has vcross:
+        {~I feel like we've been here before.|Are we getting lost?}
+    - else:
+        Along the walls there are displays with diagrams and biometric scanners.
+        Unsettling.
+}
+If you don't want to turn back, we can only take the {~norther|southern|western|eastern} arm of the cross.
+The other arms are dead ends.
+~ DescribedRooms += vcross
+-> labyrinth_progress
+
+= reach_arch
+{
+    - DescribedRooms has varch:
+        The corridor got wider.
+    - else:
+        The corridor widens.
+}
+-> describe_arch
+
+= describe_arch
+~ currentRoom = arch
+{
+    - DescribedRooms has varch:
+        A robot placed itself up across, forming an arch.
+    - else:
+        A robot raised over two others and left a low opening.
+        It looks like an arch.
+}
+~ DescribedRooms += varch
+-> labyrinth_progress
+
+=reach_serpentine
+{
+    - DescribedRooms has vserpentine:
+        Curves, crossroads, curves.
+    - else:  
+        The corridor is bending.
+        Bending a lot in both directions.
+        And these forks…
+        Oops, no, they are dead ends.
+}
+-> describe_serpentine
+
+= describe_serpentine
+~ currentRoom = serpentine
+{
+    - DescribedRooms has vserpentine:
+        The "QI test" again{.|!|…}
+        {/The second time is easier.|}
+        {/Even your dad could make it.|}
+    - else:
+        There's only one path.
+        /Chances are it's the QI test.
+        QI test to migrants?
+        Looks superfluous to me.
+        /Why?
+        They come from regions with well-known intellectual flaws.
+        /I hardly think so.
+        We studied it in training.
+        /My father was a migrant.
+        I wouldn't be proud.
+        { Events has fall: After all, you were bright enough to tell us not to take the cables.}
+        { Events has turret: You're also the same guy who let the unmanned turret shoot at us.}
+        /…
+        We have reached a clearing with one way out.
+        What should we do?
+}
+~ DescribedRooms += vserpentine
+-> labyrinth_progress
+
+
+= labyrinth_restart
+Hurray, an exit!
+Wait, no.
+We're out, but we are again where we came in.
+/Sorry. Let's try again.
+(Metallic sounds.) # sfx metal
+(Silence.) # sfx silence
+Back in.
+~ VisitedRooms = (entrance)
+-> labyrinth_room
+
+= labyrinth_exit
+Looks like we are finally there!
+The corridor has 90-degree turns.
+Wait. Now it goes straight.
+It feels like it never ends.
+~ x = 0.65
+~ y = 0.77
+But it's getting narrower and narrower: do you happen to know what it means?
+*   /Don't worry.
+    One person can hardly fit here.
+    Don't move the robots, huh!
+*   /It will widen[…], but only enough for one person to pass.
+    Don't move the robots, huh!
+    It never ends!
+- How long is this?!
+*   /Oh, yeah. Carry on.
+    Uh, I glimpse the exit.
+    We are out.
+    Short break, the guys are tired. # shortbreak
+    Alright, it's time to <>
+*   /(Rearranges the labyrinth.)
+    (Metallic sounds.) # sfx metal # intensify
+    Help!
+    (Heart-rending screams.)
+    No!!
+    (Bones crushing.)
+    ~ soldiers--
+    Hey! What the fuck is going on?
+    /What happens?
+    The walls shifted.
+    /I know nothing of it.
+    (Panting.)
+    We ran as fast as we could, we're out.
+    I think one is missing.
+    (Clamouring.)
+    It is so.
+    I don't usually yield to fear.
+    But one of us was grinded in the maze!
+    /My sympathy… I don't know what happened.
+    I have to speak to the troop. They're upset.
+    Talk to you later. # longbreak
+    We recovered. We must <>
+- proceed with the mission. # abate
+-> plot

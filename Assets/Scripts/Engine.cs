@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,7 +9,7 @@ public class Engine : MonoBehaviour, IEngine {
     public SoundManager soundManager;
 
     private ILog log;
-    private IRadio radio;
+    //private IRadio radio;
     private ICurtains curtains;
 
     private Channel[] channels;

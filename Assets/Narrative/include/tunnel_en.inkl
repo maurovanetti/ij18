@@ -1,0 +1,30 @@
+=== tunnel ===
+~ x = 0.55
+~ y = 0.60
+(Click.) # sfx click
+Vile rats! On the run again! # kidsmove
+I'm not going to follow them through those pipes and I won't let my squad get trapped in there!
+There are still {soldiers} of us and I want us to reach the end of the mission as one.
+*   /Follow the lane[.] right next to it.
+*   /Send one soldier on a scouting mission[.] into the tunnel.
+    {
+        - Events has turret:
+            I don't trust you.
+            The last time I did, an unmanned turret fired at us.
+            /As you wish, in this case you need to follow the lane on the right.
+        - else:
+            Um.
+            (Voices.)
+            I've sent a soldier. Let's wait. # longbreak
+            Listen, she did not come back!
+            No clue what happened to her, but it looks dangerous to send another one to check.
+            /She'll be back…
+            We are short of time. I leave a flare gun here, so that we can know if and when she's back.
+            ~ soldiers--
+            /In this case, you {soldiers} should continue along the lane.
+    }
+- There is no lane!
+*   /Right next to it[.], look better.
+- Found it.
+
+-> plot
