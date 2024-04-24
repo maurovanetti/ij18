@@ -1,0 +1,112 @@
+=== electrified_fence ===
+
+= problem
+~ x = 0.65
+~ y = 0.00
+VAR power = true
+VAR try_again = ""
+(Click.) # sfx click
+OK, I suppose that this street runs toward the factory.
+Let me note down that our lighting system needs improving…
+/Yes, you need to take that road, as far as I know. # kidsmove
+Well, there's a problem though.
+This whole side is fenced.
+/Well, you are armed and marching through an abandoned automated city in order to accomplish a critical mission.
+/I assume that you can take the freedom of cutting a fence.
+The metal fence is too thick.
+At regular intervals on the fence there is a warning sign.
+/What does it read?
+«Don't trespass. Identify at FM 102.5».
+/I doubt that channel is still active.
+We should climb over it, but it's very tall.
+*   /Good reason to begin already.
+    But I wouldn't want it to be electrified.
+    * * /Right, you ought to check.
+    * * /Of course it's not…
+    - - …
+    { 
+        - inter__electrification:
+            (Electric-shock noise.) # sfx electricshock
+            Hell, it is!
+            -> wait_for_safety
+        - else:
+            You were right. It's safe.
+            -> trespass
+    }
+*   /Be careful that it is not electrified.
+    I'll verify.
+    It's got cables powering it, but they look off now.    
+    Just to be sure, I'm cutting them. Wait. # shortbreak
+    ~ power = false
+    Done. Bye bye, electricity.
+- -> trespass
+
+= wait_for_safety
+{&How|What} should we do?
+/{Wait, I'll try and contact the factory|{&|Hm. }Let me try again} at FM 102.5.
+~ try_again = "{~try|give it a try|let's try} {~again|now|right now|once more}"
++   /OK, {try_again}.
+    {  
+        - inter__electrification:
+            (Electric-shock noise.) # sfx electricshock
+            Like before.
+            -> wait_for_safety
+        - else:
+            OK, it's fine now. Cross your fingers.
+            -> trespass
+    }
+        
+
+= trespass
+- Let's trespass! I start…
+Good, I passed through unharmed.
+I suppose that letting other people through is safe, isn't it?
+*   /Yeah, let them through.
+- Come on!
+{power && inter__electrification: -> burn}
+{
+    - soldiers == 2:
+        Now the one soldier who's with me is passing through.
+        Don't leave me alone…
+    - soldiers > 2:
+        Now the other {soldiers - 1} soldiers are passing through.
+}
+(Sigh.)
+Alright, we are on the other side.
+I'm calling you again when we reach the factory.
+-> plot
+
+= burn
+(Short-circuit noise.) # sfx shortcircuit # intensify
+(Heart-rending screams.)
+(Wheeze.)
+Shit.
+{
+    - soldiers == 2:
+        ~ soldiers = 1
+        The only soldier I had with me… we lost her.
+        I'm alone now.
+        I'm afraid there's nothing we can do for her: she's in ashes.
+    - soldiers == 3:
+        ~ soldiers = 1
+        We lost two, and I'm alone now.
+        One is just wounded, but the other…
+        I'll complete the mission and be back.
+        (Voices.)
+        Don't fret. A rescue drone is coming.
+        /Roger.
+        Occupational hazards.
+    - soldiers > 3:
+        ~ soldiers -= 2
+        We lost two. One is just wounded, but the other…
+        Let's attempt to save her at least.
+        (Voices.)
+        Don't fret. A rescue drone is coming.
+        /Roger.
+        It's only the {soldiers} of us now.
+        We'll complete the mission and be back.
+}
+- /I'm mortified!
+It looked like an electric chair.
+I don't usually get emotional. Let's proceed. # abate
+-> DONE

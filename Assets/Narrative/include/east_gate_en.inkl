@@ -1,0 +1,22 @@
+=== east_gate ===
+~ x = 0.95
+~ y = 0.80
+(Click.) # sfx click
+Blue Team. This is Blue Team. {~This is Blue Team.|}
+{~Do you copy|Can you hear us}?
+*   /Yes[.], I copy, not clearly though.
+    Typical.
+*   /No.
+    Good, neither do I.
+- {~We are at|Our location is|We're in front of} East Gate.
+Soldiers in action: {soldiers}.
+We know the situation.
+Please open the gate of the abandoned city, if you can.
+*   /I can[.], and I will proceed. # sfx metal
+- Can you confirm that the threat is coming from south?
+*   /Affirmative.
+- We are venturing into hostile territory.
+/Take the gallery on your left.
+/You'll be quicker.
+Got it. Later.
+-> plot

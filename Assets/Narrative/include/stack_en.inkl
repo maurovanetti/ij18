@@ -1,0 +1,136 @@
+=== stack ===
+
+= problem
+~ x = 0.85
+~ y = 1.00
+VAR nervous = false
+(Click.) # sfx click
+Where have they gone?! We are going in circles.
+I feel like I've been here before.
+What's this? A drone cemetery?
+*   /What's it look like?
+    Hundreds of drones on the ground, evenly spaced.
+    Some lack propellers. Some others the engine.
+    /Yeah, it's actually a drone cemetery.
+*   /We've seen something [like that…] similar during our latest air reconnaissance mission…
+- /The city continues to function on its own.
+/This is where it amasses the drones for repair. It reuses their parts.
+/It operates drones at night or when illegal migrants are spotted.
+Strange: I haven't yet seen any flying yet…
+However, let's stay focused.
+*   /You'd better go south.
+*   /Follow the straightest path: west.
+    As I was planning to.
+    Talk to you later.
+    ~ x = 0.80
+    ~ y = 1.00
+	(Click.) # sfx click
+    This is Blue Team. We've got a situation here.
+    An unmanned turret is keeping an eye on us.
+    Equipped with a machine gun. Can it use it?
+    * * /I'd rule it out.
+        /Proceed with caution.
+        (Gunshots.) # sfx spari # intensify
+        (Clamouring.)
+        ~ Events += turret
+        I am not used to getting nervous.
+        However, your recommendation was wrong.
+        ~ nervous = true
+        * * *   /Weird! I was sure it couldn't shoot anymore.
+                We have no casualty.
+                This is not important anymore.
+        * * *   /Forgive me, I was imprudent.
+                It had no consequence.
+    * * /Sure! Steer clear.
+    - - Then what should we do? # abate
+    We'll have to go back and try south.
+- But we saw them running westward.
+/Go south until the red steel tower.
+/From there you reconnect to the west.
+Roger. Over and out.
+~ x = 0.75
+~ y = 1.00
+(Click.) # sfx click
+Damn. # kidsmove
+We're rejoining westward, on a skyway.
+The road is blocked by heaps of stuff.
+/A barricade?
+Something like that… It's impossible to move them, it would take too long and there's only {soldiers} of us.
+-> solution
+
+= solution
+*   (might_climb) /You might climb the heaps.
+    { Inventory has rope: -> climb_with_rope } 
+    Had we kept those cables, we would.
+    But { might_jump: let me reiterate that }you told me to leave them.
+    /Oh, true.
+    I am not used to getting nervous.
+    However, your recommendation was wrong{nervous: , again}.    
+    /I'm sorry, but you can also climb bare-handed.
+    Doesn't sound like a very bright idea.
+    -> solution
++   { might_climb } /I say you climb.
+    -> climb_without_rope
+*   (might_jump) /You could rappel down the viaduct.
+    { Inventory has rope: -> jump_with_rope }
+    Had we kept those cables, we could.
+    But { might_jump: let me reiterate that }you told me to leave them.
+    /Ahem…
+    We rule out the possibility to jump into the void like lemmings.
+    /Makes sense.
+    -> solution
+*   /Go back.
+    I can see where this is coming from, but no.
+    No way, it would take too long.
+    Our target is advancing too fast, slowing down is risky.
+    Furthermore, I haven't seen alternative paths.
+    -> solution
+
+
+= jump_with_rope
+We've got those steel cables we found before.
+We can rappel down safely.
+Down to work. Over and out. # longbreak
+OK, we're back to ground level.
+We proceed flanking the skyway.
+-> plot
+
+= climb_with_rope
+We've got those steel cables we found before.
+We can climb safely.
+Down to work. Over and out. # shortbreak
+We've climbed over the barricade.
+We proceed along the skyway.
+-> plot
+
+= climb_without_rope
+I see no alternative. Let's try.
+Hope everything goes well. Talk to you later. # shortbreak
+(Moans.) # intensify
+~ soldiers--
+~ Events += fall
+No, not everything went well.
+We have one man down.
+Nothing serious, but I'm afraid he broke a leg.
+/Damn!
+We must leave him behind, can you send a rescue drone?
+*   /Yes.
+*   /No.
+    How's that?! Send one. Please.
+    /I'll do what I can.
+- You know his whereabouts, hurry up.
+We proceed. We are {soldiers} now.
+- /OK.
+-> plot
+
+
+
+    
+
+        
+        
+    
+
+
+
+-> DONE
