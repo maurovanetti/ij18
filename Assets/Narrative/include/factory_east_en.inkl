@@ -38,168 +38,168 @@ I'm in.
         The conveyor belt is still working.
         The bedlam is unbearable.
     - else:
-        Catena di montaggio. Spenta.
+        Conveyor belt. Not working.
 }
-- Ho capito dove si trovano: nel magazzino.
-*   /Fa' irruzione nel magazzino.
+- I realised where they are: in the storage room.
+*   /Break into the storage room.
     -> get_them
-*   /Cos'altro vedi?
-    C'è una porta, il cartello dice che è il locale frigorifero.
-    * * /Lì c'è un passaggio[.] da cui puoi prenderli di sorpresa.
+*   /What else can you see?
+    There's a door, the sign says it's the cold room.
+    * * /There is a passageway[.] from there, you can take them by surprise.
         -> fridge
-    * * /Meglio irrompere direttamente[.] nel magazzino.
-        Concordo.
+    * * /You'd better break in[.]to the storage room.
+        Deal.
         -> get_them
 = get_them
-La minaccia è lì dentro.
-Li ho visti da una finestra.
-Si stanno nutrendo di conserve di frutta.
-Ce n'è una quantità enorme.
-/Per forza, non ci sono più abitanti umani.
-Ci siamo quasi.
+The threat is in there.
+I saw them through a window.
+They're feeding on canned fruit.
+There's a humungous amount of it.
+/Of course, there are no longer human dwellers.
+Almost there.
 {
     - inter__red_in_factory && not inter__red_in_fridge && not freeze_both:
-        Chi va là? # veryshortbreak
-        (Voce.)
-        Ah! Mi sono riunita con la Squadra Rossa!
-        Facciamo irruzione assieme.
+        Who goes there? # veryshortbreak
+        (Voice.)
+        Ah! I rejoined Red Team!
+        We're breaking in together.
     - else:
-        Pronti all'irruzione…
+        Ready to break in…
 }
 *   /Roger. # intensify
-- \(Cigolio di porta aperta lentamente.) # sfx squeak
-Mani in alto!
-(Voci.)
-(Sparo.) # sfx bang
-(Silenzio.) # sfx silence
-Faccia al muro!
-*   /Cosa è successo?
-- Meno uno. Ho liquidato uno degli obiettivi.
-Il deceduto, maschio, è di razza straniera, età apparente anni 18.
-Gli altri prigionieri sono un maschio e due femmine, razza straniera.
-Età apparente 14 anni, 18 anni, 24 anni.
-*   /14 anni?
-*   /14 anni!
-*   /14 anni?!
-- Sì. Procediamo all'esecuzione.
-/Cosa?!
-(Sparo.) # sfx bang
-(Sparo.) # sfx bang
-(Sparo.) # sfx bang
+- \(Squeak of slowly opening door.) # sfx squeak
+Hands up!
+(Voices.)
+(Gunfire.) # sfx bang
+(Silence.) # sfx silence
+Face the wall!
+*   /What happened?
+- One down. I took out one target.
+The deceased, male, is of foreign race, apparent age 18 years.
+The other captives are one male and two females, foreign race.
+Apparent age 14, 18, 24.
+*   /14?
+*   /14!
+*   /14?!
+- Yes. Proceeding to execution.
+/What?!
+(Gunshot.) # sfx bang
+(Gunshot.) # sfx bang
+(Gunshot.) # sfx bang
 *   /…
-- Registra: giustiziate 4 unità migranti illegali a norma della Legge sulla Sicurezza dello Stato n° 103/2079. # abate
-Missione riuscita.
-Perdite Squadra Blu: {5 - soldiers}.
-Perdite nemiche: 4.
-*   [R I G I O C A] GAME OVER # restart
+- For the record: 4 illegal migrant units executed according to the State Security Act no. 103/2079. # abate
+Mission accomplished.
+Team Blue casualties: {5 - soldiers}.
+Enemy casualties: 4.
+*   [R E P L A Y] GAME OVER # restart
 -> END
 
 = fridge
 {
     - inter__fridge_locked && inter__red_in_fridge:
-        La porta del locale frigorifero è bloccata.
-        C'è qualcuno qui dentro.
-        Quello… è il comandante della Squadra Rossa!
-        /Ecco perché non comunicava più!
-        Non è una situazione ottimale.
-        A questo punto posso solo far irruzione nel magazzino.
-        +   /Aspetta…
-            Non c'è tempo. Penseremo dopo a lui.
+        The door of the cold room is locked.
+        There is someone in the room.
+        That man… is Red Team's commander!
+        /That's why he wasn't communicating!
+        Non-optimal situation.
+        I can only break into the storage room now.
+        +   /Wait…
+            No more time. We'll deal with him later.
             -> get_them
-        +   /Ma no!
-            Sì invece. A lui penseremo dopo.
+        +   /Hell no!
+            Hell yeah. We'll deal with him later.
             -> get_them
     - inter__fridge_locked && not inter__red_in_fridge:
-        {L|Come ti ho già detto, l}a porta del locale frigorifero è bloccata.
-        A questo punto posso solo far irruzione nel magazzino.
-        +   /Aspetta… Prova ora.
+        {T|As I already told you, t}he door of the cold room is locked.
+        I can only break into the storage room now.
+        +   /Wait… Try now.
             -> fridge
         +   /OK!
             -> get_them
     - else:
-        La porta è aperta.
+        The door is open.
         ~ inter__blue_in_fridge = true
 }
-Odore di carne putrescente.
-*   /I robot non mangiano.
+Stink of rotting meat.
+*   /Robots don't eat.
 -> rendez_vous
 
 = rendez_vous
 {
     - inter__fridge_locked:
-        La temperatura sta scendendo velocemente!
-        +   /Uahahaha!
-            Perché ridi?
+        Temperature is falling quickly!        
+        +   /Muahahaha!
+            Why you laughing?
             -> freeze_one
-        +   /Ops!
+        +   /Oops!
             -> freeze_one
     - inter__blue_in_fridge:
-        Chi va là?
-        (Voce.)
-        Ah! Mi sono riunita con la Squadra Rossa!
-        Sono stupita che siate qui anche voi.
-        (Voce.)
-        +   /Oh, che coincidenza!
+        Who goes there?
+        (Voice.)
+        Ah! I rejoined Red Team!
+        I'm puzzled that you're here as well.
+        (Voice.)
+        +   /Oh, what a coincidence!
             -> both_in_fridge
-        +   /Dite le vostre preghiere!
-            Cosa??
+        +   /Say your prayers!
+            What??
             -> both_in_fridge
     - else:
         -> wait_in_fridge
 }
 
 = wait_in_fridge
-Non capisco cosa devo fare.
-Non vedo nessun passaggio verso il magazzino.
-{C'è un'altra porta per uscire dal lato opposto, ma non credo mi serva|Stiamo perdendo tempo}.
-+   /Aspetta.
+I can't understand what I'm supposed to do.
+I see no passageway to the storage room.
+{There's another door to get out from the opposite end, but I doubt it's helpful|We are wasting time}.
++   /Wait.
     -> rendez_vous
-+   /Torna indietro e irrompi[.] nel magazzino.
-    Non dovremmo perdere tempo in questo modo.
-    Sono tornata indietro e ora vado verso la porta che conduce al magazzino.
++   /Come back and break in[.]to the storage room.
+    We shouldn't be wasting our time like this.
+    I walked back and now I'm moving toward the door that leads to the storage room.
     -> get_them
 
 = freeze_one
-(Rantolo.) # intensify
-(Silenzio.)
-/Direi che la Squadra Blu ha finito di perseguitare migranti. # abate
-/Questo è per te, papà. # reddeath
+(Gasps.) # intensify
+(Silence.)
+/I suppose that Blue Team won't be pursuing migrants anymore. # abate
+/Here's to you, dad. # reddeath
 -> END
 
 = both_in_fridge
 { inter__fridge_locked: -> freeze_both }
-{&Cosa significa {&|tutto} questo?|Eh?|Che cosa stai dicendo?}
-+   /Ora te lo mostro.
+{&What does {&|all} this mean?|Uh?|What are you talking about?}
++   /I'm going to show you.
     -> both_in_fridge
-+   /Non avete senso dell'umorismo, eh.
-    Sono senza parole.
-    Andiamo assieme al magazzino.
++   /You guys really have no sense of humour, have you?
+    I'm speechless.
+    Let's go to the storage room together.
     -> get_them
 
 = freeze_both
-(Urla.) # intensify
-(Rumore di pugni sulle porte.) # sfx bam
-(Rantoli.)
-/Ciao ciao, Squadra Rossa. # reddeath
-(Silenzio.) # sfx silence
-/Ciao ciao, Squadra Blu. # bluedeath
-/Direi che la vostra missione sia fallita. # abate
-/Questo è per te, papà.
-(Altoparlante: «ATTENZIONE ATTENZIONE.») # victory
+(Screams.) # intensify
+(Punching on doors.) # sfx bam
+(Gasps.)
+/Bye bye, Read Team. # reddeath
+(Silence.) # sfx silence
+/Bye bye, Blue Team. # bluedeath
+/I suppose your mission failed. # abate
+/Here's to you, dad.
+(Loudspeaker: «ATTENTION ATTENTION.») # victory
 VAR escape_meters = 3000
 
 -> victory
 
 = victory
 ~ escape_meters -= 250
-(«MIGRANTI ILLEGALI IN FUGA DAL LATO NORD NORD OVEST».)
-(«SEI STATO RICONOSCIUTO: XERO PAONONGA, ANNI 18. FERMATI!»)
-(«SEI STATA RICONOSCIUTA: KALIFA OKEKE DIYA, ANNI 18. FERMATI!»)
-(«SEI STATA RICONOSCIUTA: RACHIDA NANSUBUGA, ANNI 24. FERMATI!»)
-(«SEI STATO RICONOSCIUTO: KANTIGI OKEKE DIYA, ANNI 14. FERMATI!»)
-(«I FUGGITIVI SI TROVANO A METRI {escape_meters} DAL CONFINE.») # shortbreak
+(«ILLEGAL MIGRANTS FLEEING FROM NORTH-NORTH-WEST SIDE».)
+(«YOU HAVE BEEN RECOGNISED: XERO PAONONGA, 18. STOP!»)
+(«YOU HAVE BEEN RECOGNISED: KALIFA OKEKE DIYA, 18. STOP!»)
+(«YOU HAVE BEEN RECOGNISED: RACHIDA NANSUBUGA, 24. STOP!»)
+(«YOU HAVE BEEN RECOGNISED: KANTIGI OKEKE DIYA, 14. STOP!»)
+(«THE FUGITIVES ARE LOCATED AT {escape_meters} METRES FROM THE BORDER.») # shortbreak
 { escape_meters < 0:
-    («I FUGGITIVI HANNO VARCATO IL CONFINE.»)
+    («THE FUGITIVES HAVE TRESPASSED THE BORDER.»)
     -> END
 }
 -> victory
