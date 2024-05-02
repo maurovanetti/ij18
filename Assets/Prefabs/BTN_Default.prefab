@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89aab2884fcb824996947f4e7f8e3b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PreventOnPointerEvents: 0
   Grey: {r: 0.18431373, g: 0.18039216, b: 0.18431373, a: 1}
   White: {r: 1, g: 1, b: 1, a: 1}
   ClickSound: {fileID: 8300000, guid: 5bdecfbd7cca9d247a373cf98615cf9d, type: 3}
@@ -110,6 +111,7 @@ GameObject:
   - component: {fileID: 4002497884386516815}
   - component: {fileID: 2240228456825039904}
   - component: {fileID: 3313585305632066022}
+  - component: {fileID: 2307873280857062887}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -179,6 +181,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: PLAY
+--- !u!114 &2307873280857062887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600542827647868676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb91910f13b80443b83de0ac1a4fc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 3313585305632066022}
 --- !u!1 &7390117635147928113
 GameObject:
   m_ObjectHideFlags: 0

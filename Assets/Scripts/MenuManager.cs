@@ -1,24 +1,46 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject ButtonsContainer;
-    public GameObject CreditsContainer;
-    public GameObject LoadingContainer;
+    public CanvasGroup MainCanvasGroup;
+    public CanvasGroup ButtonsContainer;
+    public CanvasGroup CreditsContainer;
+    public CanvasGroup LoadingContainer;
     public DefaultButton ItButton;
     public DefaultButton EnButton;
     public DefaultButton PlayButton;
     public DefaultButton CreditsButton;
     public DefaultButton QuitCreditButton;
 
+    private void OnEnable()
+    {
+        Localization.LanguageChanged += OnLanguageChanged;
+    }
+
+    private void OnDisable()
+    {
+        Localization.LanguageChanged -= OnLanguageChanged;
+    }
+
+    //show buttons only after text is set
+    private void OnLanguageChanged(Localization.Language language)
+    {
+        UpdateButtonLanguage();
+        ToggleCanvasGroup(true, ref ButtonsContainer);
+        ToggleCanvasGroup(false, ref CreditsContainer);
+        ToggleCanvasGroup(false, ref LoadingContainer);
+        MainCanvasGroup.alpha = 1f;
+    }
+
     public void Play()
     {
         StartCoroutine(LoadGameSceneAsync());
-        ButtonsContainer.SetActive(false);
-        CreditsContainer.SetActive(false);
-        LoadingContainer.SetActive(true);
+        ToggleCanvasGroup(false, ref ButtonsContainer);
+        ToggleCanvasGroup(false, ref CreditsContainer);
+        ToggleCanvasGroup(true, ref LoadingContainer);
     }
 
     private IEnumerator LoadGameSceneAsync()
@@ -37,6 +59,13 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    public void ToggleCanvasGroup(bool show, ref CanvasGroup canvasGroup)
+    {
+        canvasGroup.alpha = Convert.ToInt32(show);
+        canvasGroup.interactable = show;
+        canvasGroup.blocksRaycasts = show;
+    }
+
     public void ToggleView(bool openCredits)
     {
         //reset button graphics before changing view
@@ -50,8 +79,8 @@ public class MenuManager : MonoBehaviour
             QuitCreditButton.UpdateGraphics(false);
         }
 
-        ButtonsContainer.SetActive(!openCredits);
-        CreditsContainer.SetActive(openCredits);
+        ToggleCanvasGroup(!openCredits, ref ButtonsContainer);
+        ToggleCanvasGroup(openCredits, ref CreditsContainer);
     }
 
     public void UpdateButtonLanguage()

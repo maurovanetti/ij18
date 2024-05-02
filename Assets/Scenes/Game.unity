@@ -2374,8 +2374,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 0.0010999441, y: 0.0037499666, z: 0}
-    m_Extent: {x: 3.9864001, y: 3.97935, z: 0}
+    m_Center: {x: -0.004099965, y: 0.005949974, z: 0}
+    m_Extent: {x: 3.9819999, y: 3.98115, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3055,6 +3055,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BTN_Default
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307873280857062887, guid: 7329aa520ff34c44d9e7d863b8cda320,
+        type: 3}
+      propertyPath: Values.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307873280857062887, guid: 7329aa520ff34c44d9e7d863b8cda320,
+        type: 3}
+      propertyPath: Values.Array.data[0].Index
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307873280857062887, guid: 7329aa520ff34c44d9e7d863b8cda320,
+        type: 3}
+      propertyPath: Values.Array.data[0].Value
+      value: RICOMINCIA
+      objectReference: {fileID: 0}
+    - target: {fileID: 2307873280857062887, guid: 7329aa520ff34c44d9e7d863b8cda320,
+        type: 3}
+      propertyPath: Values.Array.data[1].Value
+      value: RESTART
       objectReference: {fileID: 0}
     - target: {fileID: 2442816445707765950, guid: 7329aa520ff34c44d9e7d863b8cda320,
         type: 3}
@@ -5073,6 +5093,7 @@ GameObject:
   - component: {fileID: 706597385}
   - component: {fileID: 706597387}
   - component: {fileID: 706597386}
+  - component: {fileID: 706597388}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -5142,6 +5163,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706597384}
   m_CullTransparentMesh: 1
+--- !u!114 &706597388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706597384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb91910f13b80443b83de0ac1a4fc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 706597386}
+  textMeshPro: {fileID: 0}
+  Values:
+  - Index: 1
+    Value: Grazie per aver giocato
+  - Index: 0
+    Value: Thanks for playing
 --- !u!1 &709801423
 GameObject:
   m_ObjectHideFlags: 0
@@ -7501,8 +7541,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 0.0033500195, y: 0.0021500587, z: 0}
-    m_Extent: {x: 4.1524496, y: 4.15485, z: 0}
+    m_Center: {x: 0.00020003319, y: 0.00274992, z: 0}
+    m_Extent: {x: 4.1565, y: 4.14845, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8214,8 +8254,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: 0.13419998, y: 0.18949997, z: 0}
-    m_Extent: {x: 3.2266002, y: 3.7984, z: 0}
+    m_Center: {x: 0.13555002, y: 0.18425, z: 0}
+    m_Extent: {x: 3.23945, y: 3.7986498, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9060,7 +9100,7 @@ PrefabInstance:
     - target: {fileID: 3313585305632066022, guid: 7329aa520ff34c44d9e7d863b8cda320,
         type: 3}
       propertyPath: m_Text
-      value: MAIN MENU
+      value: MENU
       objectReference: {fileID: 0}
     - target: {fileID: 3419765008612264225, guid: 7329aa520ff34c44d9e7d863b8cda320,
         type: 3}
@@ -9097,7 +9137,8 @@ PrefabInstance:
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2307873280857062887, guid: 7329aa520ff34c44d9e7d863b8cda320, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9903,8 +9944,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: -6.6848, y: -3.1600497, z: 0}
-    m_Extent: {x: 10.999101, y: 8.63175, z: 0}
+    m_Center: {x: -6.68565, y: -3.1612, z: 0}
+    m_Extent: {x: 11.007549, y: 8.636499, z: 0}
   m_PointLightInnerAngle: 31
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 2.8
@@ -11000,8 +11041,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: -0.031049967, y: 0.016300023, z: 0}
-    m_Extent: {x: 1.78255, y: 1.2934, z: 0}
+    m_Center: {x: -0.039200008, y: 0.016049981, z: 0}
+    m_Extent: {x: 1.7807, y: 1.29345, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -13293,8 +13334,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0
   m_LocalBounds:
-    m_Center: {x: -0.00055003166, y: -0.005249977, z: 0}
-    m_Extent: {x: 2.56045, y: 2.56425, z: 0}
+    m_Center: {x: 0.0018999577, y: 0.00074994564, z: 0}
+    m_Extent: {x: 2.5655, y: 2.56115, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -15736,6 +15777,7 @@ GameObject:
   - component: {fileID: 2030934110}
   - component: {fileID: 2030934112}
   - component: {fileID: 2030934111}
+  - component: {fileID: 2030934113}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -15861,6 +15903,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030934109}
   m_CullTransparentMesh: 1
+--- !u!114 &2030934113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030934109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb91910f13b80443b83de0ac1a4fc0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  textMeshPro: {fileID: 2030934111}
+  Values:
+  - Index: 1
+    Value: Fine
+  - Index: 0
+    Value: The End
 --- !u!850595691 &2031146704
 LightingSettings:
   m_ObjectHideFlags: 0
