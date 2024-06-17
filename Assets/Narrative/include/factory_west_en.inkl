@@ -1,24 +1,30 @@
-=== factory_east ===
-~ x = 0.55
+=== factory_west ===
+~ x = 0.45
 ~ y = 0.00
-(Click.) # sfx click
-We reached the food supply factory.
-Useless factory, I daresay.
-/Indeed, but the automated city didn't realise it.
-/The targets are there.
-Mission almost accomplished.
-*   /You don't believe in luck.
-*   /Probably, yes.
-- We are so close.
-~ inter__blue_in_factory = true
-Here is an entrance door.
-*   /Then enter.
+(Clic.) # sfx click
+We reached a massive warehouse or something.
+/Has it got a smokestack?
+Let me check…
+Yes.
+/Then it's the food supply factory.
+/They're in there.
+What's it for? Nobody lives here anymore.
+/No shit, but the city automation didn't get it.
+This way it will end up feeding the porch monkeys on the run.
+*   /They must still eat too.
+*   /Moochers.
+- The fence was torn off here.
+~ inter__red_in_factory = true
+There's a sign: «Don't trespass. Identify on FM 102.5».
+Uh, I found an entrance.
+*   /Enter.
 {
     - soldiers > 2:
-        I'm letting the others in from here. I try to catch them from the other door.
+        Wait.
+        I'm letting the others enter from here, while I try to catch them from behind.
     - soldiers == 2:
         Wait.
-        I'm letting the other soldier in from here. I try to catch them from the other door.
+        I'm letting the other soldier enter from here, while I try to catch them from behind.
     - else:
         I'm the only one left, but that should be enough.
 }
@@ -29,55 +35,58 @@ Here is an entrance door.
 
 
 = infiltrate
-/You're alone, we need to be clever.
-I always am.
-I'm in.
+/You're alone, you've got to move silently.
+Thanks for your useless advice.
+(Squeak.) # sfx squeak
+/Be careful not to make any noise.
 {
     - inter__conveyor_belt:
         (Contraptions noise.) # sfx productionline
-        The conveyor belt is still in service.
-        The bedlam is unbearable.
+        There's no risk, the conveyor belt is still working.
+        Such a ruckus!
     - else:
-        Conveyor belt. Not working.
+        Shut up.
+        I'm at the conveyor belt here. It's offline, of course.
 }
 - I realised where they are: in the storage room.
 *   /Break into the storage room.
     -> get_them
 *   /What else can you see?
-    There's a door, the sign says it's the cold room.
-    * * /There is a passageway[.] from there, you can take them by surprise.
+    A door, and a sign that says it's the cold room.
+    * * /Go there, there's a passageway[.] and you can take them by surprise.
         -> fridge
     * * /You'd better break in[.]to the storage room.
-        Deal.
+        Yeah.
         -> get_them
 = get_them
+I peek through a window.
 The threat is in there.
-I saw them through a window.
-They're feeding on canned fruit.
-There's a humungous amount of it.
-/Of course, there are no longer human dwellers.
-Almost there.
+They ransacked the canned fruit.
+Getting food poisoning, hopefully.
+OK, there we are.
 {
-    - inter__red_in_factory && not inter__red_in_fridge && not freeze_both:
-        Who goes there? # veryshortbreak
+    - inter__blue_in_factory && not inter__blue_in_fridge && not freeze_both:
+        Hey! Who goes there? # veryshortbreak
         (Voice.)
-        Ah! I rejoined Red Team!
-        We're breaking in together.
+        Ah! I rejoined Blue Team!
+        Going to break in together.
     - else:
         Ready to break in…
 }
-*   /Roger. # intensify
-- \(Squeak of slowly opening door.) # sfx squeak
+*   /Roger.
+- \(Sound of door being kicked open.) # intensify
 Hands up!
 (Voices.)
 (Gunfire.) # sfx bang
 (Silence.) # sfx silence
 Face the wall!
+Leave your little friend alone!
+You'll be visiting him in porch monkeys' heaven.
 *   /What happened?
-- One down. I took out one target.
-The deceased, male, is of foreign race, apparent age 18 years.
-The other captives are one male and two females, foreign race.
-Apparent age 14, 18, 24.
+- Suspicious movement, I had to fire. One deceased.
+The casualty is male, of foreign race, apparent age 18.
+The other prisoners are same race, two females and one male.
+Apparent age 18, 24, 14.
 *   /14?
 *   /14!
 *   /14?!
@@ -87,29 +96,29 @@ Apparent age 14, 18, 24.
 (Gunshot.) # sfx bang
 (Gunshot.) # sfx bang
 *   /…
-- For the record: 4 illegal migrant units executed according to the State Security Act no. 103/2079. # abate
+- For the record: Thartwed attempt at illegal immigration. # abate
 Mission accomplished.
-Team Blue casualties: {5 - soldiers}.
+Red Team casualties: {5 - soldiers}.
 Enemy casualties: 4.
 *   [R E P L A Y] GAME OVER # restart
 -> END
 
 = fridge
 {
-    - inter__fridge_locked && inter__red_in_fridge:
+    - inter__fridge_locked && inter__blue_in_fridge:
         The door of the cold room is locked.
-        There is someone in the room.
-        That man… is Red Team's commander!
-        /That's why he wasn't communicating!
-        Non-optimal situation.
+        Hey! But there' someone here.
+        She… is Blue Team's commander!        
+        /That's why she wasn't communicating!
+        Damn.
         I can only break into the storage room now.
         +   /Wait…
-            No more time. We'll deal with him later.
+            No more time. We'll deal with her later.
             -> get_them
         +   /Hell no!
-            Hell yeah. We'll deal with him later.
+            Hell yeah. We'll deal with her later.
             -> get_them
-    - inter__fridge_locked && not inter__red_in_fridge:
+    - inter__fridge_locked && not inter__blue_in_fridge:
         {T|As I already told you, t}he door of the cold room is locked.
         I can only break into the storage room now.
         +   /Wait… Try now.
@@ -118,26 +127,26 @@ Enemy casualties: 4.
             -> get_them
     - else:
         The door is open.
-        ~ inter__blue_in_fridge = true
+        ~ inter__red_in_fridge = true
 }
-Stink of rotting meat.
-*   /Robots don't eat.
+Yuck! What a deadly rancid smell!
+*   /The meat rotted[.], but robots don't mind.
 -> rendez_vous
 
 = rendez_vous
 {
     - inter__fridge_locked:
-        Temperature is falling quickly!        
+        Hey! It's getting supercold…
         +   /Muahahaha!
-            Why you laughing?
+            Why. You. Laughing?
             -> freeze_one
         +   /Oops!
             -> freeze_one
     - inter__blue_in_fridge:
-        Who goes there?
+        Hey! Who goes there?
         (Voice.)
-        Ah! I rejoined Red Team!
-        I'm puzzled that you're here as well.
+        Ah! I rejoined Blue Team!
+        What are you doing here too?
         (Voice.)
         +   /Oh, what a coincidence!
             -> both_in_fridge
@@ -149,30 +158,31 @@ Stink of rotting meat.
 }
 
 = wait_in_fridge
-I can't understand what I'm supposed to do.
-I see no passageway to the storage room.
-{There's another door to get out from the opposite end, but I doubt it's helpful|We are wasting time}.
+What should I do now?
+I can't see no passageway to the storage room.
+{There's another door to get out from the opposite end, though|We are wasting time}.
 +   /Wait.
     -> rendez_vous
 +   /Come back and break in[.]to the storage room.
-    We shouldn't be wasting our time like this.
-    I walked back and now I'm moving toward the door that leads to the storage room.
+    I still enjoyed the fridge tour.
+    I wish it was cooler.
+    I walked back and now I'm moving toward the door leading to the storage room.
     -> get_them
 
 = freeze_one
 (Gasps.) # intensify
 (Silence.) # sfx silence
-/I suppose that Blue Team won't be pursuing migrants anymore. # abate
-/Here's to you, dad. # reddeath
+/I suppose that Red Team won't be pursuing migrants anymore. # abate
+/Here's to you, dad. # bluedeath
 -> END
 
 = both_in_fridge
 { inter__fridge_locked: -> freeze_both }
-{&What does {&|all} this mean?|Uh?|What are you talking about?}
+{&What's {&|all} this supposed to mean?|Uh?|What are you saying?}
 +   /I'm going to show you.
     -> both_in_fridge
 +   /You guys really have no sense of humour[.], have you?
-    I'm speechless.
+    Screw you.
     Let's go to the storage room together.
     -> get_them
 
