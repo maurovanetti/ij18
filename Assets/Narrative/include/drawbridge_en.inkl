@@ -1,0 +1,112 @@
+=== drawbrige ===
+
+= problem
+~ x = 0.35
+~ y = 0.40
+VAR checked_terminal = false
+(Click.) # sfx click
+We cannot {~proceed|advance}.
+There might be a moat, ahead of us. A very deep one.
+The fortified building is beyond it.
+In order to reach the castle, we need to overcome this hassle. # kidsmove
+*   /Uh, a rhyme!
+-> solution
+
+= solution 
+*   /Can't you rappel down?
+    Let me evaluate.
+    No, that's not feasible.
+	It's 20 metres at least, the walls are smooth and perfectly vertical.
+	And there's something at the bottom… 
+	Guys, light it up down there!
+	Hmm. I see something mechanical and intimidating moving around.
+    * * /OK, I daresay the conditions are suboptimal.
+        Definitely.
+    * * /I'm afraid it's the only way.
+        /Send somebody down with a rope or something…
+        Not going to happen.
+        /You're not as brave as you say…
+        Fuck off.
+    - - -> solution
+*   /What else can you see?
+    The balustrade above the moat has a gap of a few metres.
+	In that spot, there's a kiosk, there's… Looks like a computer display.
+	I sent a soldier to look around.
+    ~ checked_terminal = true
+    -> solution
++   /[Explore.]{~Explore|Browse|Look|Try and walk} around it too.
+    Alright, talk to you in five.
+    Over and out.
+    /Out. # shortbreak
+    We found nothing{\ and the electrified fences prevent us from walking around the moat|}.
+    {W|I repeat: w}e'll end up too far away from the target if you can't find a way to access the fortified building.
+    {We wasted|You made us waste{| more}} time.{|| We're getting nervous here.}
+    -> solution
+*   { checked_terminal && Inventory has sphere } /Throw the sphere[.] to the panel.
+    The sphere we collected in the tower?
+    /Yes. I read somewhere that it can be used to unlock electronic devices.
+	It sounds like a crap theory, but you're the tech guy.
+	I believed it was a fire extinguisher.
+    ~ Inventory -= sphere
+    (Thump.) # sfx thump
+    It bounced back from the wall.
+	Now the sphere is at the bottom of the moat.
+	Good thinking, man.
+    { Events has contamination: /It was contaminated anyway.}
+    -> solution
+*   { checked_terminal } /Did you check the display?
+    It's a terminal.
+	It's asking for a passcode to open the gateway, but I don't understand which gateway.
+    -> code
++   { code } /Go back to the terminal.
+    It's still asking for a passcode…
+    -> insert_code
+    
+= code
+{Do you know the passcode?|What's next?}
+*   /I'm not sure[.], but we can try.
+    It's five figures.
+    /If it's the same system used in the southern bastions, it changes twice per hour.
+    /Therefore we cannot try all hundred thousand of them.
+    Thank goodness: we're not trained to be very patient.
+    -> insert_code
++   { insert_code } /Insert another code.
+    -> insert_code
++   /No way.
+    -> solution
+ 
+= insert_code
+~ temp code1 = "{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}"
+~ temp code2 = "{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}"
+~ temp code3 = "{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}{~0|1|2|3|4|5|6|7|8|9|0}"
+*   {inter__knows_code} /29979
+    -> guessed_code
++   /{ code1 }
+    { code1 == "29979": 
+        How did you do that?! Incredible. -> guessed_code
+    } 
++   /{ code2 }
+    { code2 == "29979": 
+        How did you do that?! Incredible. -> guessed_code
+    } 
++   { not inter__knows_code } /{ code3 }
+    { code3 == "29979": 
+        How did you do that?! Incredible. -> guessed_code
+    } 
+- No, wrong.
+-> code
+
+= guessed_code
+It says it's right.
+/You're welcome.
+Uh!
+A panel in the wall is rotating about a pivot… #sfx metal
+It's a kind of drawbrige.
+-> all_safe
+
+= all_safe
+We may pass now. Let's go.
+Over and out.
+/We didn't need to try a hundred thousand, did we?
+
+-> plot

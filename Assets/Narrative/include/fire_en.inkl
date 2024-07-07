@@ -1,0 +1,132 @@
+=== fire ===
+
+= description
+~ x = 0.35
+~ y = 0.20
+(Click.) # sfx click
+Well, well, I suppose we just entered the Ludodrome.
+/Beautiful, uh?
+It was only to be expected from them.
+If you don't force them to here, they want to come anyway.
+/However, according to the sensors they didn't pass through there.
+They did.
+*   /They walked alongside the building.
+- No, man. I saw something moving.
+They ran through the iron catwalks of the Coalosseum.
+My favourite game!
+/It's not legal.
+Explanations later. Got to move.
+Piuttosto, dimmi che per attraversare questa enorme sala abbiamo un'altra soluzione.
+*   /Spiacente.
+    E va bene. <>
+*   /Potreste uscire dal Ludodromo[.], tanto non sono lì.
+    Ti dico che li ho visti!
+    Attraversiamo dalle passerelle.
+- Forza, saliamo.
+{
+    - soldiers > 2:
+        Non in fila, idioti!
+        Ognuno salga su una passerella!
+        Se non vi si dice sempre, esattamente, cosa fare siete degli inetti completi.
+    - soldiers == 2:
+        Siamo rimasti in due, quindi saliamo su una passerella a testa, Sergente.
+        Rapido.
+}
+/Non tutte le passerelle saranno collegate, ma basta fare un passo più lungo, non è difficile.
+Non è difficile, ma è lungo e noioso.
+-> problem
+
+= problem
+(Rumore di fiammata.) # sfx fire # intensify
+Ma no!
+/Cosa c'è?
+Su alcune passerelle si alzano fiammate!
+*   /Wow! Una delle difficoltà.[] Ancora funziona, incredibile!
+*   /Lasciate perdere.
+    Non se ne parla. <>
+- E ora?
+/Solo uno dei percorsi dovrebbe avere le fiammate, giusto?
+Sbagliato. Sono almeno {soldiers}.
+/Avete qualcosa per spegnere il fuoco?
+{
+    - Inventory has sphere:
+        -> walk_with_sphere
+    - else:
+        -> walk_without_sphere
+}
+
+= walk_with_sphere
+Abbiamo la sfera!
+{ Events has contamination: Secondo te non dovevamo prenderla perché era contaminata… }
+/Ottimo. Contiene una sostanza che dovrebbe spegnere le fiamme.
+/Fa tutto da sola.
+Solo che bisogna capire chi la porta, questa sfera.
+*   /Tienila tu.
+*   /Dalla al sergente.
+    Non credo proprio.
+    Sono il comandante, la tengo io.
+- Al tuo via… corriamo!
+*   /Via!
+*   /Non fatelo.
+    Allora al mio: via!
+- \(Rumori di passi e di fiammate.) # sfx fire
+(Urla.)
+(Ansimare.)
+OK, ce l'abbiamo fatta.  # abate
+Abbiamo dovuto passarci la sfera come una palla da volley ma siamo salvi, tutti e {soldiers}.
+Troviamo quei maledetti! Caricate le armi! 
+-> solution
+
+= walk_without_sphere
+Avremmo dovuto tenere la sfera!
+{ Events has contamination: /Era contaminata… }
+Va bene, proviamo a passare lo stesso.
+Basta correre molto molto velocemente.
+- Al tuo via… corriamo!
+*   /Via!
+*   /Non fatelo.
+    Allora al mio: via!
+- \(Rumori di passi e di fiammate.) # sfx fire
+(Urla strazianti.)
+(Rumori metallici.) # sfx metal
+(Silenzio.) # sfx silence
+Non era così facile come credevo.
+Sono…
+Scusami, sono sotto shock.
+{
+    - soldiers > 3:
+        ~ soldiers -= 2
+        Manteniamo la calma.
+        Siamo rimasti in {soldiers}.
+        Un'ustionata grave.
+        /Mando un drone?
+        Un altro uomo è precipitato di sotto.
+        /Dannazione.
+        Si era impigliato con l'attrezzatura.
+        Prendiamo quei maledetti e torniamo dal ferito.
+        -> solution
+    - soldiers == 3:
+        ~ soldiers = 1
+        Sono rimasto da solo.
+        L'uniforme… si è impigliata.
+        La carne bruciata… che orrore.
+        Uno l'abbiamo perso.
+        Prendo quei maledetti e torno dal ferito.
+        /Io mando un drone.
+        -> solution
+    - soldiers == 2:
+        ~ soldiers = 1
+        Sono rimasto da solo.
+        Il sergente è bruciato vivo. Ed è colpa mia.
+        Esco da questo posto maledetto.
+        -> plot
+}
+
+= solution
+Passo. # shortbreak
+Cattive notizie. # abate
+Era solo un grosso topo.
+Ma veramente grosso.
+/Ti avevo detto che non erano lì. Esci dal lato nord-ovest.
+Roger.
+-> plot

@@ -1,0 +1,9 @@
+=== lost ===
+~ x = 0.25
+~ y = 0.20
+(Click.) # sfx click
+/How long is it taking? You should already be at the next building.
+/I'm afraid you're off track.
+Off track my arse: we are going west!
+/Exactly: you should go north.
+-> plot

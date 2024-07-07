@@ -1,0 +1,9 @@
+=== lunch_time ===
+~ x = 0.35
+~ y = 0.60
+(Click.) # sfx click
+You never eat, around here, do you?
+/I was just starting.
+/Enjoy your meal!
+Ration, everyone!! # shortbreak
+-> plot

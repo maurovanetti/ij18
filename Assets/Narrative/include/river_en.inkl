@@ -1,0 +1,49 @@
+=== river ===
+~ x = 0.35
+~ y = 0.80
+(Click.) # sfx click
+(Sound of pounding water.) # sfx water start
+Oh no… what's that, a river? They swim easily, of course. # kidsmove
+/And you don't?
+With these gears?
+-> wade
+
+= wade
+*   /Hell yeah! Wade the river.
+    No way.
+    -> wade
++   /On the river bank there are boats you can use.
+- Are they sturdy enough?
+/They are.
+/Plus, I can regulate the floodgate.
+Good. Decrease the inflow: it's too strong now. 
+*   [(Decrease the flow.)]/Presto.
+    (Fading sound of pounding water.) # sfx water stop
+- We're on board: off we go. # intensify
+*   /Good crossing.
+    (Sound of splashes.) # sfx splash
+    We reached the other side.
+*   [(Increase the flow.)]/Good crossing.
+    (Sound of pounding water.) # sfx water start
+    Oh, no! A flood wave.
+    Stop the flow! Stop the fucking flow!
+    /I'm trying!
+    (Fading sound of pounding water.) # sfx water stop
+    (Sound of splashes.) # sfx splash
+    Hold on! Hold on!
+    /Talking to me?
+    No!
+	We're losing a man.
+    He's drowning.
+    (Voices.)
+    OK, we got him.
+	He's in very bad shape though.
+    We try and save him. Over. # shortbreak
+    He seems to have made it. He didn't drown. # abate
+    But he cannot continue, we're leaving him here with a thermal blanket and a beacon.
+	~ soldiers--
+    * * [(Call the drone.)] /I called in the rescue drone.
+    * * [(Pretend to.)] /O-K. I called in the rescue drone.
+    - - Good.
+- The {soldiers} of us proceed. # sfx water stop # abate
+-> plot

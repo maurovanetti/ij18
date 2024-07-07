@@ -1,0 +1,29 @@
+=== west_gate ===
+~ x = 0.05
+~ y = 0.80
+(Clic.) # sfx click
+Red Team. This is Red Team. {~This is Red Team.|}
+{~Do you copy|Can you hear us}?
+*   /Yep[.], I copy, but communication is very disturbed.
+    Fine.
+*   /No.
+    Got reception issues?
+    /Ahem, no. Just {~kidding|joking}.
+    …
+    We aren't here to {~play games|waste our time}.
+- {~We are at|Our location is|We're in front of|We're here at} West Gate.
+Soldiers in action: {soldiers}.
+*   /I'm opening the gate of the abandoned city. # sfx metal
+- We're entering.
+Can you also check the other automated mechanisms of the city?
+/I definitely cannot. This is the problem.
+/The city almost works on its own by now.
+/It's out of control.
+I see.
+We'll have to neutralise the threat without counting on you.
+*   /We will do our best.
+- /We're just the ruin guardians.
+Not for long…
+/Not for long, you are right. In one year, the city will be razed to the ground, for good.
+Over and out. Catch up with you later.
+-> plot

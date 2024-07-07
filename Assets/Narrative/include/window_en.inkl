@@ -1,0 +1,201 @@
+=== window ===
+
+= description
+~ x = 0.25
+~ y = 1.00
+VAR just_checked_corpses = false
+(Click.) # sfx click
+We 
+We thought we detected motion in the distance, but in this darkness… # kidsmove
+*   /You'd better advance.
+*   /Slow down.
+    Sounds like a truly nonsense advice to me.
+	Rather, help us understand where we're at.
+- There's an imposing building in front of us.
+*   /Tell me more.
+    It's a cylinder. Must have 10 floors minimum.
+	On a neon sign I read: «Automated City Newscast: FM 109.0».
+    /I understood where you are.
+*   /I believe I know where you are.
+- Door is open. We're getting in.
+-> problem
+
+= problem
+*   /Careful, it[ shuts behind you!]…
+*   /OK.
+*   /Enter slowly.
+- \(Metallic crash.\) # sfx clang # intensify
+Shit, the door shut behind us.
+The entrance is locked!
+Let's count us… 
+{soldiers}. We're all here. # abate
+/That passageway was used by the migrant traffickers.
+/It had been secured.
+Actually, I see something in a corner that may be human remains.
+Charred human remains.
+It's best to proceed. # shortbreak
+We found a sphere in a room and we picked it up.
+It's a translucent metal shell, filled with an amber-coloured gel.
+~ Inventory += sphere
+*   /But what [is it supposed to be useful ]for?
+    I can tell you're not familiar with emergency scenarios.
+	This thingy is like a fire extinguisher.
+    * *     /[Drop it, it's contaminated.]No, seriously, drop it.
+            /It may be contaminated.
+		    /They used to do… dangerous experiments in this building.
+		    ~ Events += contamination
+            Contaminated? and what with?
+            * * *   /With… a virus.
+                    Never heard of viruses attacking metal items.
+                    /What about tetanus?
+                    We're keeping the measles sphere, don't stress me.
+            * * *   /With… radiation.
+                    We got a Geiger counter and detect no special radioactivity here.
+					We're keeping the "radioactie" spehere, don't stress me.
+            * * *   /Ah, do as you wish. It's your life.
+                    Alright, alright. If you care that much, we're dropping it.
+                    ~ Inventory -= sphere
+*   /A-ha.
+    I supposes it's a fire extinguisher.
+*   /It's a kind of fire extinguisher.
+    Then we did good by taking it!
+- We're checking the rooms one by one.
+Talk to you later. # longbreak
+-> end_of_check
+
+= end_of_check
+~ just_checked_corpses = false
+Red Team here.
++   /Welcome back.
+    T<>
+*   /Is it dark? Can you see?
+    Perfectly, but t<>
++   /How is it going?
+    Meh. {|Fucking boring.} T<>
+- here's no one here.
+How do we get out?
++   /[Through the seventh-floor window.]Climb to the seventh floor, you'll find one window.
+    /Get out from there.
+    -> solution
++   /Go back to the entrance.
+    Alright. # shortbreak
+    We're at the entrance again.
+	Can you believe it? The door is still closed.
+    + + /Can you see something else?
+        In a corner, there are {|those} {|famed |fucking }charred human remains{\ I told you about|}.
+		In the middle of the room, there's {a kind of|the} triangular manhole cover.
+		The manhole cover is {|still} blocked {by a long|by the|by the aforementioned} metal bar placed sideways.
+        {Ah! I could swear I saw it moving|I saw it moving again}.
+        * * *   /Moving?
+                Yeah. As if it were trying to open, but the bar is holding it shut.
+                /Anything else?
+                Broken tiles, metal pipes, debris… that kind of stuff.
+        + + +   /OK.
+        - -> examine_hall
+    + + /Check the rooms better.
+        Sounds useless but let's give it a try. # longbreak
+        -> end_of_check
+
+= examine_hall
+*   /Examine the charred remains.
+    Morbid.
+    Don't know what to say: they're dead guys.
+	They're black everywhere and they crumble.
+	What the fuck are we checking them for?
+    /OK, OK.
+	I guess they got shot by somebody or something that's in that manhole.
+    ~ just_checked_corpses = true
+    -> examine_hall
+*   /What about the pipes and debris?
+    I can tell you that there ain't a damn thing to tell about them.
+    You sure you know this place?
+    -> examine_hall
++    { not hell_breaks_loose } /Remove the metal bar{|, come on}.
+    Why?
+    + + /If you're too scared, leave it alone.
+        {
+            - just_checked_corpses:
+                {|Hear me out, man: no way. |Again?! Nope! }We just watched those {fucking |}corpses!
+                Charred!
+                I don't {feel like getting|want to be} shot at.
+                -> examine_hall
+            - else:
+                Us, scared?
+                You don't know us, man.
+				Guys, take the metal bar away.
+                -> hell_breaks_loose
+        } 
+        
+    * * /Maybe there's a passageway down there.
+        Maybe? You don't know a thing.
+		Isn't there anyone more skilled to replace you?
+        /Shut up.
+    * * /I'm trying everything.
+        Unprofessional.
+    - - The metal bar is there to stay.
+    -> examine_hall
++   /Never mind.
+    /Go back to the opposite side, beyond the rooms.
+    Oh dear.
+    { 
+        - hell_breaks_loose:
+            We need to carry the injured. # longbreak
+        - else:
+            Talk to you soon. # shortbreak
+    }
+    -> end_of_check
+    
+= hell_breaks_loose
+Not easy. Just a moment…
+(Metal noise.) # sfx metal # intensify
+(Machine gun shots.) # sfx gunfire
+~ soldiers--
+~ Events += turret
+(Screams.)
+Shit shit shit! # shortbreak
+What did you do motherfucker?!
+There was an automated turret below the "manhole cover".
+Got an injured soldier. We cannot leave her here!
+We need to bring her outdoor at least, for the rescue drone.
+Why did you have us remove the bar?
+/I'm sorry.
+The hell you are.
+The "cover" was the turret's hatch.
+How did you not know it?!
+How do we get out of here for fuck's sake?
+-> examine_hall
+        
+
+= solution
+Roger. Later. # abate
+~ x = 0.25
+~ y = 0.91
+(Click.) # sfx click
+We're out, on a very steep road.
+The seventh floor was at street level!
+*   /Yes[.], the city is in an area with massive elevation changes.
+- We noticed.
+What a shithole, perfect for the vermin.
+/For whom?
+Darkies.
+Illegal immigrants.
+*   /My father[…] crossed the border in that way.
+- That's why you got a garbage accent.
+I'm so touched, really.
+{
+    -   not hell_breaks_loose: 
+        -> close_communication
+}
+What should we do with the girl?
+The bleeding stopped, call in the drone.
+We haven't even got 
+We don't even have a radio to give her.
+*   [(Call the drone.)] /Called it!
+*   [(Pretend to.)] /Ahem… called it!
+- We must absolutely go on.
+-> close_communication
+
+
+= close_communication
+Over and out.
+-> plot
