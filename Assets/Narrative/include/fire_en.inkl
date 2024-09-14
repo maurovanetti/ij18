@@ -16,38 +16,38 @@ They ran through the iron catwalks of the Coalosseum.
 My favourite game!
 /It's not legal.
 Explanations later. Got to move.
-Piuttosto, dimmi che per attraversare questa enorme sala abbiamo un'altra soluzione.
-*   /Spiacente.
-    E va bene. <>
-*   /Potreste uscire dal Ludodromo[.], tanto non sono lì.
-    Ti dico che li ho visti!
-    Attraversiamo dalle passerelle.
-- Forza, saliamo.
+Rather, tell me that we have another option to cross this giant hall.
+*   /I'm sorry.
+    Alright then. <>
+*   /You may get out of the Ludodrome[.], since they are not there.
+    I told you, I've seen them!
+    Let's cross it through the catwalks.
+- Scoot upstairs.
 {
     - soldiers > 2:
-        Non in fila, idioti!
-        Ognuno salga su una passerella!
-        Se non vi si dice sempre, esattamente, cosa fare siete degli inetti completi.
+        Not in single file, idiots!
+        Each on their own catwalk!
+        If you are not exactly told what to do, every time, you are totally inept.
     - soldiers == 2:
-        Siamo rimasti in due, quindi saliamo su una passerella a testa, Sergente.
-        Rapido.
+        We are only two, we get a catwalk each, Sergeant.
+        Swift.
 }
-/Non tutte le passerelle saranno collegate, ma basta fare un passo più lungo, non è difficile.
-Non è difficile, ma è lungo e noioso.
+/Not all catwalks are going to be bridged, but you may just need to take a longer step, it's not hard.
+Not hard, but long and boring.
 -> problem
 
 = problem
-(Rumore di fiammata.) # sfx fire # intensify
-Ma no!
-/Cosa c'è?
-Su alcune passerelle si alzano fiammate!
-*   /Wow! Una delle difficoltà.[] Ancora funziona, incredibile!
-*   /Lasciate perdere.
-    Non se ne parla. <>
-- E ora?
-/Solo uno dei percorsi dovrebbe avere le fiammate, giusto?
-Sbagliato. Sono almeno {soldiers}.
-/Avete qualcosa per spegnere il fuoco?
+(Blaze sound.) # sfx fire # intensify
+Oh no!
+/What's up?
+There are flare-ups happening on some catwalks!
+*   /Wow! One of the challenges.[] Still working, incredible!
+*   /Give up.
+    No way. <>
+- Now what?
+/Only one path is supposed to have fire, isn't it?
+Wrong. At least {soldiers} have it.
+/Have you got something to put out the fire?
 {
     - Inventory has sphere:
         -> walk_with_sphere
@@ -56,77 +56,77 @@ Sbagliato. Sono almeno {soldiers}.
 }
 
 = walk_with_sphere
-Abbiamo la sfera!
-{ Events has contamination: Secondo te non dovevamo prenderla perché era contaminata… }
-/Ottimo. Contiene una sostanza che dovrebbe spegnere le fiamme.
-/Fa tutto da sola.
-Solo che bisogna capire chi la porta, questa sfera.
-*   /Tienila tu.
-*   /Dalla al sergente.
-    Non credo proprio.
-    Sono il comandante, la tengo io.
-- Al tuo via… corriamo!
-*   /Via!
-*   /Non fatelo.
-    Allora al mio: via!
-- \(Rumori di passi e di fiammate.) # sfx fire
-(Urla.)
-(Ansimare.)
-OK, ce l'abbiamo fatta.  # abate
-Abbiamo dovuto passarci la sfera come una palla da volley ma siamo salvi, tutti e {soldiers}.
-Troviamo quei maledetti! Caricate le armi! 
+We have the sphere!
+{ Events has contamination: According to you, we shouldn't have because it was contaminated… }
+/Excellent. It contains a substance that should extinguish the flames.
+/It does everything by itself.
+Except that we need to find out who's bringing this sphere.
+*   /You keep it.
+*   /Give it to the Sergeant.
+    I don't think so.
+	I'm the commander, I'm keeping it.
+- At your go… we run!
+*   /Go!
+*   /Don't.
+    In that case, at mine: go!
+- \(Sound of footsteps and blazes.) # sfx fire
+(Screams.)
+(Gasps.)
+OK, we made it.  # abate
+We had to bandy the sphere like a volleyball match but we're safe and sound, all {soldiers} of us.
+Go get the bastards! Load your weapons!
 -> solution
 
 = walk_without_sphere
-Avremmo dovuto tenere la sfera!
-{ Events has contamination: /Era contaminata… }
-Va bene, proviamo a passare lo stesso.
-Basta correre molto molto velocemente.
-- Al tuo via… corriamo!
-*   /Via!
-*   /Non fatelo.
-    Allora al mio: via!
-- \(Rumori di passi e di fiammate.) # sfx fire
-(Urla strazianti.)
-(Rumori metallici.) # sfx metal
-(Silenzio.) # sfx silence
-Non era così facile come credevo.
-Sono…
-Scusami, sono sotto shock.
+We should have kept the sphere!
+{ Events has contamination: /It was contaminated… }
+Alright, we're making an attempt just the same.
+Running very fast should be enough.
+- At your go… we run!
+*   /Go!
+*   /Don't.
+    In that case, at mine: go!
+- \(Sound of footsteps and blazes.)) # sfx fire
+(Heartrending screams.)
+(Metallic sounds.) # sfx metal
+(Silence.) # sfx silence
+Not as easy as I believed.
+I'm…
+Excuse me, I'm shocked.
 {
     - soldiers > 3:
         ~ soldiers -= 2
-        Manteniamo la calma.
-        Siamo rimasti in {soldiers}.
-        Un'ustionata grave.
-        /Mando un drone?
-        Un altro uomo è precipitato di sotto.
-        /Dannazione.
-        Si era impigliato con l'attrezzatura.
-        Prendiamo quei maledetti e torniamo dal ferito.
+        Keep calm.
+        We are still {soldiers}.
+        One woman seriously burned.
+        /Should I send in a drone?
+        Another man plummeted down.
+        /Damn.
+        He got entangled in the equipment.
+		Go get the bastards and then we'll provide for the injured.
         -> solution
     - soldiers == 3:
         ~ soldiers = 1
-        Sono rimasto da solo.
-        L'uniforme… si è impigliata.
-        La carne bruciata… che orrore.
-        Uno l'abbiamo perso.
-        Prendo quei maledetti e torno dal ferito.
-        /Io mando un drone.
+        I remained alone.
+        The uniform… it got caught up.
+        The burned flesh… horrific.
+        One lost.
+        I go get the bastards and then I'll provide for the other, injured.
+        /I'm sending a drone.
         -> solution
     - soldiers == 2:
         ~ soldiers = 1
-        Sono rimasto da solo.
-        Il sergente è bruciato vivo. Ed è colpa mia.
-        Esco da questo posto maledetto.
+		I remained alone.
+		The Sergeant was burned alive. And it's all my fault.
+		Out of this cursed place.
         -> plot
 }
 
 = solution
-Passo. # shortbreak
-Cattive notizie. # abate
-Era solo un grosso topo.
-Ma veramente grosso.
-/Ti avevo detto che non erano lì. Esci dal lato nord-ovest.
+Over. # shortbreak
+Bad news. # abate
+It was just a big rat.
+But really big.
+/I told you they were not there. Exit from the North-West side.
 Roger.
 -> plot

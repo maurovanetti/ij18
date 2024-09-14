@@ -1,0 +1,25 @@
+=== mine_field ===
+~ x = 0.15
+~ y = 1.00
+(Click.) # sfx click
+We are on a dirt road between empty warehouses. # kidsmove
+What a crap place.
+There's a rusted sign. Impossible to read, and not just because it's dark, here.
+*   /Careful, it's a[ minefield!]…
+*   /Nothing to worry about.
+    Good.
+- ~ soldiers--
+(Explosion.) # sfx boom # intensify
+(Moans.)
+We lost a man.
+Damn!
+(Voices.)
+I believe there's nothing to do.
+/I'm sorry.
+It was a minefield.
+I didn't expect it to be that dangerous here.
+Fuck automation.
+/Artificial intelligence reorganised it in unpredictable ways.
+We'll be sending a deminer to fetch the body.
+Let's complete the mission now. And try to predict the unpredictable, too.
+-> plot

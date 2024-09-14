@@ -37,7 +37,7 @@ It's best to proceed. # shortbreak
 We found a sphere in a room and we picked it up.
 It's a translucent metal shell, filled with an amber-coloured gel.
 ~ Inventory += sphere
-*   /But what [is it supposed to be useful ]for?
+*   /But what is it [for?]supposed to be used for?
     I can tell you're not familiar with emergency scenarios.
 	This thingy is like a fire extinguisher.
     * *     /[Drop it, it's contaminated.]No, seriously, drop it.
