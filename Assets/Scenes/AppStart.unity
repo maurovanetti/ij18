@@ -3673,8 +3673,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 207.16768, y: 0}
-  m_SizeDelta: {x: 414.33536, y: 0}
+  m_AnchoredPosition: {x: 207.08972, y: 0}
+  m_SizeDelta: {x: 414.17944, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &680652659
 MonoBehaviour:
@@ -11729,11 +11729,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Title Screen or Screen Saver
       objectReference: {fileID: 0}
+    - target: {fileID: 1734827649855064935, guid: 2f4f6db3ed8013a49a5984fce3422b43,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3002173996269667126, guid: 2f4f6db3ed8013a49a5984fce3422b43,
         type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 534669904}
+    - target: {fileID: 4074925117721926616, guid: 2f4f6db3ed8013a49a5984fce3422b43,
+        type: 3}
+      propertyPath: startTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493305895248341415, guid: 2f4f6db3ed8013a49a5984fce3422b43,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8876832182547265438, guid: 2f4f6db3ed8013a49a5984fce3422b43,
         type: 3}
       propertyPath: m_Pivot.x
