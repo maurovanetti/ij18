@@ -11,7 +11,7 @@ public class SimpleCurtains : MonoBehaviour/*, ICurtains*/ {
 
     public GameObject radio;
 
-    private GameObject currentCurtain = null;
+    // private GameObject currentCurtain = null;
 
     //public void ChangeTo(Curtain curtain)
     //{
