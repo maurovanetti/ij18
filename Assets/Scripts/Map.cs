@@ -5,14 +5,20 @@ using UnityEngine;
 
 public class Map : MonoBehaviour, IMap
 {
-    public Vector2 topLeftCorner;
-    public Vector2 bottomRightCorner;
+
+    public GameObject topLeftCornerMarker;
+    public GameObject bottomRightCornerMarker;
+
+    private Vector2 topLeftCorner;
+    private Vector2 bottomRightCorner;
 
     public GameObject[] Markers;
     public GameObject[] Trails;
 
     private void Start()
     {
+        topLeftCorner = topLeftCornerMarker.transform.localPosition;
+        bottomRightCorner = bottomRightCornerMarker.transform.localPosition;
         for (int i = 0; i < Markers.Length; i++)
         {
             Markers[i].SetActive(false);
