@@ -26,7 +26,10 @@ public class TranslatableText : MonoBehaviour
         string value = Values.SingleOrDefault(v => v.Index == language).Value;
 
         if (text != null)
+        {
+            text.supportRichText = true;
             text.text = value;
+        }
         else if (textMeshPro != null)
             textMeshPro.text = value;
         else
@@ -38,5 +41,6 @@ public class TranslatableText : MonoBehaviour
 public class TranslatedText
 {
     public Localization.Language Index;
+    [TextArea(3, 10)]
     public string Value;
 }
