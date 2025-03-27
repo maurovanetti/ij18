@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,7 +10,6 @@ public class Engine : MonoBehaviour, IEngine {
     public SoundManager soundManager;
 
     private ILog log;
-    //private IRadio radio;
     private ICurtains curtains;
 
     private Channel[] channels;
@@ -75,6 +75,8 @@ public class Engine : MonoBehaviour, IEngine {
             return channels[(int)currentChannelIndex];
         }
     }
+
+    public Action OnLockFrequency { get; internal set; }
 
     public bool TuneTo(float frequency, int noise)
     {
@@ -207,5 +209,10 @@ public class Engine : MonoBehaviour, IEngine {
     internal void AbateMusic()
     {
         soundManager.Abate();
+    }
+
+    internal void LockFrequency()
+    {
+        OnLockFrequency();
     }
 }

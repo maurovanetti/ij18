@@ -66,7 +66,7 @@ Almost there.
     - else:
         Ready to break in…
 }
-*   /Roger. # intensify
+*   /Roger. # intensify # lock
 - \(Squeak of slowly opening door.) # sfx squeak
 Hands up!
 (Voices.)
@@ -177,7 +177,7 @@ I see no passageway to the storage room.
     -> get_them
 
 = freeze_both
-(Screams.) # intensify
+(Screams.) # intensify # lock
 (Punching on doors.) # sfx bam
 (Gasps.)
 /Bye bye, Read Team. # reddeath

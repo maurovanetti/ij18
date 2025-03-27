@@ -66,7 +66,7 @@ Ci siamo quasi.
     - else:
         Pronti all'irruzione…
 }
-*   /Roger. # intensify
+*   /Roger. # intensify # lock
 - \(Cigolio di porta aperta lentamente.) # sfx squeak
 Mani in alto!
 (Voci.)
@@ -177,7 +177,7 @@ Non vedo nessun passaggio verso il magazzino.
     -> get_them
 
 = freeze_both
-(Urla.) # intensify
+(Urla.) # intensify # lock
 (Rumore di pugni sulle porte.) # sfx bam
 (Rantoli.)
 /Ciao ciao, Squadra Rossa. # reddeath

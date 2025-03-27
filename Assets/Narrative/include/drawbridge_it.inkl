@@ -91,7 +91,9 @@ L'edificio fortificato è al di là del fossato. # kidsmove
 +   { not inter__knows_code } /{ code3 }
     { code3 == "29979": 
         Come hai fatto?! Incredibile. -> guessed_code
-    } 
+    }
++   /Nessuno di questi.
+    -> insert_code
 - No, sbagliato.
 -> code
 

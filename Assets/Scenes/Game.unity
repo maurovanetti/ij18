@@ -453,6 +453,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Title Screen Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1734827649855064935, guid: 2f4f6db3ed8013a49a5984fce3422b43,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4074925117721926616, guid: 2f4f6db3ed8013a49a5984fce3422b43,
+        type: 3}
+      propertyPath: waitTime
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8876832182547265438, guid: 2f4f6db3ed8013a49a5984fce3422b43,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5005,7 +5015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00093438814}
+  m_AnchoredPosition: {x: 0, y: 0.00022489249}
   m_SizeDelta: {x: -10, y: 5}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &681812900
@@ -14852,7 +14862,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 558298449}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999956
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

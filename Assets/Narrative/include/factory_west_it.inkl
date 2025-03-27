@@ -74,7 +74,7 @@ OK, ci siamo.
         Pronti all'irruzione…
 }
 *   /Roger.
-- \(Rumore di porta spalancata con un calcio.) # intensify
+- \(Rumore di porta spalancata con un calcio.) # intensify # lock
 Mani in alto!
 (Voci.)
 (Sparo.) # sfx bang
@@ -187,7 +187,7 @@ Non vedo nessun passaggio verso il magazzino.
     -> get_them
 
 = freeze_both
-(Urla.) # intensify
+(Urla.) # intensify # lock
 (Rumore di pugni sulle porte.) # sfx bam
 (Rantoli.)
 /Ciao ciao, Squadra Rossa. # reddeath

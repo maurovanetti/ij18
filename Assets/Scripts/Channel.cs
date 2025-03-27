@@ -17,6 +17,7 @@ public class Channel : MonoBehaviour {
     public const string Intensify = "intensify";
     public const string Abate = "abate";
     public const string Sfx = "sfx";
+    public const string LockFrequency = "lock";
 
     public const string InterChannelVariablePrefix = "inter__";
 
@@ -42,7 +43,7 @@ public class Channel : MonoBehaviour {
     private static Dictionary<string, object> interChannelVariables = new Dictionary<string, object>();
     private bool destinationReached;
     private bool startOfTransmission;
-    private bool overAndOut;    
+    private bool overAndOut;
 
     // Use this for initialization
     void Start() {
@@ -182,6 +183,10 @@ public class Channel : MonoBehaviour {
                     if (story.currentTags.Contains(Abate))
                     {
                         engine.AbateMusic();
+                    }
+                    if (story.currentTags.Contains(LockFrequency))
+                    {
+                        engine.LockFrequency();
                     }
                     Debug.Log("Channel read: " + sentence);
                     Pause(sentence.Length, extraPause);

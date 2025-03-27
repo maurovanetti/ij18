@@ -25,8 +25,19 @@ public class Radio : MonoBehaviour, IRadio
     void Start()
     {
         if (Engine)
+        {
             _engineInterface = Engine;
+            Engine.OnLockFrequency = DisableFrequencyButtons;
+        }
         StartCoroutine(InitRadio());
+    }
+
+    private void DisableFrequencyButtons()
+    {
+        foreach (FrequencyButton button in FrequencyButtons)
+        {
+            button.enabled = false;
+        }
     }
 
     private IEnumerator InitRadio()
